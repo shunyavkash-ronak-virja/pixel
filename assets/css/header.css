@@ -1,0 +1,40 @@
+.header {
+  padding-block: 15px;
+}
+
+.header-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.header-logo {
+  color: var(--white);
+}
+
+.header-logo-icon {
+  max-width: 89px;
+  max-height: 26px;
+}
+
+.header-link-stack {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  line-height: var(--line-height-1_428);
+}
+
+.header-link {
+  padding-block: 8px;
+}
+
+.header-dropdown-link-wraper {
+  display: flex;
+  align-items: center;
+  column-gap: 4px;
+}
+
+.header-dropdown-icon {
+  width: 8px;
+}

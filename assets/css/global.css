@@ -1,0 +1,262 @@
+:root {
+  --black: #000000;
+  --black-80: #000000cc;
+  --black-100: #04040e;
+  --eigengrau: #17171f;
+  --dark-gunmetal: #212328;
+  --white: #ffffff;
+  --white-1: #ffffff03;
+  --white-2: #ffffff05;
+  --white-6: #ffffff0f;
+  --white-7: #ffffff12;
+  --white-8: #ffffff14;
+  --white-9: #ffffff17;
+  --white-12: #ffffff1f;
+  --white-24: #ffffff3d;
+  --white-27: #ffffff45;
+  --white-32: #ffffff52;
+  --white-60: #ffffff99;
+  --white-72: #ffffffb8;
+  --primary: #f0f0f0;
+  --pelati: #ff3337;
+  --pelati-100: #ef282c;
+  --pelati-200: #ee272b;
+  --pelati-12: #ff33371f;
+  --pelati-24: #ff33373d;
+  --pelati-25: #ff333740;
+  --pelati-40: #ff333766;
+  --line-height-1: 1;
+  --line-height-1_428: 1.428;
+  --line-height-1_5: 1.5;
+  --line-height-1_562: 1.562;
+  --line-height-1_625: 1.625;
+  --font-family-inter: "Inter";
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.font-primary {
+  color: color-mix(in srgb, #ff3337 50%, #ce1215 50%);
+}
+
+body {
+  min-height: 100vh;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: var(--black-100);
+  color: var(--white);
+  font-family: var(--font-family-inter);
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin-inline: auto;
+  padding-inline: 30px;
+  border-inline: 1px solid var(--white-8);
+}
+
+a {
+  text-decoration: none;
+  display: block;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.img-cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+button {
+  font-family: inherit;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.mx-auto {
+  margin-inline: auto;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.border-none {
+  border: none;
+}
+
+.display-block {
+  display: block;
+}
+
+.flex-shrink {
+  flex-shrink: 0;
+}
+
+/* ----- Font Size ----- */
+.h1,
+h1:not(:where(.h2, .h3, .h4, .h5, .h6)) {
+  font-size: 60px;
+  line-height: 1.1;
+}
+
+@media (max-width: 991px) {
+  .h1,
+  h1:not(:where(.h2, .h3, .h4, .h5, .h6)) {
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 767px) {
+  .h1,
+  h1:not(:where(.h2, .h3, .h4, .h5, .h6)) {
+    font-size: 40px;
+    line-height: var(--line-height-1_2);
+  }
+}
+
+.h2,
+h2:not(:where(.h1, .h3, .h4, .h5, .h6)) {
+  font-size: 52px;
+  line-height: 1.1;
+}
+@media (max-width: 991px) {
+  .h2,
+  h2:not(:where(.h1, .h3, .h4, .h5, .h6)) {
+    font-size: 42px;
+  }
+}
+
+@media (max-width: 767px) {
+  .h2,
+  h2:not(:where(.h1, .h3, .h4, .h5, .h6)) {
+    font-size: 36px;
+  }
+}
+
+.h3,
+h3:not(:where(.h1, .h2, .h4, .h5, .h6)) {
+  font-size: 40px;
+  line-height: 1.1;
+}
+@media (max-width: 991px) {
+  .h3,
+  h3:not(:where(.h1, .h2, .h4, .h5, .h6)) {
+    font-size: 38px;
+  }
+}
+
+@media (max-width: 767px) {
+  .h3,
+  h3:not(:where(.h1, .h2, .h4, .h5, .h6)) {
+    font-size: 32px;
+  }
+}
+
+.h4,
+h4:not(:where(.h1, .h2, .h3, .h5, .h6)) {
+  font-size: 36px;
+  line-height: 1.1;
+}
+
+@media (max-width: 991px) {
+  .h4,
+  h4:not(:where(.h1, .h2, .h3, .h5, .h6)) {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .h4,
+  h4:not(:where(.h1, .h2, .h3, .h5, .h6)) {
+    font-size: 28px;
+  }
+}
+
+.h5,
+h5:not(:where(.h1, .h2, .h3, .h4, .h6)) {
+  font-size: 32px;
+  line-height: 1;
+}
+
+@media (max-width: 991px) {
+  .h5,
+  h5:not(:where(.h1, .h2, .h3, .h4, .h6)) {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 767px) {
+  .h5,
+  h5:not(:where(.h1, .h2, .h3, .h4, .h6)) {
+    font-size: 24px;
+  }
+}
+
+.h6,
+h6:not(:where(.h1, .h2, .h3, .h4, .h5)) {
+  font-size: 28px;
+  line-height: 1;
+}
+
+@media (max-width: 991px) {
+  .h6,
+  h6:not(:where(.h1, .h2, .h3, .h4, .h5)) {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 767px) {
+  .h6,
+  h6:not(:where(.h1, .h2, .h3, .h4, .h5)) {
+    font-size: 20px;
+  }
+}
+
+.font-24 {
+  font-size: 24px;
+  line-height: 1.041;
+}
+
+.font-20 {
+  font-size: 20px;
+  line-height: 1;
+}
+
+.font-14 {
+  font-size: 14px;
+  line-height: 1;
+}
+
+.font-12 {
+  font-size: 12px;
+  line-height: 1.6;
+}
