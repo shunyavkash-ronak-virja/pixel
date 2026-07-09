@@ -7,6 +7,7 @@
   --white: #ffffff;
   --white-1: #ffffff03;
   --white-2: #ffffff05;
+  --white-4: #ffffff0a;
   --white-6: #ffffff0f;
   --white-7: #ffffff12;
   --white-8: #ffffff14;
@@ -22,15 +23,25 @@
   --pelati-100: #ef282c;
   --pelati-200: #ee272b;
   --pelati-12: #ff33371f;
+  --pelati-16: #ff333729;
   --pelati-24: #ff33373d;
   --pelati-25: #ff333740;
   --pelati-40: #ff333766;
+  --obsidian: #07011308;
   --line-height-1: 1;
+  --line-height-1_215: 1.215;
   --line-height-1_428: 1.428;
   --line-height-1_5: 1.5;
   --line-height-1_562: 1.562;
   --line-height-1_625: 1.625;
+  --line-height-1_714: 1.714;
   --font-family-inter: "Inter";
+  --border-solid: solid;
+  --border-1: 1px;
+  --border-0_5: 0.5px;
+  --border-primary: var(--pelati);
+  --border-primary_24: var(--pelati-24);
+  --border-secondary: var(--white-8);
 }
 
 * {
@@ -60,7 +71,7 @@ body {
   max-width: 1280px;
   margin-inline: auto;
   padding-inline: 30px;
-  border-inline: 1px solid var(--white-8);
+  border-inline: var(--border-1) var(--border-solid) var(--white-8);
 }
 
 a {
@@ -87,6 +98,9 @@ ol {
 
 button {
   font-family: inherit;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }
 
 .text-center {
@@ -119,6 +133,18 @@ button {
 
 .flex-shrink {
   flex-shrink: 0;
+}
+
+.border-b-1 {
+  border-bottom: var(--border-1) var(--border-solid) var(--border-secondary);
+}
+
+.border-all {
+  border: var(--border-1) var(--border-solid) var(--border-secondary);
+}
+
+.max-w-max {
+  max-width: max-content;
 }
 
 /* ----- Font Size ----- */
@@ -259,4 +285,130 @@ h6:not(:where(.h1, .h2, .h3, .h4, .h5)) {
 .font-12 {
   font-size: 12px;
   line-height: 1.6;
+}
+
+.btn {
+  padding: 2px;
+  position: relative;
+  font-size: 14px;
+  line-height: var(--line-height-1_714);
+}
+
+.btn-content {
+  padding: 4px 12px;
+  border: var(--border-0_5) var(--border-solid);
+}
+
+.btn::before,
+.btn::after,
+.btn-content::before,
+.btn-content::after {
+  content: "";
+  position: absolute;
+  width: 8px;
+  aspect-ratio: 1;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn::before,
+.btn-content::before {
+  top: 0;
+  border-top: var(--border-1) var(--border-solid) var(--border-primary);
+}
+
+.btn::after,
+.btn-content::after {
+  bottom: 0;
+  border-bottom: var(--border-1) var(--border-solid) var(--border-primary);
+}
+
+.btn::before,
+.btn::after {
+  left: 0;
+  border-left: var(--border-1) var(--border-solid) var(--border-primary);
+}
+
+.btn-content::before,
+.btn-content::after {
+  right: 0;
+  border-right: var(--border-1) var(--border-solid) var(--border-primary);
+}
+
+.btn:hover {
+  &.btn::before {
+    transform: translate(-2px, -2px);
+  }
+
+  .btn-content::before {
+    transform: translate(2px, -2px);
+  }
+
+  .btn-content::after {
+    transform: translate(2px, 2px);
+  }
+
+  &.btn::after {
+    transform: translate(-2px, 2px);
+  }
+}
+
+.btn-primary {
+  background-color: var(--pelati-12);
+  border-color: var(--border-primary_24);
+  filter: blur(4)
+    drop-shadow(
+      0 0.5px 0.5px 0 var(--obsidian),
+      0 1px 1px -0.5px var(--obsidian),
+      0 2px 2px -1px var(--obsidian),
+      0 3px 3px -1.5px var(--obsidian),
+      0 5px 5px -2.5px var(--obsidian),
+      0 8px 8px -3px var(--obsidian)
+    );
+  box-shadow:
+    inset 0 8px 24px -4px var(--pelati-16),
+    inset 0 0.5px 0.5px 0 var(--pelati-16),
+    inset 0 1px 2px -0.5px var(--pelati-12);
+}
+
+@media (max-width: 767px) {
+  .btn {
+    line-height: var(--line-height-1_215);
+  }
+
+  .btn::before,
+  .btn::after,
+  .btn-content::before,
+  .btn-content::after {
+    width: 6px;
+  }
+}
+/* ------------------ .btn-secondary {} ------------------ */
+
+.icon-btn {
+  width: 40px;
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-btn-secondary {
+  border: var(--border-1) var(--border-solid) var(--white-24);
+  filter: blur(4)
+    drop-shadow(
+      0 0.5px 0.5px 0 var(--obsidian),
+      0 1px 1px -0.5px var(--obsidian),
+      0 2px 2px -1px var(--obsidian),
+      0 3px 3px -1.5px var(--obsidian),
+      0 5px 5px -2.5px var(--obsidian),
+      0 8px 8px -3px var(--obsidian)
+    );
+  box-shadow:
+    inset 0 8px 24px -4px var(--white-4),
+    inset 0 0.5px 0.5px 0px var(--white-2),
+    inset 0 1px 2px -0.5px var(--white-2);
+}
+
+.icon-btn-content {
+  height: 48%;
 }
