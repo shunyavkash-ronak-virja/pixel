@@ -33,3 +33,20 @@
   align-items: center;
   gap: 8px;
 }
+
+.footer-link-title {
+  margin-bottom: 26px;
+}
+
+.footer-link {
+  color: var(--white-60);
+  transition: all 0.3s ease-in-out;
+}
+
+.footer-link:hover {
+  color: var(--white);
+}
+
+.footer-link:not(:last-child) {
+  margin-bottom: 10px;
+}
