@@ -1,0 +1,35 @@
+.footer {
+  margin-top: auto;
+}
+
+.footer-pt {
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+.footer-wrapper {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.footer-media-wrapper {
+  max-width: 372px;
+}
+
+.footer-logo {
+  max-width: 90px;
+  max-height: 26px;
+}
+
+.footer-description {
+  margin-block: 24px 44px;
+  line-height: var(--line-height-1_625);
+}
+
+.footer-social-media-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
