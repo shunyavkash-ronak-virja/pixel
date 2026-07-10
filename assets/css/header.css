@@ -49,12 +49,6 @@
   transition: all 0.3s ease-in-out;
 }
 
-.header-link:hover::after {
-  width: 100%;
-  left: 0;
-  right: auto;
-}
-
 .header-dropdown {
   position: relative;
 }
@@ -97,6 +91,12 @@
 }
 
 @media (min-width: 768px) {
+  .header-link:hover::after {
+    width: 100%;
+    left: 0;
+    right: auto;
+  }
+
   .header-dropdown-link-wraper:hover .header-dropdown-icon {
     transform: rotate(180deg);
   }
