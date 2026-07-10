@@ -113,6 +113,10 @@
   gap: 16px;
 }
 
+.header-btn {
+  line-height: var(--line-height-1_714);
+}
+
 .toggle-btn {
   display: none;
 }
@@ -229,5 +233,9 @@
 
   .header-dropdown-stack .header-link {
     padding-inline: 20px;
+  }
+
+  .header-btn {
+    line-height: var(--line-height-1_08);
   }
 }
