@@ -440,7 +440,7 @@ h6:not(:where(.h1, .h2, .h3, .h4, .h5)) {
 
 /* ----- Inputs Css ----- */
 .input-field {
-  border: var(--border-0_5) var(--border-solid) var(--white-2);
+  border: var(--border-0_5) var(--border-solid) var(--white-24);
   line-height: var(--line-height-1_5);
   color: var(--white);
   filter: blur(4)
@@ -467,12 +467,13 @@ h6:not(:where(.h1, .h2, .h3, .h4, .h5)) {
 
 .input-field::before {
   content: "";
-  width: 1px;
+  width: 4px;
   height: 100%;
   background-color: var(--white);
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 4;
 }
 
 .input-field::placeholder {
