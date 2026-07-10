@@ -50,3 +50,14 @@
 .footer-link:not(:last-child) {
   margin-bottom: 10px;
 }
+
+.footer-form {
+  max-width: 347px;
+}
+
+.footer-input-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
