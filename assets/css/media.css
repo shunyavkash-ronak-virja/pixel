@@ -1,0 +1,29 @@
+@media (max-width: 767px) {
+  /* ----- Hero Section ----- */
+  .hero-img-content {
+    display: none;
+  }
+
+  .hero-content {
+    text-align: center;
+  }
+
+  .hero-content,
+  .hero-description {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .hero-btn {
+    justify-self: center;
+  }
+}
+
+@media (max-width: 575px) {
+  /* ----- Hero Section ----- */
+  .hero-description {
+    font-size: 14px;
+    margin-bottom: 36px;
+    line-height: var(--line-height-1_642);
+  }
+}

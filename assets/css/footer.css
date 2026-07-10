@@ -159,4 +159,8 @@
   .footer-input-wrapper {
     margin-top: 16px;
   }
+
+  .footer-bg {
+    top: 80%;
+  }
 }

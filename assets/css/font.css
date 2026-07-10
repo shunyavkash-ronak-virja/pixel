@@ -232,3 +232,56 @@
   font-style: italic;
   font-display: swap;
 }
+
+/* ----- Britti Sans ----- */
+@font-face {
+  font-family: "Britti Sans Trial";
+  src: url("../font/britti-sans/BrittiSansTrial-Light.eot");
+  src:
+    url("../font/britti-sans/BrittiSansTrial-Light.eot?#iefix") format("embedded-opentype"),
+    url("../font/britti-sans/BrittiSansTrial-Light.woff2") format("woff2"),
+    url("../font/britti-sans/BrittiSansTrial-Light.woff") format("woff"),
+    url("../font/britti-sans/BrittiSansTrial-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Britti Sans Trial";
+  src: url("../font/britti-sans/BrittiSansTrial-Bold.eot");
+  src:
+    url("../font/britti-sans/BrittiSansTrial-Bold.eot?#iefix") format("embedded-opentype"),
+    url("../font/britti-sans/BrittiSansTrial-Bold.woff2") format("woff2"),
+    url("../font/britti-sans/BrittiSansTrial-Bold.woff") format("woff"),
+    url("../font/britti-sans/BrittiSansTrial-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Britti Sans Trial";
+  src: url("../font/britti-sans/BrittiSansTrial-Regular.eot");
+  src:
+    url("../font/britti-sans/BrittiSansTrial-Regular.eot?#iefix") format("embedded-opentype"),
+    url("../font/britti-sans/BrittiSansTrial-Regular.woff2") format("woff2"),
+    url("../font/britti-sans/BrittiSansTrial-Regular.woff") format("woff"),
+    url("../font/britti-sans/BrittiSansTrial-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Britti Sans Trial";
+  src: url("../font/britti-sans/BrittiSansTrial-Semibold.eot");
+  src:
+    url("../font/britti-sans/BrittiSansTrial-Semibold.eot?#iefix") format("embedded-opentype"),
+    url("../font/britti-sans/BrittiSansTrial-Semibold.woff2") format("woff2"),
+    url("../font/britti-sans/BrittiSansTrial-Semibold.woff") format("woff"),
+    url("../font/britti-sans/BrittiSansTrial-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}

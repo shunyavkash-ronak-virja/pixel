@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'Britti Sans Trial';
+    src: url('BrittiSansTrial-Light.eot');
+    src: url('BrittiSansTrial-Light.eot?#iefix') format('embedded-opentype'),
+        url('BrittiSansTrial-Light.woff2') format('woff2'),
+        url('BrittiSansTrial-Light.woff') format('woff'),
+        url('BrittiSansTrial-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Britti Sans Trial';
+    src: url('BrittiSansTrial-Bold.eot');
+    src: url('BrittiSansTrial-Bold.eot?#iefix') format('embedded-opentype'),
+        url('BrittiSansTrial-Bold.woff2') format('woff2'),
+        url('BrittiSansTrial-Bold.woff') format('woff'),
+        url('BrittiSansTrial-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Britti Sans Trial';
+    src: url('BrittiSansTrial-Regular.eot');
+    src: url('BrittiSansTrial-Regular.eot?#iefix') format('embedded-opentype'),
+        url('BrittiSansTrial-Regular.woff2') format('woff2'),
+        url('BrittiSansTrial-Regular.woff') format('woff'),
+        url('BrittiSansTrial-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Britti Sans Trial';
+    src: url('BrittiSansTrial-Semibold.eot');
+    src: url('BrittiSansTrial-Semibold.eot?#iefix') format('embedded-opentype'),
+        url('BrittiSansTrial-Semibold.woff2') format('woff2'),
+        url('BrittiSansTrial-Semibold.woff') format('woff'),
+        url('BrittiSansTrial-Semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+

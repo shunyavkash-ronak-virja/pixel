@@ -1,0 +1,30 @@
+/* ----- Hero Section ----- */
+.hero-section {
+  position: relative;
+}
+
+.hero-py {
+  padding-block: 108px 66px;
+}
+
+.hero-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+}
+
+.hero-content {
+  width: 58%;
+  max-width: 670px;
+}
+
+.hero-description {
+  max-width: 620px;
+  margin-block: 20px 40px;
+  line-height: var(--line-height-1_625);
+}
+
+.hero-img {
+  min-height: 368px;
+}

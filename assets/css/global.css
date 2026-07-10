@@ -31,6 +31,7 @@
   --obsidian: #07011308;
   --transparent: transparent;
   --line-height-1: 1;
+  --line-height-1_1: 1.1;
   --line-height-1_08: 1.08;
   --line-height-1_215: 1.215;
   --line-height-1_428: 1.428;
@@ -40,6 +41,7 @@
   --line-height-1_642: 1.642;
   --line-height-1_714: 1.714;
   --font-family-inter: "Inter";
+  --font-family-britti-sans: "Britti Sans Trial";
   --border-solid: solid;
   --border-1: 1px;
   --border-0_5: 0.5px;
@@ -163,7 +165,9 @@ input {
 .h1,
 h1:not(:where(.h2, .h3, .h4, .h5, .h6)) {
   font-size: 60px;
-  line-height: 1.1;
+  line-height: var(--line-height-1_1);
+  font-family: var(--font-family-britti-sans);
+  letter-spacing: -0.044em;
 }
 
 @media (max-width: 991px) {
@@ -177,14 +181,21 @@ h1:not(:where(.h2, .h3, .h4, .h5, .h6)) {
   .h1,
   h1:not(:where(.h2, .h3, .h4, .h5, .h6)) {
     font-size: 40px;
-    line-height: var(--line-height-1_2);
+  }
+}
+
+@media (max-width: 575px) {
+  .h1,
+  h1:not(:where(.h2, .h3, .h4, .h5, .h6)) {
+    font-size: 36px;
   }
 }
 
 .h2,
 h2:not(:where(.h1, .h3, .h4, .h5, .h6)) {
   font-size: 52px;
-  line-height: 1.1;
+  line-height: var(--line-height-1_1);
+  font-family: var(--font-family-britti-sans);
 }
 @media (max-width: 991px) {
   .h2,
@@ -203,7 +214,8 @@ h2:not(:where(.h1, .h3, .h4, .h5, .h6)) {
 .h3,
 h3:not(:where(.h1, .h2, .h4, .h5, .h6)) {
   font-size: 40px;
-  line-height: 1.1;
+  line-height: var(--line-height-1_1);
+  font-family: var(--font-family-britti-sans);
 }
 @media (max-width: 991px) {
   .h3,
@@ -222,7 +234,7 @@ h3:not(:where(.h1, .h2, .h4, .h5, .h6)) {
 .h4,
 h4:not(:where(.h1, .h2, .h3, .h5, .h6)) {
   font-size: 36px;
-  line-height: 1.1;
+  line-height: var(--line-height-1_1);
 }
 
 @media (max-width: 991px) {
@@ -242,7 +254,7 @@ h4:not(:where(.h1, .h2, .h3, .h5, .h6)) {
 .h5,
 h5:not(:where(.h1, .h2, .h3, .h4, .h6)) {
   font-size: 32px;
-  line-height: 1;
+  line-height: var(--line-height-1_1);
 }
 
 @media (max-width: 991px) {
@@ -298,8 +310,16 @@ h6:not(:where(.h1, .h2, .h3, .h4, .h5)) {
   line-height: 1.6;
 }
 
+.titel-span {
+  background: linear-gradient(180deg, #ff3337 0%, #ce1215 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
 /* ----- Button Css ----- */
 .btn {
+  max-width: max-content;
   position: relative;
 }
 
@@ -321,6 +341,11 @@ h6:not(:where(.h1, .h2, .h3, .h4, .h5)) {
 
 .btn-big-px {
   padding-inline: 16px;
+}
+
+.btn-b {
+  padding: 2px 6px;
+  background-color: var(--pelati);
 }
 
 .btn::before,
