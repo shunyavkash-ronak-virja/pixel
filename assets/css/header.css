@@ -215,8 +215,12 @@
   .header-dropdown-stack {
     background-color: transparent;
     border: none;
-    border-bottom: var(--border-1) var(--border-solid) var(--white-8);
+    border-bottom: var(--border-1) var(--border-solid) var(--transparent);
     overflow: hidden;
+  }
+
+  .header-dropdown-block.active .header-dropdown-stack {
+    border-color: var(--white-8);
   }
 
   .header-dropdown-link-wraper.active .header-dropdown-icon {
