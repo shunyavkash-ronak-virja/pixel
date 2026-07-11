@@ -14,12 +14,6 @@ headerDropdownLink.addEventListener("click", () => {
   headerDropdownBlock.classList.toggle("active");
 });
 
-// Close dropdowns if the user clicks anywhere outside of them
-// window.addEventListener("click", () => {
-//   document.querySelectorAll(".dropdown-content").forEach((content) => {
-//     content.classList.remove("show");
-//   });
-// });
 
 // Footer Toggel JS ----------
 const footerTitles = document.querySelectorAll(".footer-link-title");

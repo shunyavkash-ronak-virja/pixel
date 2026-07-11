@@ -70,14 +70,14 @@
   top: 100%;
   left: 50%;
   transform: translateX(-50%);
-  padding-top: 16px;
+  padding-top: 15px;
   opacity: 0;
   visibility: hidden;
   transition: all 0.3s ease-in-out;
 }
 
 .header-dropdown-stack {
-  background-color: var(--white-12);
+  background-color: var(--eigengrau);
   border: var(--border-1) var(--border-solid) var(--white-8);
 }
 
