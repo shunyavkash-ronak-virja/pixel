@@ -71,12 +71,52 @@ body {
   flex-direction: column;
 }
 
+header,
+section,
+footer {
+  padding-inline: 30px;
+}
+
+@media (max-width: 991px) {
+
+  header,
+  section,
+  footer {
+    padding-inline: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+
+  header,
+  section,
+  footer {
+    padding-inline: 16px;
+  }
+}
+
+
 .container {
   width: 100%;
   max-width: 1280px;
   margin-inline: auto;
-  padding-inline: 30px;
   border-inline: var(--border-1) var(--border-solid) var(--white-8);
+}
+
+.container:not(:where(.container-px)) {
+  padding-inline: 30px;
+}
+
+@media (max-width: 991px) {
+  .container:not(:where(.container-px)) {
+    padding-inline: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .container:not(:where(.container-px)) {
+    padding-inline: 16px;
+  }
 }
 
 a {
@@ -520,6 +560,10 @@ h6:not(:where(.h1, .h2, .h3, .h4, .h5)) {
 }
 
 /* ----- Inputs Css ----- */
+.input-stack {
+  position: relative;
+}
+
 .input-field {
   border: var(--border-0_5) var(--border-solid) var(--white-24);
   line-height: var(--line-height-1_5);
@@ -536,22 +580,29 @@ h6:not(:where(.h1, .h2, .h3, .h4, .h5)) {
     inset 0 1px 2px -0.5px var(--white-2);
   background-color: var(--white-2);
   padding: 8px 12px;
-  position: relative;
 }
 
 .input-field:focus {
   outline: none;
 }
 
-.input-field::before {
-  content: "";
-  width: 8px;
+.input-overlay {
+  width: 100%;
+  max-width: 36px;
   height: 100%;
-  background-color: var(--white);
+  border-left: var(--border-1) var(--border-solid) var(--white);
   position: absolute;
   top: 0;
   left: 0;
   z-index: 4;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 100%);
+  backdrop-filter: blur(4px);
+  opacity: 1;
+  transition: all 0.3s ease-in-out;
+}
+
+.input-overlay:is(:where(.input-field):focus~*) {
+  opacity: 1;
 }
 
 .input-field::placeholder {

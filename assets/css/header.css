@@ -6,6 +6,10 @@
   z-index: 999;
 }
 
+.header.active {
+  background-color: var(--black-100);
+}
+
 .header-py {
   padding-block: 15px;
 }
@@ -169,7 +173,7 @@
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: var(--pelati-12);
+    background-color: var(--black-100);
     border-block: var(--border-1) var(--border-solid) var(--white-8);
     transform: translateY(10px);
     opacity: 0;
