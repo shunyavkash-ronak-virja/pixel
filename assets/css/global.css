@@ -78,7 +78,6 @@ footer {
 }
 
 @media (max-width: 991px) {
-
   header,
   section,
   footer {
@@ -87,14 +86,12 @@ footer {
 }
 
 @media (max-width: 767px) {
-
   header,
   section,
   footer {
     padding-inline: 16px;
   }
 }
-
 
 .container {
   width: 100%;
@@ -213,7 +210,6 @@ h1:not(:where(.h2, .h3, .h4, .h5, .h6)) {
 }
 
 @media (max-width: 991px) {
-
   .h1,
   h1:not(:where(.h2, .h3, .h4, .h5, .h6)) {
     font-size: 48px;
@@ -221,7 +217,6 @@ h1:not(:where(.h2, .h3, .h4, .h5, .h6)) {
 }
 
 @media (max-width: 767px) {
-
   .h1,
   h1:not(:where(.h2, .h3, .h4, .h5, .h6)) {
     font-size: 40px;
@@ -229,7 +224,6 @@ h1:not(:where(.h2, .h3, .h4, .h5, .h6)) {
 }
 
 @media (max-width: 575px) {
-
   .h1,
   h1:not(:where(.h2, .h3, .h4, .h5, .h6)) {
     font-size: 36px;
@@ -244,7 +238,6 @@ h2:not(:where(.h1, .h3, .h4, .h5, .h6)) {
 }
 
 @media (max-width: 991px) {
-
   .h2,
   h2:not(:where(.h1, .h3, .h4, .h5, .h6)) {
     font-size: 42px;
@@ -252,7 +245,6 @@ h2:not(:where(.h1, .h3, .h4, .h5, .h6)) {
 }
 
 @media (max-width: 767px) {
-
   .h2,
   h2:not(:where(.h1, .h3, .h4, .h5, .h6)) {
     font-size: 36px;
@@ -267,7 +259,6 @@ h3:not(:where(.h1, .h2, .h4, .h5, .h6)) {
 }
 
 @media (max-width: 991px) {
-
   .h3,
   h3:not(:where(.h1, .h2, .h4, .h5, .h6)) {
     font-size: 38px;
@@ -275,7 +266,6 @@ h3:not(:where(.h1, .h2, .h4, .h5, .h6)) {
 }
 
 @media (max-width: 767px) {
-
   .h3,
   h3:not(:where(.h1, .h2, .h4, .h5, .h6)) {
     font-size: 32px;
@@ -289,7 +279,6 @@ h4:not(:where(.h1, .h2, .h3, .h5, .h6)) {
 }
 
 @media (max-width: 991px) {
-
   .h4,
   h4:not(:where(.h1, .h2, .h3, .h5, .h6)) {
     font-size: 30px;
@@ -297,7 +286,6 @@ h4:not(:where(.h1, .h2, .h3, .h5, .h6)) {
 }
 
 @media (max-width: 767px) {
-
   .h4,
   h4:not(:where(.h1, .h2, .h3, .h5, .h6)) {
     font-size: 28px;
@@ -311,7 +299,6 @@ h5:not(:where(.h1, .h2, .h3, .h4, .h6)) {
 }
 
 @media (max-width: 991px) {
-
   .h5,
   h5:not(:where(.h1, .h2, .h3, .h4, .h6)) {
     font-size: 28px;
@@ -319,7 +306,6 @@ h5:not(:where(.h1, .h2, .h3, .h4, .h6)) {
 }
 
 @media (max-width: 767px) {
-
   .h5,
   h5:not(:where(.h1, .h2, .h3, .h4, .h6)) {
     font-size: 24px;
@@ -333,7 +319,6 @@ h6:not(:where(.h1, .h2, .h3, .h4, .h5)) {
 }
 
 @media (max-width: 991px) {
-
   .h6,
   h6:not(:where(.h1, .h2, .h3, .h4, .h5)) {
     font-size: 24px;
@@ -341,7 +326,6 @@ h6:not(:where(.h1, .h2, .h3, .h4, .h5)) {
 }
 
 @media (max-width: 767px) {
-
   .h6,
   h6:not(:where(.h1, .h2, .h3, .h4, .h5)) {
     font-size: 20px;
@@ -375,7 +359,6 @@ h6:not(:where(.h1, .h2, .h3, .h4, .h5)) {
 }
 
 @media (max-width: 575px) {
-
   .font-20 {
     font-size: 16px;
   }
@@ -486,12 +469,15 @@ h6:not(:where(.h1, .h2, .h3, .h4, .h5)) {
 .btn-primary {
   background-color: var(--pelati-12);
   border-color: var(--pelati-24);
-  filter: blur(4) drop-shadow(0 0.5px 0.5px 0 var(--obsidian),
+  filter: blur(4)
+    drop-shadow(
+      0 0.5px 0.5px 0 var(--obsidian),
       0 1px 1px -0.5px var(--obsidian),
       0 2px 2px -1px var(--obsidian),
       0 3px 3px -1.5px var(--obsidian),
       0 5px 5px -2.5px var(--obsidian),
-      0 8px 8px -3px var(--obsidian));
+      0 8px 8px -3px var(--obsidian)
+    );
   box-shadow:
     inset 0 8px 24px -4px var(--pelati-16),
     inset 0 0.5px 0.5px 0 var(--pelati-16),
@@ -499,7 +485,6 @@ h6:not(:where(.h1, .h2, .h3, .h4, .h5)) {
 }
 
 @media (max-width: 767px) {
-
   .btn::before,
   .btn::after,
   .btn-content::before,
@@ -519,7 +504,6 @@ h6:not(:where(.h1, .h2, .h3, .h4, .h5)) {
 }
 
 @media (max-width: 575px) {
-
   .icon-btn {
     width: 36px;
   }
@@ -527,12 +511,15 @@ h6:not(:where(.h1, .h2, .h3, .h4, .h5)) {
 
 .icon-btn-secondary {
   border: var(--border-1) var(--border-solid) var(--white-24);
-  filter: blur(4) drop-shadow(0 0.5px 0.5px 0 var(--obsidian),
+  filter: blur(4)
+    drop-shadow(
+      0 0.5px 0.5px 0 var(--obsidian),
       0 1px 1px -0.5px var(--obsidian),
       0 2px 2px -1px var(--obsidian),
       0 3px 3px -1.5px var(--obsidian),
       0 5px 5px -2.5px var(--obsidian),
-      0 8px 8px -3px var(--obsidian));
+      0 8px 8px -3px var(--obsidian)
+    );
   box-shadow:
     inset 0 8px 24px -4px var(--white-4),
     inset 0 0.5px 0.5px 0px var(--white-2),
@@ -542,17 +529,19 @@ h6:not(:where(.h1, .h2, .h3, .h4, .h5)) {
 
 .icon-btn-secondary:hover {
   border-color: var(--white-52);
-  filter: blur(4) drop-shadow(0 0.5px 0.5px 0 var(--white-80),
+  filter: blur(4)
+    drop-shadow(
+      0 0.5px 0.5px 0 var(--white-80),
       0 1px 1px -0.5px var(--white-80),
       0 2px 2px -1px var(--white-80),
       0 3px 3px -1.5px var(--white-80),
       0 5px 5px -2.5px var(--white-80),
-      0 8px 8px -3px var(--white-80));
+      0 8px 8px -3px var(--white-80)
+    );
   box-shadow:
     inset 0 8px 24px -4px var(--white-12),
     inset 0 0.5px 0.5px 0px var(--white-12),
     inset 0 1px 2px -0.5px var(--white-12);
-
 }
 
 .icon-btn-content {
@@ -568,12 +557,15 @@ h6:not(:where(.h1, .h2, .h3, .h4, .h5)) {
   border: var(--border-0_5) var(--border-solid) var(--white-24);
   line-height: var(--line-height-1_5);
   color: var(--white);
-  filter: blur(4) drop-shadow(0 0.5px 0.5px 0 var(--obsidian),
+  filter: blur(4)
+    drop-shadow(
+      0 0.5px 0.5px 0 var(--obsidian),
       0 1px 1px -0.5px var(--obsidian),
       0 2px 2px -1px var(--obsidian),
       0 3px 3px -1.5px var(--obsidian),
       0 5px 5px -2.5px var(--obsidian),
-      0 8px 8px -3px var(--obsidian));
+      0 8px 8px -3px var(--obsidian)
+    );
   box-shadow:
     inset 0 8px 24px -4px var(--white-4),
     inset 0 0.5px 0.5px 0px var(--white-2),
@@ -601,7 +593,7 @@ h6:not(:where(.h1, .h2, .h3, .h4, .h5)) {
   transition: all 0.3s ease-in-out;
 }
 
-.input-overlay:is(:where(.input-field):focus~*) {
+.input-overlay:is(:where(.input-field):focus ~ *) {
   opacity: 1;
 }
 

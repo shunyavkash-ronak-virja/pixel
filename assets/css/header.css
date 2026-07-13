@@ -157,6 +157,10 @@
 }
 
 @media (max-width: 767px) {
+  .header .container {
+    position: relative;
+  }
+
   .header-py {
     padding-block: 12px;
   }
