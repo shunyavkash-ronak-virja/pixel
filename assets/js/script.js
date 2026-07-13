@@ -23,7 +23,7 @@ headerDropdownLink.addEventListener("click", () => {
 document.addEventListener("DOMContentLoaded", function () {
   const header = document.querySelector("header");
   addEventListener("scroll", () => {
-    if (window.pageYOffset > 20) {
+    if (window.pageYOffset > 4) {
       header.classList.add("show");
     } else {
       header.classList.remove("show");
@@ -49,9 +49,14 @@ footerTitles.forEach((title) => {
 // ================================
 document.addEventListener("DOMContentLoaded", function () {
   var splide = new Splide(".logo-showcase-slider.splide", {
-    type: loop,
-    peraPge: 1,
-    padding: 24,
+    type: "loop",
+    autoplay: "true",
+    perPage: 6,
+    padding: "24px",
+    arrows: false,
+    interval: 5000,
+    autoScroll: { speed: 0.7 },
   });
   splide.mount();
+  // window.splide.Extensions;
 });
