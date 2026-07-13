@@ -43,3 +43,15 @@ footerTitles.forEach((title) => {
     title.classList.toggle("active");
   });
 });
+
+// ================================
+// Logo Showcase JS
+// ================================
+document.addEventListener("DOMContentLoaded", function () {
+  var splide = new Splide(".logo-showcase-slider.splide", {
+    type: loop,
+    peraPge: 1,
+    padding: 24,
+  });
+  splide.mount();
+});

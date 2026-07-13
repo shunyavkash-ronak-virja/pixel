@@ -1,5 +1,16 @@
+@media (max-width: 991px) {
+  /* ----- Hero Section ----- */
+  .hero-section-spacing {
+    padding-block: 70px 56px;
+  }
+}
+
 @media (max-width: 767px) {
   /* ----- Hero Section ----- */
+  .hero-section-spacing {
+    padding-block: 60px 52px;
+  }
+
   .hero-img-content {
     display: none;
   }

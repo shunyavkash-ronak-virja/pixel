@@ -1,9 +1,13 @@
 /* ----- Hero Section ----- */
 .hero-section {
+  border-bottom: var(--border-1) var(--border-solid) var(--white-8);
+}
+
+.hero-section .container {
   position: relative;
 }
 
-.hero-py {
+.hero-section-spacing {
   padding-block: 82px 66px;
 }
 
@@ -11,11 +15,22 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 28px;
+  gap: 36px;
 }
 
+/* .hero-title::before {
+  content: "";
+  width: 2px;
+  min-height: 60px;
+  position: absolute;
+  top: 82px;
+  left: 0;
+  transform: translateX(-50%);
+  background-color: var(--pelati);
+} */
+
 .hero-content {
-  width: 58%;
+  width: 57%;
   max-width: 670px;
 }
 
@@ -25,6 +40,36 @@
   line-height: var(--line-height-1_625);
 }
 
+.hero-img-content {
+  width: 43%;
+  max-width: 516px;
+}
+
 .hero-img {
   min-height: 368px;
+}
+
+/* ----- Our Clients Section ----- */
+.splide {
+  visibility: visible;
+}
+
+.clients-section-spacing {
+  padding-top: 40px;
+}
+
+.our-clients-label {
+  background-color: var(--pelati-300);
+  padding-inline: 4px;
+  font-size: 14px;
+  line-height: var(--line-height-1_714);
+  position: absolute;
+  top: 0;
+  left: 30px;
+  transform: translateY(-50%);
+}
+
+.logo-showcase-img {
+  /* max-width: 137px; */
+  /* max-height: 34px; */
 }

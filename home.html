@@ -6,19 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pixel</title>
 
+    <!----- Splide Css ----->
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+
     <!----- Custome Css ----->
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
 
 <body>
     <!----- Header ----->
-    <header class="header border-b-1">
+    <header class="border-b-1">
         <div class="container header-py">
             <div class="header-wrapper">
                 <a class="header-logo" href="home.html">
                     <img class="header-logo-icon" src="assets/images/logo/pixel.png" alt="header-logo">
                 </a>
-                <div class="font-14 header-link-stack">
+                <div class="header-link-stack">
                     <a class="header-link" href="javascript:void(0);">Work</a>
                     <div class="header-dropdown">
                         <div class="header-link header-dropdown-link-wraper">
@@ -40,14 +43,14 @@
                     <a class="header-link" href="javascript:void(0);">Blog</a>
                 </div>
                 <div class="header-btn-wrappder">
-                    <a class="font-14 btn btn-small header-btn" href="javascript:void(0);">
+                    <a class="btn btn-small header-btn flex-shrink" href="javascript:void(0);">
                         <p class="btn-content btn-small-py btn-small-px btn-primary">Book a call</p>
                     </a>
                     <button class="btn btn-small toggle-btn">
-                        <div class="btn-content btn-small-py btn-primary toggle-stack">
-                            <span class="bar"></span>
-                            <span class="bar"></span>
-                            <span class="bar"></span>
+                        <div class="btn-content btn-small-py btn-primary flex-shrink toggle-stack">
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
                         </div>
                     </button>
                 </div>
@@ -58,11 +61,14 @@
     <main>
         <!----- Hero Section ----->
         <section class="hero-section">
-            <div class="container hero-py">
+            <div class="relative container hero-section-spacing">
+                <div class="section-mark-top">
+                    <div class="section-mark-bottom"></div>
+                </div>
                 <div class="hero-wrapper">
                     <div class="hero-content">
-                        <h1>
-                            We <span class="titel-span">Build</span> and <span class="titel-span">Elevate</span>
+                        <h1 class="hero-title">
+                            We <span class="text-gradient">Build</span> and <span class="text-gradient">Elevate</span>
                             <br>E-Commerce Experiences
                         </h1>
                         <p class="hero-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -81,9 +87,47 @@
             </div>
         </section>
 
+        <!----- Our Clients Section ----->
+        <section class="our-clients-section">
+            <div class="relative container clients-section-spacing">
+                <div class="max-w-max our-clients-label">Our Clients</div>
+                <div class="logo-showcase-slider splide" role="group" aria-label="Splide Basic HTML Example">
+                    <div class="logo-showcase-tracks splide__track">
+                        <ul class="logo-showcase-list splide__list">
+                            <li class="logo-showcase-slide splide__slide">
+                                <div class="logo-showcase-content">
+                                    <img class="logo-showcase-img" src="assets/images/logo/logo-showcase-01.png" alt="logo-showcase">
+                                </div>
+                            </li>
+                            <li class="logo-showcase-slide splide__slide">
+                                <div class="logo-showcase-content">
+                                    <img class="logo-showcase-img" src="assets/images/logo/logo-showcase-02.png" alt="logo-showcase">
+                                </div>
+                            </li>
+                            <li class="logo-showcase-slide splide__slide">
+                                <div class="logo-showcase-content">
+                                    <img class="logo-showcase-img" src="assets/images/logo/logo-showcase-03.png" alt="logo-showcase">
+                                </div>
+                            </li>
+                            <li class="logo-showcase-slide splide__slide">
+                                <div class="logo-showcase-content">
+                                    <img class="logo-showcase-img" src="assets/images/logo/logo-showcase-04.png" alt="logo-showcase">
+                                </div>
+                            </li>
+                            <li class="logo-showcase-slide splide__slide">
+                                <div class="logo-showcase-content">
+                                    <img class="logo-showcase-img" src="assets/images/logo/logo-showcase-01.png" alt="logo-showcase">
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!----- Footer ----->
-        <footer class="footer">
-            <div class="container container-px section-outline footer-pt">
+        <footer>
+            <div class="container container-px section-outline-hide footer-pt">
                 <div class="footer-wrapper">
                     <div class="footer-media-wrapper">
                         <img class="footer-logo" src="assets/images/logo/pixel.png" alt="footer-logo">
@@ -120,7 +164,7 @@
                         </div>
                     </div>
                     <div class="footer-links-stack">
-                        <div class="font-20 footer-link-title">
+                        <div class="footer-link-title">
                             <span>Company</span>
                             <svg class="footer-title-icon" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M0.353516 0.353554L4.35352 4.35355L8.35352 0.353554" stroke="white" />
@@ -138,7 +182,7 @@
                         </div>
                     </div>
                     <div class="footer-links-stack">
-                        <div class="font-20 footer-link-title">
+                        <div class="footer-link-title">
                             <span>Services</span>
                             <svg class="footer-title-icon" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M0.353516 0.353554L4.35352 4.35355L8.35352 0.353554" stroke="white" />
@@ -155,7 +199,7 @@
                         </div>
                     </div>
                     <form class="footer-form">
-                        <div class="font-20 footer-link-title">Newsletter</div>
+                        <div class="footer-link-title">Newsletter</div>
                         <div class="footer-input-wrapper">
                             <div class="input-stack">
                                 <input class="input-field footer-input" type="email" placeholder="email address..." required>
@@ -165,7 +209,7 @@
                                 <p class="btn-content btn-big-py btn-big-px btn-primary">Subscribe</p>
                             </button>
                         </div>
-                        <p class="font-14 footer-form-description">By subscribing you agree to with our Privacy Policy and
+                        <p class="footer-form-description">By subscribing you agree to with our Privacy Policy and
                             provide consent to receive updates from Pixel.</p>
                     </form>
                 </div>
@@ -176,6 +220,10 @@
             </div>
         </footer>
     </main>
+
+    <!----- Splide Js ----->
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+
     <!----- Custome Js ----->
     <script src="assets/js/script.js"></script>
 </body>
