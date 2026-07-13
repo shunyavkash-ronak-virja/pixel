@@ -1,5 +1,8 @@
+// ================================
+// Header JS
+// ================================
 // Header Toggel JS ----------
-const header = document.querySelector(".header");
+const header = document.querySelector("header");
 const toggleBtn = document.querySelector(".toggle-btn");
 const headerLinkStack = document.querySelector(".header-link-stack");
 const headerDropdownLink = document.querySelector(".header-dropdown-link-wraper");
@@ -16,7 +19,21 @@ headerDropdownLink.addEventListener("click", () => {
   headerDropdownBlock.classList.toggle("active");
 });
 
+// Body Scroll JS ----------
+document.addEventListener("DOMContentLoaded", function () {
+  const header = document.querySelector("header");
+  addEventListener("scroll", () => {
+    if (window.pageYOffset > 20) {
+      header.classList.add("show");
+    } else {
+      header.classList.remove("show");
+    }
+  });
+});
 
+// ================================
+// Footer JS
+// ================================
 // Footer Toggel JS ----------
 const footerTitles = document.querySelectorAll(".footer-link-title");
 footerTitles.forEach((title) => {

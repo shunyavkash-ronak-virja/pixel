@@ -97,11 +97,14 @@ footer {
   width: 100%;
   max-width: 1280px;
   margin-inline: auto;
-  border-inline: var(--border-1) var(--border-solid) var(--white-8);
 }
 
 .container:not(:where(.container-px)) {
   padding-inline: 30px;
+}
+
+.container:not(:where(.section-outline)) {
+  border-inline: var(--border-1) var(--border-solid) var(--white-8);
 }
 
 @media (max-width: 991px) {
@@ -370,6 +373,14 @@ h6:not(:where(.h1, .h2, .h3, .h4, .h5)) {
   position: relative;
 }
 
+.btn-small {
+  padding: 2px;
+}
+
+.btn-big {
+  padding: 4px;
+}
+
 .btn-content {
   border: var(--border-0_5) var(--border-solid);
 }
@@ -390,8 +401,12 @@ h6:not(:where(.h1, .h2, .h3, .h4, .h5)) {
   padding-inline: 16px;
 }
 
-.btn-b {
-  padding: 1.4px 5.78px;
+.btn-content span {
+  height: 22px;
+  aspect-ratio: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   background-color: var(--pelati);
 }
 
@@ -430,39 +445,48 @@ h6:not(:where(.h1, .h2, .h3, .h4, .h5)) {
   border-right: var(--border-1) var(--border-solid) var(--pelati);
 }
 
-.btn-small:hover {
-  &.btn::before {
-    transform: translate(-2px, -2px);
-  }
-
-  .btn-content::before {
-    transform: translate(2px, -2px);
-  }
-
-  .btn-content::after {
-    transform: translate(2px, 2px);
-  }
-
+.btn:is(:hover) {
+  &.btn::before,
+  .btn-content::before,
+  .btn-content::after,
   &.btn::after {
-    transform: translate(-2px, 2px);
+    transform: translate(0, 0);
   }
 }
 
-.btn-big:hover {
+.btn-small {
   &.btn::before {
-    transform: translate(-4px, -4px);
+    transform: translate(2px, 2px);
   }
 
   .btn-content::before {
-    transform: translate(4px, -4px);
+    transform: translate(-2px, 2px);
   }
 
   .btn-content::after {
-    transform: translate(4px, 4px);
+    transform: translate(-2px, -2px);
   }
 
   &.btn::after {
+    transform: translate(2px, -2px);
+  }
+}
+
+.btn-big {
+  &.btn::before {
+    transform: translate(4px, 4px);
+  }
+
+  .btn-content::before {
     transform: translate(-4px, 4px);
+  }
+
+  .btn-content::after {
+    transform: translate(-4px, -4px);
+  }
+
+  &.btn::after {
+    transform: translate(4px, -4px);
   }
 }
 
@@ -587,9 +611,8 @@ h6:not(:where(.h1, .h2, .h3, .h4, .h5)) {
   top: 0;
   left: 0;
   z-index: 4;
-  background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 100%);
-  backdrop-filter: blur(4px);
-  opacity: 1;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.12) 0%, rgba(255, 255, 255, 0) 100%);
+  opacity: 0;
   transition: all 0.3s ease-in-out;
 }
 
