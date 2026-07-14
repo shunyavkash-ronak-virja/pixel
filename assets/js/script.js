@@ -91,21 +91,17 @@ let currentIndex = 0;
 let timer;
 
 function activateItem(index) {
-  // Remove active class from all items
   items.forEach((item) => {
     item.classList.remove("active");
 
-    // Reset animation
     const effect = item.querySelector(".process-flow-time-line-effect");
     effect.style.animation = "none";
-    effect.offsetHeight; // Force reflow
+    effect.offsetHeight;
     effect.style.animation = "";
   });
 
-  // Activate current item
   items[index].classList.add("active");
 
-  // After 10s move to next item
   clearTimeout(timer);
   timer = setTimeout(() => {
     currentIndex = (index + 1) % items.length;
@@ -113,7 +109,6 @@ function activateItem(index) {
   }, 10000);
 }
 
-// Manual click
 document.querySelectorAll(".process-flow-heade").forEach((header, index) => {
   header.addEventListener("click", () => {
     currentIndex = index;
@@ -121,5 +116,4 @@ document.querySelectorAll(".process-flow-heade").forEach((header, index) => {
   });
 });
 
-// Start
 activateItem(0);
