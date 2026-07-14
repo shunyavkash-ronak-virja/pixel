@@ -48,16 +48,15 @@ footerTitles.forEach((title) => {
 // Logo Showcase JS
 // ================================
 document.addEventListener("DOMContentLoaded", function () {
-const splide = new Splide(".logo-showcase-slider.splide", {
-  type: "loop",
-  autoplay: true,
-  perPage: 6,
-  padding: "24px",
-  arrows: false,
-  gap: 32,
-  interval: 5000,
-  autoScroll: { speed: 0.7 },
-});
+  const splide = new Splide(".logo-showcase-slider.splide", {
+    type: "loop",
+    autoplay: true,
+    perPage: 6,
+    padding: "24px",
+    arrows: false,
+    gap: 32,
+    interval: 5000,
+    autoScroll: { speed: 0.7 },
   });
   splide.mount();
   // window.splide.Extensions;
