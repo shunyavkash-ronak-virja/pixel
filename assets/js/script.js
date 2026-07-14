@@ -48,10 +48,10 @@ footerTitles.forEach((title) => {
 // Logo Showcase JS
 // ================================
 document.addEventListener("DOMContentLoaded", function () {
-  var splide = new Splide(".logo-showcase-slider.splide", {
+  const splide = new Splide(".logo-showcase-slider.splide", {
     type: loop,
     peraPge: 1,
-    padding: 24,
+    gap: 32,
   });
   splide.mount();
 });
