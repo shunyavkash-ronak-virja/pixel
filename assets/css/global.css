@@ -57,8 +57,15 @@
   box-sizing: border-box;
 }
 
-.font-primary {
-  color: color-mix(in srgb, #ff3337 50%, #ce1215 50%);
+.text-primary {
+  color: #ff3337;
+}
+
+.text-gradient {
+  background: linear-gradient(180deg, #ff3337 0%, #ce1215 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 body {
@@ -402,13 +409,6 @@ h6:not(:where(.h1, .h2, .h3, .h4, .h5)) {
   h6:not(:where(.h1, .h2, .h3, .h4, .h5)) {
     font-size: 20px;
   }
-}
-
-.text-gradient {
-  background: linear-gradient(180deg, #ff3337 0%, #ce1215 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 /* ----- Button Css ----- */

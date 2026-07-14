@@ -47,17 +47,38 @@ footerTitles.forEach((title) => {
 // ================================
 // Logo Showcase JS
 // ================================
-document.addEventListener("DOMContentLoaded", function () {
-  const splide = new Splide(".logo-showcase-slider.splide", {
+if (document.querySelector(".logo-showcase-slider.splide")) {
+  new Splide(".logo-showcase-slider", {
     type: "loop",
-    autoplay: true,
-    perPage: 6,
-    padding: "24px",
+    gap: "30px",
     arrows: false,
-    gap: 32,
-    interval: 5000,
+    perPage: 6,
+    pagination: false,
     autoScroll: { speed: 0.7 },
+    breakpoints: {
+      991: {
+        perPage: 5,
+      },
+      767: {
+        perPage: 4,
+      },
+    },
+  }).mount(window.splide.Extensions);
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+  var splide = new Splide(".clients-site-showcase.splide", {
+    autoplay: true,
+    rewind: true,
+    gap: "28px",
+    width: "auto",
+    arrows: false,
+    pagination: false,
+    breakpoints: {
+      991: {
+        gap: "24px",
+      },
+    },
   });
   splide.mount();
-  // window.splide.Extensions;
 });
