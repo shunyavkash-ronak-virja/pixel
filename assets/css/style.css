@@ -50,7 +50,6 @@
 }
 
 /* ----- Our Clients Section ----- */
-
 .clients-section-spacing {
   padding-top: 40px;
 }
@@ -66,7 +65,15 @@
   transform: translateY(-50%);
 }
 
+.logo-showcase-list {
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-showcase-content {
+  display: inline-block;
+}
+
 .logo-showcase-img {
-  /* max-width: 137px; */
-  /* max-height: 34px; */
+  max-width: 137px;
 }
