@@ -82,3 +82,44 @@ document.addEventListener("DOMContentLoaded", function () {
   });
   splide.mount();
 });
+
+// ================================
+// Process Flow JS
+// ================================
+const items = document.querySelectorAll(".process-flow-item");
+let currentIndex = 0;
+let timer;
+
+function activateItem(index) {
+  // Remove active class from all items
+  items.forEach((item) => {
+    item.classList.remove("active");
+
+    // Reset animation
+    const effect = item.querySelector(".process-flow-time-line-effect");
+    effect.style.animation = "none";
+    effect.offsetHeight; // Force reflow
+    effect.style.animation = "";
+  });
+
+  // Activate current item
+  items[index].classList.add("active");
+
+  // After 10s move to next item
+  clearTimeout(timer);
+  timer = setTimeout(() => {
+    currentIndex = (index + 1) % items.length;
+    activateItem(currentIndex);
+  }, 10000);
+}
+
+// Manual click
+document.querySelectorAll(".process-flow-heade").forEach((header, index) => {
+  header.addEventListener("click", () => {
+    currentIndex = index;
+    activateItem(currentIndex);
+  });
+});
+
+// Start
+activateItem(0);

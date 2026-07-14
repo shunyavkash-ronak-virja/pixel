@@ -16,6 +16,11 @@
   .clients-site-track {
     padding-left: 20px !important;
   }
+
+  /* ----- How We Work Section ----- */
+  .process-flow-item {
+    padding: 18px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -58,6 +63,20 @@
 
   .clients-site-track {
     padding-left: 16px !important;
+  }
+
+  /* ----- How We Work Section ----- */
+  .process-flow-content-list {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .process-flow-wrapper {
+    flex-direction: column;
+  }
+
+  .process-flow-img-content {
+    display: none;
   }
 }
 

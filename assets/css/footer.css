@@ -98,7 +98,7 @@ footer {
   left: 50%;
   transform: translateX(-50%);
   z-index: -1;
-  background-color: #f02828;
+  background-color: var(--pelati-400);
   filter: blur(972.3px);
 }
 
