@@ -3,6 +3,7 @@ header {
   top: 0;
   left: 0;
   z-index: 999;
+  border-bottom: var(--border-1) var(--border-solid) var(--white-8);
 }
 
 header.show {
@@ -13,7 +14,7 @@ header.active {
   background-color: var(--black-100);
 }
 
-.header-py {
+.header-spacing {
   padding-block: 15px;
 }
 
@@ -171,7 +172,7 @@ header.active {
     position: relative;
   }
 
-  .header-py {
+  .header-spacing {
     padding-block: 12px;
   }
 

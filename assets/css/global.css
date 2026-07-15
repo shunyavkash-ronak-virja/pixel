@@ -3,7 +3,7 @@
   --black-80: #000000cc;
   --black-100: #04040e;
   --black-200: #05050e;
-  --eigengrau: #17171f;
+  --black-300: #17171f;
   --dark-gunmetal: #212328;
   --white: #ffffff;
   --white-1: #ffffff03;
@@ -105,31 +105,27 @@ footer {
   }
 }
 
-.section-spacing-top {
-  padding-top: 80px;
+.section-spacing {
+  padding-block: 80px;
 }
 
-.section-spacing-bottom {
-  padding-bottom: 80px;
+.section-spacing-top-0 {
+  padding-top: 0;
+}
+
+.section-spacing-bottom-0 {
+  padding-bottom: 0;
 }
 
 @media (max-width: 991px) {
-  .section-spacing-top {
-    padding-top: 54px;
-  }
-
-  .section-spacing-bottom {
-    padding-bottom: 54px;
+  .section-spacing {
+    padding-block: 54px;
   }
 }
 
 @media (max-width: 767px) {
-  .section-spacing-top {
-    padding-top: 40px;
-  }
-
-  .section-spacing-bottom {
-    padding-bottom: 40px;
+  .section-spacing {
+    padding-block: 40px;
   }
 }
 
@@ -139,28 +135,28 @@ footer {
   margin-inline: auto;
 }
 
-.container:not(:where(.container-px)) {
+.container:not(:where(.container-saping-0)) {
   padding-inline: 30px;
 }
 
-.container:not(:where(.section-outline-hide)) {
+.container:not(:where(.container-outline-hide)) {
   border-inline: var(--border-1) var(--border-solid) var(--white-8);
 }
 
 @media (max-width: 991px) {
-  .container:not(:where(.container-px)) {
+  .container:not(:where(.container-saping-0)) {
     padding-inline: 20px;
   }
 }
 
 @media (max-width: 767px) {
-  .container:not(:where(.container-px)) {
+  .container:not(:where(.container-saping-0)) {
     padding-inline: 16px;
   }
 }
 
 @media (max-width: 575px) {
-  .container:not(:where(.container-px)) {
+  .container:not(:where(.container-saping-0)) {
     padding-inline: 12px;
   }
 }
@@ -272,7 +268,7 @@ input {
   flex-shrink: 0;
 }
 
-.border-b-1 {
+.border-bottom {
   border-bottom: var(--border-1) var(--border-solid) var(--white-8);
 }
 
@@ -284,27 +280,34 @@ input {
   max-width: max-content;
 }
 
-.section-heade {
+.full-size {
+  width: 100%;
+  height: 100%;
+}
+
+.section-head {
   display: flex;
   flex-direction: column;
   gap: 24px;
 }
 
-.section-heade-center {
+.section-head-center {
   align-items: center;
   text-align: center;
 }
 
-.section-heade-start {
+.section-head-start {
   align-items: start;
 }
-
-.pt-0 {
-  padding-top: 0;
+@media (max-width: 991px) {
+  .section-head {
+    gap: 20px;
+  }
 }
-
-.pb-0 {
-  padding-bottom: 0;
+@media (max-width: 767px) {
+  .section-head {
+    gap: 16px;
+  }
 }
 
 /* ----- Font Size ----- */

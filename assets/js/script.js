@@ -86,34 +86,58 @@ document.addEventListener("DOMContentLoaded", function () {
 // ================================
 // Process Flow JS
 // ================================
-const items = document.querySelectorAll(".process-flow-item");
-let currentIndex = 0;
-let timer;
+if (window.matchMedia("(min-width: 768px)").matches) {
+  const items = document.querySelectorAll(".process-flow-item");
+  let currentIndex = 0;
+  let timer;
 
-function activateItem(index) {
-  items.forEach((item) => {
-    item.classList.remove("active");
+  function activateItem(index) {
+    items.forEach((item) => {
+      item.classList.remove("active");
 
-    const effect = item.querySelector(".process-flow-time-line-effect");
-    effect.style.animation = "none";
-    effect.offsetHeight;
-    effect.style.animation = "";
+      const effect = item.querySelector(".process-flow-time-line-effect");
+      effect.style.animation = "none";
+      effect.offsetHeight;
+      effect.style.animation = "";
+    });
+
+    items[index].classList.add("active");
+
+    clearTimeout(timer);
+    timer = setTimeout(() => {
+      currentIndex = (index + 1) % items.length;
+      activateItem(currentIndex);
+    }, 10000);
+  }
+
+  document.querySelectorAll(".process-flow-heade").forEach((header, index) => {
+    header.addEventListener("click", () => {
+      currentIndex = index;
+      activateItem(currentIndex);
+    });
   });
 
-  items[index].classList.add("active");
-
-  clearTimeout(timer);
-  timer = setTimeout(() => {
-    currentIndex = (index + 1) % items.length;
-    activateItem(currentIndex);
-  }, 10000);
+  activateItem(0);
 }
 
-document.querySelectorAll(".process-flow-heade").forEach((header, index) => {
-  header.addEventListener("click", () => {
-    currentIndex = index;
-    activateItem(currentIndex);
-  });
-});
-
-activateItem(0);
+// ================================
+// Partners Showcase JS
+// ================================
+if (document.querySelector(".partners-showcase-slider.splide")) {
+  new Splide(".partners-showcase-slider", {
+    type: "loop",
+    gap: "30px",
+    arrows: false,
+    perPage: 4,
+    pagination: false,
+    autoScroll: { speed: 0.7 },
+    breakpoints: {
+      991: {
+        perPage: 5,
+      },
+      767: {
+        perPage: 4,
+      },
+    },
+  }).mount(window.splide.Extensions);
+}
