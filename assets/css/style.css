@@ -285,14 +285,14 @@
   border-block: var(--border-1) var(--border-solid) var(--black-300);
 }
 
+.partners-showcase-head-spacing {
+  padding-bottom: 44px;
+}
+
 .partners-showcase-description {
   max-width: 778px;
 }
 
-.partners-showcase-slider {
-  margin-top: 44px;
-}
-
 .partners-brand-logo {
-  max-width: 190px;
+  max-height: 64px;
 }

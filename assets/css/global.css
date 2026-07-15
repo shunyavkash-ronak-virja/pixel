@@ -108,14 +108,6 @@ footer {
   padding-block: 80px;
 }
 
-.section-spacing-top-0 {
-  padding-top: 0;
-}
-
-.section-spacing-bottom-0 {
-  padding-bottom: 0;
-}
-
 @media (max-width: 991px) {
   .section-spacing {
     padding-block: 54px;
@@ -126,6 +118,14 @@ footer {
   .section-spacing {
     padding-block: 40px;
   }
+}
+
+.section-spacing-top-0 {
+  padding-top: 0;
+}
+
+.section-spacing-bottom-0 {
+  padding-bottom: 0;
 }
 
 .container {

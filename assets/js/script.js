@@ -133,9 +133,6 @@ if (document.querySelector(".partners-showcase-slider.splide")) {
     autoScroll: { speed: 0.7 },
     breakpoints: {
       991: {
-        perPage: 5,
-      },
-      767: {
         perPage: 4,
       },
     },
