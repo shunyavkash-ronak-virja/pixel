@@ -107,7 +107,7 @@ if (window.matchMedia("(min-width: 768px)").matches) {
     timer = setTimeout(() => {
       currentIndex = (index + 1) % items.length;
       activateItem(currentIndex);
-    }, 10000);
+    }, 6090);
   }
 
   document.querySelectorAll(".process-flow-heade").forEach((header, index) => {
@@ -128,7 +128,7 @@ if (document.querySelector(".partners-showcase-slider.splide")) {
     type: "loop",
     gap: "30px",
     arrows: false,
-    perPage: 4,
+    perPage: 5,
     pagination: false,
     autoScroll: { speed: 0.7 },
     breakpoints: {

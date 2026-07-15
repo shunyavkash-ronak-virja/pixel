@@ -161,7 +161,11 @@
   display: none;
 }
 
-/* ----- How We Work Section ----- */
+/* ----- Process Flow Section ----- */
+.process-flow-head-container {
+  padding-bottom: 60px;
+}
+
 .process-flow-head-description {
   max-width: 745px;
   line-height: var(--line-height-1_625);
@@ -170,6 +174,7 @@
 .process-flow-wrapper {
   display: flex;
   background-color: var(--black-200);
+  border-block: var(--border-1) var(--border-solid) var(--white-10);
 }
 
 .process-flow-content-list {
@@ -194,13 +199,13 @@
   .process-flow-item {
     padding: 24px 20px 28px 24px;
     border-bottom: var(--border-1) var(--border-solid) var(--white-10);
-    border-inline: var(--border-0_5) var(--border-solid) var(--transparent);
+    border-inline: var(--border-1) var(--border-solid) var(--transparent);
     position: relative;
     transition: all 0.3s ease-in-out;
   }
 
-  .process-flow-item:nth-child(1) {
-    border-top: var(--border-1) var(--border-solid) var(--white-10);
+  .process-flow-item:last-child {
+    border-bottom-color: var(--transparent);
   }
 
   .process-flow-item.active {
@@ -251,7 +256,7 @@
   .process-flow-time-line-effect {
     height: 100%;
     background: linear-gradient(90deg, rgba(255, 51, 55, 0) 0%, rgba(255, 51, 55, 1) 100%);
-    animation: timelineProgress 10s linear forwards;
+    animation: timelineProgress 6s linear forwards;
   }
 
   @keyframes timelineProgress {
@@ -267,7 +272,7 @@
 .process-flow-img-content {
   width: 52%;
   max-width: 646px;
-  border: var(--border-1) var(--border-solid) var(--white-10);
+  border-left: var(--border-1) var(--border-solid) var(--white-10);
   aspect-ratio: 1 / 1;
 }
 

@@ -18,10 +18,6 @@
   }
 
   /* ----- How We Work Section ----- */
-  .process-flow-wrapper {
-    margin-top: 48px;
-  }
-
   .process-flow-item {
     padding: 18px;
   }
@@ -94,7 +90,6 @@
 
   .process-flow-wrapper {
     background-color: var(--transparent);
-    margin-top: 36px;
   }
 
   .process-flow-content-list {
