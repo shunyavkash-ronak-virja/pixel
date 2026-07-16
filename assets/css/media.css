@@ -130,7 +130,7 @@
 
   .process-flow-item {
     background-color: var(--black-200);
-    border: var(--border-1) var(--border-solid) var(--white-10);
+    border: var(--border) var(--white-10);
   }
 
   .process-flow-item:not(:last-child) {

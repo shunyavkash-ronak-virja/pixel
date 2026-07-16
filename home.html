@@ -45,10 +45,10 @@
                 </div>
                 <div class="header-btn-wrappder">
                     <a class="btn btn-small header-btn flex-shrink" href="javascript:void(0);">
-                        <p class="btn-content btn-small-py btn-small-px btn-primary">Book a call</p>
+                        <p class="btn-content btn-small-py btn-small-px btn-primary-gradient">Book a call</p>
                     </a>
                     <button class="btn btn-small flex-shrink toggle-btn">
-                        <div class="btn-content btn-small-py btn-primary toggle-stack">
+                        <div class="btn-content btn-small-py btn-primary-gradient toggle-stack">
                             <div class="bar"></div>
                             <div class="bar"></div>
                             <div class="bar"></div>
@@ -74,7 +74,7 @@
                             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
                             exercitation ullamco</p>
                         <a class="btn btn-big hero-btn" href="javascript:void(0);">
-                            <p class="btn-content btn-big-py btn-small-px btn-primary">
+                            <p class="btn-content btn-big-py btn-small-px btn-primary-gradient">
                                 Press <span>B</span> to book a call
                             </p>
                         </a>
@@ -366,32 +366,15 @@
                     <p class="head-description why-it-matters-head-description">Every minute of downtime costs revenue. Every security vulnerability puts your business at risk. Every poor user experience sends customers to competitors. That's why we build systems where failure is not an option.</p>
                 </div>
             </div>
-            <div class="highlight-slider-block section-spacing section-spacing-top-0">
-                <div class="highlight-slider-wrapper">
-
-                    <section id="image-carousel" class="highlight- -slider splide" aria-label="Beautiful Images">
-                        <div class="splide__track">
-                            <ul class="splide__list">
-                                <li class="splide__slide">
-                                    <img src="image01.jpg" alt="">
-                                </li>
-                                <li class="splide__slide">
-                                    <img src="image02.jpg" alt="">
-                                </li>
-                                <li class="splide__slide">
-                                    <img src="image03.jpg" alt="">
-                                </li>
-                            </ul>
-                        </div>
-                    </section>
-
-                    <div class="highlight-slider-">
-                        <div class="highlight-slider splide" role="group" aria-label="Splide Basic HTML Example">
-                            <div class="highlight-slider-track splide__track">
-                                <ul class="highlight-slider-list splide__list">
-                                    <li class="highlight-slider-slide splide__slide">
-                                        <div class="highlight-slider-img-content">
-                                            <img class="highlight-slider-img" src="assets/images/sections/global-images/highlight-slider-img.png" alt="highlight-img">
+            <div class="highlights-block container container-saping-0 section-spacing section-spacing-top-0">
+                <div class="highlight-wrapper">
+                    <div class="relative highlight-thumbnail-outline">
+                        <div class="highlight-thumbnail-slider splide" id="image-carousel" aria-label="Beautiful Images">
+                            <div class="highlight-thumbnail-track splide__track">
+                                <ul class="highlight-thumbnail-list splide__list">
+                                    <li class="highlight-thumbnail-slide splide__slide">
+                                        <div class="highlight-thumbnail-img-content">
+                                            <img class="highlight-thumbnail-img img-cover" src="assets/images/sections/global-images/highlight-slider-img.png" alt="highlight-img">
                                         </div>
                                     </li>
                                 </ul>
@@ -399,10 +382,45 @@
                         </div>
                     </div>
                     <div class="highlight-slider splide" role="group" aria-label="Splide Basic HTML Example">
+                        <div class="splide__arrows splide__arrows--ltr">
+                            <button class="splide__arrow splide__arrow--prev" type="button" aria-label="Previous slide" aria-controls="splide01-track">
+                                <svg width="11" height="18" viewBox="0 0 11 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.41431 0.707031L1.41431 8.70703L9.41431 16.707" stroke="white" stroke-width="2" />
+                                </svg>
+
+                            </button>
+                            <button class="splide__arrow splide__arrow--next" type="button" aria-label="Next slide" aria-controls="splide01-track">
+                                <svg width="11" height="18" viewBox="0 0 11 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.41431 0.707031L1.41431 8.70703L9.41431 16.707" stroke="white" stroke-width="2" />
+                                </svg>
+                            </button>
+                        </div>
+
                         <div class="highlight-slider-track splide__track">
                             <ul class="highlight-slider-list splide__list">
                                 <li class="highlight-slider-slide splide__slide">
                                     <div class="highlight-block">
+                                        <div class="max-w-max highlight-caption">
+                                            <img src="assets/images/logo/highlight-logo.png" alt="highlight-logo">
+                                        </div>
+                                        <h3 class="h5 highlight-title">Redesigned Rendify to $11 Million Funding</h3>
+                                        <div class="highlight-counter-wrapper">
+                                            <div class="highlight-counter-block">
+                                                <div class="h4 text-gradient highlight-counter-number">305+</div>
+                                                <p class="highlight-counter-description">New subscriptions in first month</p>
+                                            </div>
+                                            <div class="highlight-counter-block">
+                                                <div class="h4 text-gradient highlight-counter-number">$7000+</div>
+                                                <p class="highlight-counter-description">ROI in first month</p>
+                                            </div>
+                                            <div class="highlight-counter-block">
+                                                <div class="h4 text-gradient highlight-counter-number">82%</div>
+                                                <p class="highlight-counter-description">Drop in infrastructure cost</p>
+                                            </div>
+                                        </div>
+                                        <a class="highlight-btn btn btn-big" href="javascript:void(0);">
+                                            <p class="btn-content btn-big-py btn-small-px btn-primary">Read More</p>
+                                        </a>
                                     </div>
                                 </li>
                             </ul>
@@ -493,7 +511,7 @@
                                 <span class="input-overlay"></span>
                             </div>
                             <button class="btn btn-small footer-form-btn" type="submit">
-                                <p class="btn-content btn-big-py btn-big-px btn-primary">Subscribe</p>
+                                <p class="btn-content btn-big-py btn-big-px btn-primary-gradient">Subscribe</p>
                             </button>
                         </div>
                         <p class="footer-form-description">By subscribing you agree to with our Privacy Policy and
