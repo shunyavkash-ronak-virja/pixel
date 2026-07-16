@@ -70,6 +70,18 @@
   -webkit-text-fill-color: transparent;
 }
 
+/* ----- Background Glow ----- */
+.background-glow {
+  width: 100%;
+  height: 399px;
+  position: absolute;
+  top: 870px;
+  left: 0;
+  z-index: -1;
+  background-color: var(--pelati-400);
+  filter: blur(622.7px);
+}
+
 body {
   min-height: 100vh;
   font-size: 16px;
@@ -126,6 +138,18 @@ footer {
 
 .section-spacing-bottom-0 {
   padding-bottom: 0;
+}
+
+.section-border {
+  border-block: var(--border-1) var(--border-solid) var(--black-300);
+}
+
+.section-border-top-none {
+  border-top: none;
+}
+
+.section-border-bottom-0 {
+  border-bottom: none;
 }
 
 .container {
@@ -298,6 +322,35 @@ input {
 .section-head-start {
   align-items: start;
 }
+
+.section-caption {
+  max-width: max-content;
+  font-size: 14px;
+  line-height: var(--line-height-1);
+  color: var(--white-32);
+  padding: 10px 20px;
+  border: var(--border-1) var(--border-solid);
+  border-inline-color: var(--white);
+  border-block-color: var(--white-24);
+  filter: blur(4)
+    drop-shadow(
+      0 0.5px 0.5px 0 var(--obsidian),
+      0 1px 1px -0.5px var(--obsidian),
+      0 2px 2px -1px var(--obsidian),
+      0 3px 3px -1.5px var(--obsidian),
+      0 5px 5px -2.5px var(--obsidian),
+      0 8px 8px -3px var(--obsidian)
+    );
+  box-shadow:
+    inset 0 8px 24px -4px var(--white-4),
+    inset 0 0.5px 0.5px 0px var(--white-2),
+    inset 0 1px 2px -0.5px var(--white-2);
+  background-color: var(--white-2);
+}
+
+.head-description {
+  line-height: var(--line-height-1_625);
+}
 @media (max-width: 991px) {
   .section-head {
     gap: 20px;
@@ -306,6 +359,10 @@ input {
 @media (max-width: 767px) {
   .section-head {
     gap: 16px;
+  }
+
+  .head-description {
+    font-size: 14px;
   }
 }
 

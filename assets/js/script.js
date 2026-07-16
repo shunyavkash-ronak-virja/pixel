@@ -107,7 +107,7 @@ if (window.matchMedia("(min-width: 768px)").matches) {
     timer = setTimeout(() => {
       currentIndex = (index + 1) % items.length;
       activateItem(currentIndex);
-    }, 6090);
+    }, 6000);
   }
 
   document.querySelectorAll(".process-flow-heade").forEach((header, index) => {
@@ -138,3 +138,7 @@ if (document.querySelector(".partners-showcase-slider.splide")) {
     },
   }).mount(window.splide.Extensions);
 }
+
+// ================================
+// Partners Showcase JS
+// ================================

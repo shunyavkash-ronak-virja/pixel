@@ -4,6 +4,10 @@
     left: -21px;
   }
 
+  .hero-wrapper {
+    gap: 28px;
+  }
+
   .hero-section-spacing {
     padding-block: 70px 56px;
   }
@@ -37,6 +41,11 @@
   /* ----- Partners Showcase Section ----- */
   .partners-brand-logo {
     max-height: 54px;
+  }
+
+  /* ----- Projects Showcase Section ----- */
+  .partner-collection-img {
+    min-height: 586px;
   }
 }
 
@@ -105,7 +114,6 @@
 
   .process-flow-head-description {
     max-width: 100%;
-    font-size: 14px;
     line-height: var(--line-height-1_642);
   }
 
@@ -152,6 +160,11 @@
   /* ----- Partners Showcase Section ----- */
   .partners-brand-logo {
     max-height: 42px;
+  }
+
+  /* ----- Projects Showcase Section ----- */
+  .partner-collection-img {
+    min-height: 474px;
   }
 }
 
