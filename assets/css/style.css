@@ -14,16 +14,15 @@
   gap: 36px;
 }
 
-/* .hero-title::before {
+.hero-title::before {
   content: "";
   width: 2px;
   min-height: 60px;
   position: absolute;
-  top: 82px;
-  left: 0;
-  transform: translateX(-50%);
+  top: 0;
+  left: -31px;
   background-color: var(--pelati);
-} */
+}
 
 .hero-content {
   width: 57%;
