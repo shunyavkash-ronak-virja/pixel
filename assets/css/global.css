@@ -149,7 +149,7 @@ footer {
   border-top: none;
 }
 
-.section-border-bottom-0 {
+.section-border-bottom-none {
   border-bottom: none;
 }
 
@@ -352,6 +352,13 @@ input {
 .head-description {
   line-height: var(--line-height-1_625);
 }
+
+.head-btn-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
 @media (max-width: 991px) {
   .section-head {
     gap: 20px;
@@ -416,6 +423,7 @@ h1:not(:where(.h2, .h3, .h4, .h5, .h6)) {
 h2:not(:where(.h1, .h3, .h4, .h5, .h6)) {
   font-size: 52px;
   font-weight: 600;
+  letter-spacing: -2px;
 }
 
 @media (max-width: 991px) {
@@ -737,6 +745,15 @@ h6:not(:where(.h1, .h2, .h3, .h4, .h5)) {
     inset 0 8px 24px -4px var(--white-16),
     inset 0 0.5px 0.5px 0 var(--white-16),
     inset 0 1px 2px -0.5px var(--white-12);
+}
+
+.btn:has(.btn-secondary) {
+  &.btn::before,
+  &.btn::after,
+  .btn-content::before,
+  .btn-content::after {
+    border-color: var(--white);
+  }
 }
 
 .icon-btn {

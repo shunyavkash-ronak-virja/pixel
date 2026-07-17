@@ -403,4 +403,42 @@
   pointer-events: none;
 }
 
-/* ----- Why It Matters Section ----- */
+/* ----- Our Services Section ----- */
+.our-services-head-spacing {
+  padding-bottom: 60px;
+}
+
+.our-services-head-wrapper {
+  max-width: 978px;
+}
+
+.our-services-head-description {
+  max-width: 825px;
+  color: var(--white-72);
+}
+
+.our-services-card-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.our-services-card {
+  padding: 32px;
+}
+
+.our-services-img-content {
+  width: 120px;
+  aspect-ratio: 1;
+  margin-bottom: 40px;
+}
+
+.our-services-title-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.our-services-description {
+  margin-top: 24px;
+  color: var(--white-72);
+}
