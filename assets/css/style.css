@@ -292,7 +292,6 @@
 
 .highlight-wrapper {
   display: flex;
-  align-items: start;
   justify-content: space-between;
   gap: 24px;
   padding: 60px 30px;
@@ -302,6 +301,17 @@
 }
 
 .highlight-thumbnail-outline {
+  max-width: 574px;
+}
+
+.highlight-slider {
+  width: 50%;
+  max-width: 608px;
+  padding-top: 24px;
+}
+
+.highlight-thumbnail-outline {
+  width: 50%;
   padding: 12px;
   background-color: var(--black-100);
 }
@@ -328,8 +338,8 @@
   border-right: var(--border) var(--pelati);
 }
 
-.highlight-thumbnail-img-content {
-  aspect-ratio: 1 / 0.76962;
+.highlight-thumbnail-img {
+  min-height: 380px;
 }
 
 .highlight-caption {
@@ -353,12 +363,16 @@
   margin-bottom: 20px;
 }
 
+.highlight-caption-img {
+  max-width: 100px;
+}
+
 .highlight-counter-wrapper {
   max-width: 545px;
   display: flex;
   align-items: start;
   justify-content: space-between;
-  gap: 24px;
+  gap: 18px;
   margin-block: 24px 32px;
 }
 
@@ -368,3 +382,25 @@
   font-weight: 400;
   letter-spacing: -0.1px;
 }
+
+.highlight-slider-arrow-wrapper .icon-btn {
+  top: auto;
+  bottom: 0;
+  transform: translateY(0);
+}
+
+.highlight-slider-arrow-wrapper .splide__arrow--prev {
+  left: 0;
+}
+
+.highlight-slider-arrow-wrapper .splide__arrow--next {
+  right: auto;
+  left: 48px;
+}
+
+.highlight-slider-arrow-wrapper .icon-btn:disabled {
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+/* ----- Why It Matters Section ----- */

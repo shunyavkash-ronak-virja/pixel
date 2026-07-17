@@ -36,6 +36,11 @@ footer {
   gap: 8px;
 }
 
+.footer-social-media-icon {
+  height: 48%;
+  aspect-ratio: 1;
+}
+
 .footer-link-title {
   font-size: 20px;
   line-height: var(--line-height-1);

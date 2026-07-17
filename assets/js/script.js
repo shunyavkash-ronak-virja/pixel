@@ -144,22 +144,18 @@ if (document.querySelector(".partners-showcase-slider.splide")) {
 // ================================
 document.addEventListener("DOMContentLoaded", function () {
   var thumbnails = new Splide(".highlight-thumbnail-slider", {
-    rewind: true,
+    // rewind: true,
     drag: false,
     arrows: false,
-    breakpoints: {
-      600: {
-        fixedWidth: 60,
-        fixedHeight: 44,
-      },
-    },
+    pagination: false,
+    perPage: 1,
   });
 
   var main = new Splide(".highlight-slider", {
     type: "fade",
-    rewind: true,
-    arrows: false,
+    // rewind: true,
     pagination: false,
+    perPage: 1,
   });
 
   main.sync(thumbnails);

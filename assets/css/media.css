@@ -1,3 +1,18 @@
+@media (max-width: 1280px) {
+  /* ----- Why It Matters Section ----- */
+  .highlight-slider {
+    padding-top: 0;
+  }
+
+  .highlight-caption {
+    margin-bottom: 18px;
+  }
+
+  .highlight-counter-wrapper {
+    margin-block: 22px 28px;
+  }
+}
+
 @media (max-width: 991px) {
   /* ----- Hero Section ----- */
   .hero-title::before {
@@ -46,6 +61,23 @@
   /* ----- Projects Showcase Section ----- */
   .partner-collection-img {
     min-height: 586px;
+  }
+
+  /* ----- Why It Matters Section ----- */
+  .highlight-wrapper {
+    padding: 50px 20px;
+  }
+
+  .highlight-caption-img {
+    max-width: 86px;
+  }
+
+  .highlight-counter-wrapper {
+    margin-block: 20px 24px;
+  }
+
+  .highlight-counter-description {
+    margin-top: 6px;
   }
 }
 
@@ -165,6 +197,40 @@
   /* ----- Projects Showcase Section ----- */
   .partner-collection-img {
     min-height: 474px;
+  }
+
+  /* ----- Why It Matters Section ----- */
+  .highlight-wrapper {
+    flex-direction: column;
+    gap: 28px;
+    padding-block: 35px 40px;
+    padding-inline: 16px;
+  }
+
+  .highlight-thumbnail-outline,
+  .highlight-slider {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .highlight-counter-wrapper {
+    max-width: 100%;
+  }
+
+  /* .highlight-thumbnail-img {
+    max-height: 320px;
+  } */
+
+  .highlight-slider-arrow-wrapper .icon-btn {
+    left: auto;
+  }
+
+  .highlight-slider-arrow-wrapper .splide__arrow--prev {
+    right: 48px;
+  }
+
+  .highlight-slider-arrow-wrapper .splide__arrow--next {
+    right: 0;
   }
 }
 

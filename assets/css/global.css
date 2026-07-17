@@ -36,6 +36,7 @@
   --pelati-24: #ff33373d;
   --pelati-25: #ff333740;
   --pelati-40: #ff333766;
+  --pelati-60: #ff3337a1;
   --obsidian: #07011308;
   --transparent: transparent;
   --line-height-1: 1;
@@ -512,6 +513,28 @@ h6:not(:where(.h1, .h2, .h3, .h4, .h5)) {
   }
 }
 
+/* ----- Slider Button Default Css ----- */
+.splide__arrow {
+  background: transparent;
+  border-radius: 0;
+  height: auto;
+  opacity: 1;
+}
+
+.splide__arrow svg {
+  fill: none;
+  width: auto;
+  height: auto;
+}
+
+.splide.is-focus-in .splide__arrow:focus {
+  outline: none;
+}
+
+.splide__arrow:disabled {
+  opacity: 1;
+}
+
 /* ----- Button Css ----- */
 .btn {
   max-width: max-content;
@@ -567,7 +590,11 @@ h6:not(:where(.h1, .h2, .h3, .h4, .h5)) {
 .btn::before,
 .btn::after,
 .btn-content::before,
-.btn-content::after {
+.btn-content::after,
+.icon-corner-shape::before,
+.icon-corner-shape::after,
+.icon-corner-shape-content::before,
+.icon-corner-shape-content::after {
   content: "";
   position: absolute;
   width: 8px;
@@ -576,25 +603,33 @@ h6:not(:where(.h1, .h2, .h3, .h4, .h5)) {
 }
 
 .btn::before,
-.btn-content::before {
+.btn-content::before,
+.icon-corner-shape::before,
+.icon-corner-shape-content::before {
   top: 0;
   border-top: var(--border) var(--pelati);
 }
 
 .btn::after,
-.btn-content::after {
+.btn-content::after,
+.icon-corner-shape::after,
+.icon-corner-shape-content::after {
   bottom: 0;
   border-bottom: var(--border) var(--pelati);
 }
 
 .btn::before,
-.btn::after {
+.btn::after,
+.icon-corner-shape::before,
+.icon-corner-shape::after {
   left: 0;
   border-left: var(--border) var(--pelati);
 }
 
 .btn-content::before,
-.btn-content::after {
+.btn-content::after,
+.icon-corner-shape-content::before,
+.icon-corner-shape-content::after {
   right: 0;
   border-right: var(--border) var(--pelati);
 }
@@ -644,6 +679,39 @@ h6:not(:where(.h1, .h2, .h3, .h4, .h5)) {
   }
 }
 
+.icon-corner-shape::before,
+.icon-corner-shape::after,
+.icon-corner-shape-content::before,
+.icon-corner-shape-content::after {
+  border-color: var(--pelati-60);
+  opacity: 0;
+}
+
+.icon-btn:hover {
+  &.icon-corner-shape::before,
+  .icon-corner-shape-content::before,
+  &.icon-corner-shape::after,
+  .icon-corner-shape-content::after {
+    opacity: 1;
+  }
+
+  &.icon-corner-shape::before {
+    transform: translate(-2px, -2px);
+  }
+
+  .icon-corner-shape-content::before {
+    transform: translate(2px, -2px);
+  }
+
+  &.icon-corner-shape::after {
+    transform: translate(-2px, 2px);
+  }
+
+  .icon-corner-shape-content::after {
+    transform: translate(2px, 2px);
+  }
+}
+
 .btn-primary {
   border-color: var(--pelati);
   background-color: var(--pelati);
@@ -677,6 +745,36 @@ h6:not(:where(.h1, .h2, .h3, .h4, .h5)) {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.icon-btn .icon-btn-content,
+.icon-btn-content {
+  width: 25%;
+  height: 100%;
+}
+
+.icon-btn .icon-btn-icon {
+  width: 100%;
+  height: 100%;
+}
+
+.icon-btn-primary {
+  color: var(--white);
+  background-color: var(--pelati-20);
+  filter: blur(4)
+    drop-shadow(
+      0 0.5px 0.5px 0 var(--obsidian),
+      0 1px 1px -0.5px var(--obsidian),
+      0 2px 2px -1px var(--obsidian),
+      0 3px 3px -1.5px var(--obsidian),
+      0 5px 5px -2.5px var(--obsidian),
+      0 8px 8px -3px var(--obsidian)
+    );
+  box-shadow:
+    inset 0 8px 24px -4px var(--pelati-16),
+    inset 0 0.5px 0.5px 0px var(--pelati-16),
+    inset 0 1px 2px -0.5px var(--pelati-12);
 }
 
 .icon-btn-secondary {
@@ -694,7 +792,6 @@ h6:not(:where(.h1, .h2, .h3, .h4, .h5)) {
     inset 0 8px 24px -4px var(--white-4),
     inset 0 0.5px 0.5px 0px var(--white-2),
     inset 0 1px 2px -0.5px var(--white-2);
-  transition: all 0.3s ease-in-out;
 }
 
 .icon-btn-secondary:hover {
@@ -714,10 +811,6 @@ h6:not(:where(.h1, .h2, .h3, .h4, .h5)) {
     inset 0 1px 2px -0.5px var(--white-12);
 }
 
-.icon-btn-content {
-  height: 48%;
-}
-
 @media (max-width: 767px) {
   .btn::before,
   .btn::after,
@@ -729,11 +822,19 @@ h6:not(:where(.h1, .h2, .h3, .h4, .h5)) {
   .btn-content span {
     display: none;
   }
+
+  .icon-btn {
+    width: 36px;
+  }
 }
 
 @media (max-width: 575px) {
   .icon-btn {
     width: 36px;
+  }
+
+  .icon-btn {
+    width: 32px;
   }
 }
 
