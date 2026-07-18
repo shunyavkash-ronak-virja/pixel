@@ -426,8 +426,12 @@
   padding: 32px;
 }
 
-.our-services-img-content {
-  width: 120px;
+.our-services-card:not(:last-child) {
+  border-right: var(--border) var(--black-300);
+}
+
+.our-services-img {
+  max-width: 120px;
   aspect-ratio: 1;
   margin-bottom: 40px;
 }
@@ -438,7 +442,18 @@
   gap: 12px;
 }
 
+.our-services-title-icon {
+  width: 30px;
+  aspect-ratio: 1;
+}
+
+.our-services-title {
+  font-size: 24px;
+  line-height: var(--line-height-1_08);
+}
+
 .our-services-description {
+  max-width: 340px;
   margin-top: 24px;
   color: var(--white-72);
 }

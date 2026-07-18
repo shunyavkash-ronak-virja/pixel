@@ -79,6 +79,28 @@
   .highlight-counter-description {
     margin-top: 6px;
   }
+
+  /* ----- Our Services Section ----- */
+  .our-services-card {
+    padding-inline: 20px;
+    padding-block: 24px;
+  }
+
+  .our-services-img {
+    margin-bottom: 30px;
+  }
+
+  .our-services-title-icon {
+    width: 26px;
+  }
+
+  .our-services-title {
+    font-size: 22px;
+  }
+
+  .our-services-description {
+    margin-top: 18px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -232,6 +254,38 @@
   .highlight-slider-arrow-wrapper .splide__arrow--next {
     right: 0;
   }
+
+  /* ----- Our Services Section ----- */
+  .our-services-card-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .our-services-card:not(:last-child) {
+    border-right: none;
+    border-bottom: var(--border) var(--black-300);
+  }
+
+  .our-services-card {
+    padding-inline: 16px;
+  }
+
+  .our-services-img {
+    margin-bottom: 24px;
+  }
+
+  .our-services-title-icon {
+    width: 24px;
+  }
+
+  .our-services-title {
+    font-size: 20px;
+  }
+
+  .our-services-description {
+    max-width: 100%;
+    margin-top: 12px;
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 575px) {
@@ -280,6 +334,16 @@
   /* ----- Partners Showcase Section ----- */
   .partners-brand-logo {
     max-height: 32px;
+  }
+
+  /* ----- Our Services Section ----- */
+  .our-services-card {
+    padding-inline: 12px;
+  }
+
+  .our-services-title {
+    font-size: 18px;
+    line-height: var(--line-height-1_388);
   }
 }
 

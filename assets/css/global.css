@@ -41,6 +41,8 @@
   --transparent: transparent;
   --line-height-1: 1;
   --line-height-1_1: 1.1;
+  --line-height-1_388: 1.388;
+  --line-height-1_444: 1.444;
   --line-height-1_08: 1.08;
   --line-height-1_215: 1.215;
   --line-height-1_428: 1.428;
@@ -356,7 +358,9 @@ input {
 .head-btn-wrapper {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 16px;
+  flex-wrap: wrap;
 }
 
 @media (max-width: 991px) {
