@@ -30,6 +30,7 @@
   --pelati-300: #fd3134;
   --pelati-400: #f02828;
   --pelati-1: #ff333703;
+  --pelati-8: #ff333714;
   --pelati-12: #ff33371f;
   --pelati-16: #ff333729;
   --pelati-20: #ff333733;
@@ -41,9 +42,10 @@
   --transparent: transparent;
   --line-height-1: 1;
   --line-height-1_1: 1.1;
+  --line-height-1_041: 1.041;
+  --line-height-1_08: 1.08;
   --line-height-1_388: 1.388;
   --line-height-1_444: 1.444;
-  --line-height-1_08: 1.08;
   --line-height-1_215: 1.215;
   --line-height-1_428: 1.428;
   --line-height-1_5: 1.5;
@@ -51,6 +53,7 @@
   --line-height-1_625: 1.625;
   --line-height-1_642: 1.642;
   --line-height-1_714: 1.714;
+  --line-height-1_857: 1.857;
   --font-family-inter: "Inter", sans-serif;
   --font-family-britti-sans: "Britti Sans Trial", sans-serif;
   --border: 1px solid;
@@ -798,7 +801,8 @@ h6:not(:where(.h1, .h2, .h3, .h4, .h5)) {
     inset 0 1px 2px -0.5px var(--pelati-12);
 }
 
-.icon-btn-secondary {
+.icon-btn-secondary,
+.icon-secondary-gradient {
   border: var(--border) var(--white-24);
   filter: blur(4)
     drop-shadow(
