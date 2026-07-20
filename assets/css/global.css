@@ -537,6 +537,7 @@ h6:not(:where(.h1, .h2, .h3, .h4, .h5)) {
   border-radius: 0;
   height: auto;
   opacity: 1;
+  transform: translate(0);
 }
 
 .splide__arrow svg {
@@ -844,6 +845,12 @@ h6:not(:where(.h1, .h2, .h3, .h4, .h5)) {
     inset 0 1px 2px -0.5px var(--white-12);
 }
 
+@media (max-width: 991px) {
+  .icon-btn-big {
+    width: 42px;
+  }
+}
+
 @media (max-width: 767px) {
   .btn::before,
   .btn::after,
@@ -859,6 +866,10 @@ h6:not(:where(.h1, .h2, .h3, .h4, .h5)) {
   .icon-btn {
     width: 36px;
   }
+
+  .icon-btn-big {
+    width: 38px;
+  }
 }
 
 @media (max-width: 575px) {
@@ -867,6 +878,10 @@ h6:not(:where(.h1, .h2, .h3, .h4, .h5)) {
   }
 
   .icon-btn {
+    width: 32px;
+  }
+
+  .icon-btn-big {
     width: 32px;
   }
 }
