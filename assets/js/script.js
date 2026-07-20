@@ -144,7 +144,6 @@ if (document.querySelector(".partners-showcase-slider.splide")) {
 // ================================
 document.addEventListener("DOMContentLoaded", function () {
   var thumbnails = new Splide(".highlight-thumbnail-slider", {
-    // rewind: true,
     drag: false,
     arrows: false,
     pagination: false,
@@ -153,7 +152,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
   var main = new Splide(".highlight-slider", {
     type: "fade",
-    // rewind: true,
     pagination: false,
     perPage: 1,
   });
@@ -161,4 +159,31 @@ document.addEventListener("DOMContentLoaded", function () {
   main.sync(thumbnails);
   main.mount();
   thumbnails.mount();
+});
+
+// ================================
+// Client Testimonials JS
+// ================================
+document.addEventListener("DOMContentLoaded", function () {
+  var thumbnails = new Splide(".client-testimonials-thumbnails-slider", {
+    drag: false,
+    arrows: false,
+    pagination: false,
+    perPage: 1,
+  });
+
+  var main = new Splide(".client-testimonials-slider", {
+    type: "fade",
+    pagination: false,
+    perPage: 1,
+  });
+
+  main.sync(thumbnails);
+  main.mount();
+  thumbnails.mount();
+});
+
+// Fancybox js -----
+document.addEventListener("DOMContentLoaded", () => {
+  Fancybox.bind("[data-fancybox]", {});
 });

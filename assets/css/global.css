@@ -16,9 +16,11 @@
   --white-10: #ffffff1a;
   --white-12: #ffffff1f;
   --white-16: #ffffff29;
+  --white-20: #ffffff33;
   --white-24: #ffffff3d;
   --white-27: #ffffff45;
   --white-32: #ffffff52;
+  --white-50: #ffffff80;
   --white-52: #ffffff85;
   --white-60: #ffffff99;
   --white-72: #ffffffb8;
@@ -42,6 +44,7 @@
   --transparent: transparent;
   --line-height-1: 1;
   --line-height-1_1: 1.1;
+  --line-height-1_333: 1.333;
   --line-height-1_041: 1.041;
   --line-height-1_08: 1.08;
   --line-height-1_388: 1.388;
@@ -547,7 +550,8 @@ h6:not(:where(.h1, .h2, .h3, .h4, .h5)) {
 }
 
 .splide__arrow:disabled {
-  opacity: 1;
+  opacity: 0.6;
+  pointer-events: none;
 }
 
 /* ----- Button Css ----- */
@@ -770,6 +774,10 @@ h6:not(:where(.h1, .h2, .h3, .h4, .h5)) {
   align-items: center;
   justify-content: center;
   transition: all 0.3s ease-in-out;
+}
+
+.icon-btn-big {
+  width: 46px;
 }
 
 .icon-btn .icon-btn-content,
