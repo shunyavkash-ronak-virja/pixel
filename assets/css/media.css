@@ -105,6 +105,56 @@
   .our-services-description {
     margin-top: 18px;
   }
+
+  /* ----- Why Choose Us Section ----- */
+  .why-choose-us-cons::before {
+    max-width: 170px;
+    left: 20px;
+  }
+
+  .why-choose-us-content {
+    padding-inline: 20px;
+    padding-bottom: 40px;
+  }
+
+  .why-choose-us-lits {
+    gap: 22px;
+  }
+
+  .why-choose-us-title {
+    margin-bottom: 36px;
+  }
+
+  .why-choose-us-icon-block {
+    width: 28px;
+  }
+
+  .why-choose-us-title-stack {
+    gap: 14px;
+  }
+
+  .why-choose-us-item-title {
+    font-size: 18px;
+  }
+
+  .why-choose-us-item-description {
+    padding-left: 42px;
+    margin-top: 6px;
+  }
+
+  .why-choose-us-news-banner {
+    padding: 20px;
+  }
+
+  .why-choose-us-news-title {
+    font-size: 20px;
+  }
+
+  .why-choose-us-news-description {
+    font-size: 14px;
+    line-height: var(--line-height-1_642);
+    margin-top: 12px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -260,11 +310,16 @@
   }
 
   /* ----- Our Services Section ----- */
+  .our-services-section .section-mark-bottom {
+    display: none;
+  }
+
   .our-services-head-spacing {
     padding-bottom: 40px;
   }
 
   .our-services-card-wrapper {
+    padding-bottom: 56px;
     grid-template-columns: repeat(1, 1fr);
   }
 
@@ -293,6 +348,59 @@
     max-width: 100%;
     margin-top: 12px;
     font-size: 14px;
+  }
+
+  /* ----- Why Choose Us Section ----- */
+  .section-spacing-block {
+    display: none;
+  }
+
+  .why-choose-us-section {
+    border-top: none;
+  }
+
+  .why-choose-us-wrapper {
+    padding-top: 40px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .why-choose-us-pros {
+    border-right: none;
+    border-bottom: var(--border) var(--black-300);
+  }
+
+  .why-choose-us-content {
+    padding-inline: 16px;
+  }
+
+  .why-choose-us-title-stack {
+    gap: 12px;
+  }
+
+  .why-choose-us-icon-block {
+    width: 24px;
+  }
+
+  .why-choose-us-item-title {
+    font-size: 16px;
+  }
+
+  .why-choose-us-item-description {
+    padding-left: 36px;
+    margin-top: 4px;
+  }
+
+  .why-choose-us-news-banner {
+    padding: 16px;
+    margin-inline: -16px;
+  }
+
+  .why-choose-us-cons::before {
+    max-width: 100%;
+    height: 384px;
+    left: 0;
+    background: linear-gradient(180deg, rgba(255, 51, 55, 0.25) 0, rgba(255, 51, 55, 0) 64%);
+    clip-path: polygon(20% 0, 32% 60%, 100% 100%, 0 100%, 0 0);
   }
 }
 

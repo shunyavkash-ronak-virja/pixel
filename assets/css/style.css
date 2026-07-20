@@ -578,5 +578,5 @@
   top: 0;
   left: 30px;
   border-top: var(--border) var(--pelati);
-  /* background: linear-gradient(0deg, rgba(255, 51, 55, 0) 25%, rgba(255, 51, 55, 1) 100%); */
+  background: linear-gradient(180deg, rgba(255, 51, 55, 0.25) 0%, rgba(255, 51, 55, 0) 100%);
 }
