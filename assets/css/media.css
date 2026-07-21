@@ -206,6 +206,19 @@
   .faq-content.active .faq-answer {
     padding-top: 18px;
   }
+
+  /* ----- Latest News Section ----- */
+  .latest-news-head {
+    margin-bottom: 52px;
+  }
+
+  .blog-card-content-block {
+    padding-block: 18px;
+  }
+
+  .blog-card-title {
+    margin-block: 14px 12px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -535,6 +548,37 @@
   .faq-content.active .faq-answer {
     padding-top: 14px;
   }
+
+  /* ----- Latest News Section ----- */
+  .latest-news-head {
+    align-items: center;
+    text-align: center;
+    margin-bottom: 44px;
+  }
+
+  .blog-card-slider {
+    display: none;
+  }
+
+  .blog-card-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .blog-card-content-block {
+    padding-block: 16px;
+  }
+
+  .blog-card-caption {
+    font-size: 12px;
+    line-height: var(--line-height-1);
+    padding: 4px;
+  }
+
+  .blog-card-title {
+    font-size: 18px;
+  }
 }
 
 @media (max-width: 575px) {
@@ -603,10 +647,24 @@
   .faq-content.active .faq-answer {
     padding-top: 12px;
   }
+
+  /* ----- Latest News Section ----- */
+  .latest-news-head {
+    margin-bottom: 36px;
+  }
+
+  .blog-card-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 @media (max-width: 424px) {
   .logo-showcase-img {
     max-width: 70px;
+  }
+
+  /* ----- Latest News Section ----- */
+  .blog-card-wrapper {
+    gap: 12px;
   }
 }

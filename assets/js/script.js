@@ -202,3 +202,21 @@ document.querySelectorAll(".faq-question-block").forEach((question) => {
     faqItem.classList.toggle("active");
   });
 });
+
+// ================================
+// Blog Card JS
+// ================================
+document.addEventListener("DOMContentLoaded", function () {
+  var splide = new Splide(".blog-card-slider.splide", {
+    perPage: 3,
+    gap: "20px",
+    pagination: false,
+    breakpoints: {
+      991: {
+        perPage: 2,
+        gap: "18px",
+      },
+    },
+  });
+  splide.mount();
+});
