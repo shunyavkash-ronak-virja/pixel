@@ -828,3 +828,27 @@
 .blog-card-wrapper {
   display: none;
 }
+
+/* ----- CTA Section ----- */
+.cta-section-spacing {
+  padding-block: 120px;
+}
+
+.cta-content-wrapper {
+  max-width: 830px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cta-description {
+  max-width: 502px;
+  margin-block: 24px 44px;
+  color: var(--white-60);
+}
+
+.cta-btn-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
