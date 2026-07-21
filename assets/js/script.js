@@ -187,3 +187,18 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener("DOMContentLoaded", () => {
   Fancybox.bind("[data-fancybox]", {});
 });
+
+// ================================
+// FAQ JS
+// ================================
+document.querySelectorAll(".faq-question-block").forEach((question) => {
+  question.addEventListener("click", () => {
+    const faqItem = question.parentElement;
+    document.querySelectorAll(".faq-content").forEach((item) => {
+      if (item !== faqItem) {
+        item.classList.remove("active");
+      }
+    });
+    faqItem.classList.toggle("active");
+  });
+});

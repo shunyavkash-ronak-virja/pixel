@@ -286,7 +286,6 @@
 
 /* ----- Why It Matters Section ----- */
 .why-it-matters-head-description {
-  color: var(--white-72);
   max-width: 932px;
 }
 
@@ -409,7 +408,6 @@
 
 .our-services-head-description {
   max-width: 825px;
-  color: var(--white-72);
 }
 
 .our-services-card-wrapper {
@@ -450,7 +448,6 @@
 .our-services-description {
   max-width: 340px;
   margin-top: 24px;
-  color: var(--white-72);
 }
 
 /* ----- Why Choose Us Section ----- */
@@ -674,4 +671,75 @@
     right: auto;
     left: 62px;
   }
+}
+
+/* ----- FAQ Section ----- */
+
+.faq-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.faq-block-spacing {
+  padding-block: 65px;
+}
+
+.faq-head-wrapper {
+  max-width: 448px;
+}
+
+.faqs-contact-btn {
+  margin-top: 40px;
+}
+
+.faqs-wrapper {
+  border-left: var(--border) var(--black-300);
+  padding-block: 30px;
+}
+
+.faqs-list:not(:last-child) {
+  border-bottom: var(--border) var(--black-300);
+}
+
+.faq-content {
+  padding-block: 30px;
+}
+
+.faq-question-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.faq-question {
+  font-size: 24px;
+  line-height: var(--line-height-1_041);
+}
+
+.faq-btn-icon {
+  width: 86%;
+  transition: all 0.3s ease-in-out;
+}
+
+.faq-content.active .faq-btn-icon {
+  transform: rotate(180deg);
+}
+
+.faq-answer-block {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: all 0.3s ease-in-out;
+}
+
+.faq-content.active .faq-answer-block {
+  grid-template-rows: 1fr;
+}
+
+.faq-answer {
+  transition: all 0.3s ease-in-out;
+}
+
+.faq-content.active .faq-answer {
+  padding-top: 22px;
 }
