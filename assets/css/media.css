@@ -219,6 +219,15 @@
   .blog-card-title {
     margin-block: 14px 12px;
   }
+
+  /* ----- CTA Section ----- */
+  .cta-section-spacing {
+    padding-block: 100px;
+  }
+
+  .cta-description {
+    margin-block: 22px 40px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -579,6 +588,15 @@
   .blog-card-title {
     font-size: 18px;
   }
+
+  /* ----- CTA Section ----- */
+  .cta-section-spacing {
+    padding-block: 80px;
+  }
+
+  .cta-description {
+    margin-block: 20px 36px;
+  }
 }
 
 @media (max-width: 575px) {
@@ -655,6 +673,15 @@
 
   .blog-card-wrapper {
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  /* ----- CTA Section ----- */
+  .cta-section-spacing {
+    padding-block: 60px;
+  }
+
+  .cta-description {
+    margin-block: 16px 32px;
   }
 }
 

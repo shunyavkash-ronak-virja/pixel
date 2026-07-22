@@ -394,11 +394,8 @@ function drawGlow(cell) {
   // =====================================================
 
   ctx.strokeStyle = `rgba(255,51,55,${0.12 * a})`;
-
   ctx.lineWidth = 1;
-
   ctx.strokeRect(x + 0.5, y + 0.5, w - 1, h - 1);
-
   ctx.restore();
 }
 
