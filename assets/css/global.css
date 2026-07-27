@@ -4,6 +4,7 @@
   --black-100: #04040e;
   --black-200: #05050e;
   --black-300: #17171f;
+  --black-400: #181821;
   --dark-gunmetal: #212328;
   --white: #ffffff;
   --white-1: #ffffff03;
@@ -95,10 +96,12 @@
   filter: blur(622.7px);
 }
 
+/* ----- Favicon ----- */
+
 body {
   min-height: 100vh;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: var(--line-height-1_5);
   background-color: var(--black-100);
   color: var(--white);
   font-family: var(--font-family-inter);
@@ -127,6 +130,10 @@ footer {
   footer {
     padding-inline: 16px;
   }
+}
+
+main {
+  margin-top: auto;
 }
 
 .section-spacing {

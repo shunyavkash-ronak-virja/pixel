@@ -882,3 +882,70 @@
     inset 0 1px 2px -0.5px var(--pelati-12);
   opacity: 0;
 }
+
+/* =====================================================
+Blog Listing Page
+===================================================== */
+/* ----- Blogs Highlights Section ----- */
+.blogs-highlights-head {
+  max-width: 575px;
+}
+
+.blogs-highlights-head-spacing {
+  padding-block: 100px 60px;
+}
+
+.blogs-highlights-wrapper {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  gap: 24px;
+  border-color: var(--black-400);
+}
+
+.blogs-highlights-img-content {
+  width: 52%;
+  max-width: 648px;
+  aspect-ratio: 1 / 0.58643;
+  border-right: var(--border) var(--black-400);
+}
+
+.blogs-highlights-content {
+  width: 48%;
+  max-width: 594px;
+  padding-block: 40px;
+  padding-right: 3.8%;
+  align-self: center;
+}
+
+.blogs-highlights-caption-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.blogs-highlights-caption {
+  border-inline-color: var(--white-24);
+  color: var(--white);
+  padding: 6px 8px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: var(--line-height-1_428);
+}
+
+.blogs-highlights-date {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.blogs-highlights-title {
+  font-size: 20px;
+  letter-spacing: -0.02em;
+  line-height: var(--line-height-1);
+}
+
+.blogs-highlights-description {
+  margin-block: 16px 40px;
+  font-weight: 400;
+}

@@ -228,6 +228,27 @@
   .cta-description {
     margin-block: 22px 40px;
   }
+
+  /* =====================================================
+Blog Listing Page
+===================================================== */
+  /* ----- Blogs Highlights Section ----- */
+  .blogs-highlights-head-spacing {
+    padding-block: 88px 54px;
+  }
+
+  .blogs-highlights-content {
+    padding-block: 26px;
+    padding-right: 3%;
+  }
+
+  .blogs-highlights-caption-wrapper {
+    margin-bottom: 18px;
+  }
+
+  .blogs-highlights-description {
+    margin-bottom: 28px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -597,6 +618,39 @@
   .cta-description {
     margin-block: 20px 36px;
   }
+
+  /* =====================================================
+Blog Listing Page
+===================================================== */
+  /* ----- Blogs Highlights Section ----- */
+  .blogs-highlights-head-spacing {
+    padding-block: 76px 48px;
+  }
+
+  .blogs-highlights-wrapper {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .blogs-highlights-img-content,
+  .blogs-highlights-content {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .blogs-highlights-img-content {
+    border-right: none;
+  }
+
+  .blogs-highlights-content {
+    padding-block: 0 36px;
+    padding-inline: 16px;
+  }
+
+  .blogs-highlights-description {
+    font-size: 14px;
+    line-height: var(--line-height-1_642);
+  }
 }
 
 @media (max-width: 575px) {
@@ -682,6 +736,28 @@
 
   .cta-description {
     margin-block: 16px 32px;
+  }
+
+  /* =====================================================
+Blog Listing Page
+===================================================== */
+  /* ----- Blogs Highlights Section ----- */
+  .blogs-highlights-head-spacing {
+    padding-block: 60px 40px;
+  }
+
+  .blogs-highlights-caption-wrapper {
+    margin-bottom: 16px;
+  }
+
+  .blogs-highlights-caption {
+    font-size: 12px;
+    line-height: 1.666;
+    padding-block: 4px;
+  }
+
+  .blogs-highlights-title {
+    font-size: 18px;
   }
 }
 

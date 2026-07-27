@@ -408,7 +408,6 @@ function animate() {
 
   cells.forEach((cell) => {
     // Keep Grid Border Always Visible
-
     ctx.strokeStyle = GRID_BORDER;
     ctx.lineWidth = 1;
 
