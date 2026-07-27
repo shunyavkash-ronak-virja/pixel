@@ -949,3 +949,100 @@ Blog Listing Page
   margin-block: 16px 40px;
   font-weight: 400;
 }
+
+/* ----- Articles Section ----- */
+.articles-filter-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding-block: 120px 20px;
+}
+
+.articles-filter-tab-list {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px;
+  border: var(--border) var(--black-400);
+  border-left: none;
+  overflow-x: auto;
+}
+
+.articles-filter-tab {
+  padding: 8px 12px;
+  background-color: var(--white-1);
+  border: var(--border) var(--white-8);
+  color: var(--white-32);
+  filter: blur(4)
+    drop-shadow(
+      0 0.5px 0.5px 0 var(--obsidian),
+      0 1px 1px -0.5px var(--obsidian),
+      0 2px 2px -1px var(--obsidian),
+      0 3px 3px -1.5px var(--obsidian),
+      0 5px 5px -2.5px var(--obsidian),
+      0 8px 8px -3px var(--obsidian)
+    );
+  box-shadow:
+    inset 0 8px 24px -4px var(--white-4),
+    inset 0 0.5px 0.5px 0 var(--white-2),
+    inset 0 1px 2px -0.5px var(--white-2);
+  transition: all 0.3s ease-in-out;
+}
+
+.articles-filter-tab:hover,
+.articles-filter-tab.active {
+  background-color: var(--pelati-12);
+  border-color: var(--pelati-24);
+  color: var(--pelati);
+  box-shadow:
+    inset 0 8px 24px -4px var(--pelati-16),
+    inset 0 0.5px 0.5px 0 var(--pelati-16),
+    inset 0 1px 2px -0.5px var(--pelati-12);
+}
+
+.articles-filter-input-label {
+  width: 100%;
+  max-width: 412px;
+}
+
+.articles-filter-input {
+  font-weight: 400;
+  border: var(--border) var(--black-400);
+  padding-block: 16px;
+  padding-inline: 40px 20px;
+  color: var(--white);
+  transition: all 0.3s ease-in-out;
+}
+
+.articles-filter-input::placeholder {
+  color: var(--white-32);
+}
+
+.articles-filter-input:focus {
+  border-color: var(--white-24);
+}
+
+.articles-filter-input-icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  max-width: 16px;
+  aspect-ratio: 1;
+}
+
+.articles-blog-spacing {
+  padding-block: 40px 120px;
+}
+
+.articles-blog-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px 20px;
+}
+
+.articles-blog-load-btn {
+  margin-top: 60px;
+  display: block;
+}

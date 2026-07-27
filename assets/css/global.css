@@ -279,6 +279,10 @@ input {
   background-color: var(--transparent);
 }
 
+input:focus {
+  outline: none;
+}
+
 .text-center {
   text-align: center;
 }
@@ -965,10 +969,6 @@ h6:not(:where(.h1, .h2, .h3, .h4, .h5)) {
     inset 0 1px 2px -0.5px var(--white-2);
   background-color: var(--white-2);
   padding: 8px 12px;
-}
-
-.input-field:focus {
-  outline: none;
 }
 
 .input-overlay {
