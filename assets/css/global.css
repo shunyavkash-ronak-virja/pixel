@@ -96,8 +96,6 @@
   filter: blur(622.7px);
 }
 
-/* ----- Favicon ----- */
-
 body {
   min-height: 100vh;
   font-size: 16px;
@@ -991,4 +989,13 @@ h6:not(:where(.h1, .h2, .h3, .h4, .h5)) {
 
 .input-field::placeholder {
   color: var(--white-24);
+}
+
+/* ----- Scrollbar Css ----- */
+.scroll-bar::-webkit-scrollbar {
+  height: 4px;
+}
+
+.scroll-bar::-webkit-scrollbar-thumb {
+  border-top: 1px solid var(--white-20);
 }
