@@ -379,6 +379,10 @@ input:focus {
   background-color: var(--white-2);
 }
 
+.section-caption span {
+  color: var(--white);
+}
+
 .head-description {
   line-height: var(--line-height-1_625);
 }

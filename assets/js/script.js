@@ -497,3 +497,29 @@ document.addEventListener("DOMContentLoaded", () => {
   window.addEventListener("scroll", updateActiveLink);
   window.addEventListener("resize", updateActiveLink);
 });
+
+// ================================
+// Case Study Hero Slider
+// ================================
+if (typeof Splide !== "undefined" && document.querySelector(".case-study-hero-slider.splide")) {
+  document.addEventListener("DOMContentLoaded", function () {
+    var splide = new Splide(".case-study-hero-slider.splide", {
+      direction: "ttb",
+      releaseWheel: true,
+      autoplay: true,
+      rewind: true,
+      autoHeight: "100%",
+      heightRatio: 1.23,
+      focus: "center",
+      gap: "28px",
+      arrows: false,
+      pagination: false,
+      breakpoints: {
+        991: {
+          gap: "24px",
+        },
+      },
+    });
+    splide.mount();
+  });
+}
