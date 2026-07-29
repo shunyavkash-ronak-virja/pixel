@@ -311,6 +311,15 @@ Blog Details Page
   .blog-details-category-description {
     margin-top: 20px;
   }
+
+  /* ----- Related Articles Section ----- */
+  .related-articles-section-spacing {
+    padding-bottom: 108px;
+  }
+
+  .related-articles-title {
+    margin-bottom: 54px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -826,6 +835,15 @@ Blog Details Page
   .blog-details-side-media-caption {
     margin-top: 0;
   }
+
+  /* ----- Related Articles Section ----- */
+  .related-articles-section-spacing {
+    padding-bottom: 96px;
+  }
+
+  .related-articles-title {
+    margin-bottom: 48px;
+  }
 }
 
 @media (max-width: 575px) {
@@ -968,6 +986,15 @@ Blog Details Page
 
   .blog-details-category-title {
     font-size: 18px;
+  }
+
+  /* ----- Related Articles Section ----- */
+  .related-articles-section-spacing {
+    padding-bottom: 80px;
+  }
+
+  .related-articles-title {
+    margin-bottom: 40px;
   }
 }
 
