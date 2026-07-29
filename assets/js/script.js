@@ -467,3 +467,33 @@ if (tabs.length && cards.length && searchInput && loadMoreBtn) {
   // Initial Load
   filterBlogs();
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+  const sections = document.querySelectorAll(".blog-details-category-item");
+  const links = document.querySelectorAll(".blog-details-side-link");
+
+  const offset = 100; // same as scroll-margin-top
+
+  function updateActiveLink() {
+    // Remove all active classes first
+    links.forEach((link) => link.classList.remove("active"));
+
+    let activeIndex = -1;
+
+    sections.forEach((section, index) => {
+      const top = section.getBoundingClientRect().top;
+
+      // Section has reached the 100px line
+      if (top <= offset) {
+        activeIndex = index;
+      }
+    });
+
+    if (activeIndex >= 0) {
+      links[activeIndex].classList.add("active");
+    }
+  }
+
+  window.addEventListener("scroll", updateActiveLink);
+  window.addEventListener("resize", updateActiveLink);
+});
