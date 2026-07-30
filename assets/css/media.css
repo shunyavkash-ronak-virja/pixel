@@ -844,6 +844,53 @@ Blog Details Page
   .related-articles-title {
     margin-bottom: 48px;
   }
+
+  /* =====================================================
+Case Study Page
+===================================================== */
+  /* ----- Case Study Hero Section ----- */
+  .case-study-hero-wrapper {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .case-study-hero-content {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 60px;
+  }
+
+  .case-study-hero-caption {
+    display: none;
+  }
+
+  .case-study-hero-description {
+    font-size: 14px;
+    line-height: var(--line-height-1_642);
+    margin-bottom: 36px;
+  }
+
+  .case-study-hero-slider {
+    width: auto;
+    max-width: none;
+    margin-inline: -16px;
+  }
+
+  .case-study-hero-slider::after {
+    display: none;
+  }
+
+  .case-study-hero-slide {
+    max-width: 430px;
+  }
+
+  .case-study-hero-info {
+    padding: 8px;
+  }
 }
 
 @media (max-width: 575px) {
@@ -996,6 +1043,18 @@ Blog Details Page
   .related-articles-title {
     margin-bottom: 40px;
   }
+
+  /* =====================================================
+Case Study Page
+===================================================== */
+  /* ----- Case Study Hero Section ----- */
+  .case-study-hero-slider {
+    margin-inline: -12px;
+  }
+
+  .case-study-hero-slide {
+    max-width: 380px;
+  }
 }
 
 @media (max-width: 424px) {
@@ -1014,5 +1073,13 @@ Blog Listing Page
   /* ----- Articles Section ----- */
   .articles-blog-wrapper {
     gap: 12px;
+  }
+
+  /* =====================================================
+Case Study Page
+===================================================== */
+  /* ----- Case Study Hero Section ----- */
+  .case-study-hero-slide {
+    max-width: 330px;
   }
 }

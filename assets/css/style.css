@@ -125,6 +125,7 @@
   justify-content: space-between;
   gap: 16px;
   border-top: var(--border) var(--pelati-40);
+  background-color: var(--pelati-25);
   filter: blur(72)
     drop-shadow(
       0 0.5px 0.5px 0 var(--obsidian),
@@ -1232,9 +1233,10 @@ Case Study Page
 }
 
 .case-study-hero-content {
-  padding-block: 100px 126px;
   width: 50%;
   max-width: 528px;
+  padding-block: 40px;
+  align-self: center;
 }
 
 .case-study-hero-caption {
@@ -1252,11 +1254,10 @@ Case Study Page
   height: 100%;
 }
 
-/* .case-study-hero-track,
-.case-study-hero-list,
-.case-study-hero-slide {
+.case-study-hero-track,
+.case-study-hero-list {
   height: 100%;
-} */
+}
 
 .case-study-hero-slider::after {
   content: "";

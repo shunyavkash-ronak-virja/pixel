@@ -507,8 +507,8 @@ if (typeof Splide !== "undefined" && document.querySelector(".case-study-hero-sl
       direction: "ttb",
       releaseWheel: true,
       autoplay: true,
-      rewind: true,
-      autoHeight: "100%",
+      type: "loop",
+      autoHeight: true,
       heightRatio: 1.23,
       focus: "center",
       gap: "28px",
@@ -516,7 +516,14 @@ if (typeof Splide !== "undefined" && document.querySelector(".case-study-hero-sl
       pagination: false,
       breakpoints: {
         991: {
-          gap: "24px",
+          gap: "20px",
+          heightRatio: 1.56,
+        },
+        767: {
+          gap: "12px",
+          direction: "ltr",
+          heightRatio: 0,
+          focus: "left",
         },
       },
     });
