@@ -530,3 +530,28 @@ if (typeof Splide !== "undefined" && document.querySelector(".case-study-hero-sl
     splide.mount();
   });
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+  var main = new Splide(".featured-slider.splide", {
+    type: "fade",
+    perPage: 1,
+    pagination: false,
+  });
+
+  var thumbnails = new Splide(".featured-thumbnail-slider.splide", {
+    perPage: 1,
+    gap: 10,
+    arrows: false,
+    pagination: false,
+    breakpoints: {
+      600: {
+        fixedWidth: 60,
+        fixedHeight: 44,
+      },
+    },
+  });
+
+  main.sync(thumbnails);
+  main.mount();
+  thumbnails.mount();
+});
