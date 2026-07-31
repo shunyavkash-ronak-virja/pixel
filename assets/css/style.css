@@ -756,33 +756,33 @@
   padding-bottom: 60px;
 }
 
-.blog-card {
+.articles-card {
   border: var(--border) var(--white-12);
 }
 
-.blog-card.hide {
+.articles-card.hide {
   display: none;
 }
 
-.blog-card-img-content {
+.articles-card-img-content {
   aspect-ratio: 1 / 0.6502;
 }
 
-.blog-card-img {
+.articles-card-img {
   transition: all 0.3s ease-in-out;
 }
 
-.blog-card:hover .blog-card-img {
+.articles-card:hover .articles-card-img {
   transform: scale(1.02);
 }
 
-.blog-card-content-block {
+.articles-card-content-block {
   padding: 20px 18px;
   background-color: var(--black-100);
   border-top: var(--border) var(--white-12);
 }
 
-.blog-card-caption {
+.articles-card-caption {
   font-size: 14px;
   line-height: var(--line-height-1_714);
   text-transform: uppercase;
@@ -804,17 +804,17 @@
     inset 0 1px 2px -0.5px var(--pelati-12);
 }
 
-.blog-card-content-wrapper {
+.articles-card-content-wrapper {
   max-width: 308px;
 }
 
-.blog-card-title {
+.articles-card-title {
   margin-block: 16px 14px;
   font-size: 20px;
   line-height: 1;
 }
 
-.blog-card-description {
+.articles-card-description {
   font-size: 14px;
   line-height: var(--line-height-1_857);
   color: var(--white-60);
@@ -1043,7 +1043,7 @@ Blog Listing Page
   padding-block: 40px 120px;
 }
 
-.articles-blog-wrapper {
+.articles-card-wrapper {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
@@ -1416,4 +1416,13 @@ Case Study Page
 
 .featured-slider-arrow-wrapper .splide__arrow--next {
   right: 0;
+}
+
+/* ----- Case Studies Articles Section ----- */
+.case-studies-articles-section-spacing {
+  padding-block: 160px 120px;
+}
+
+.case-studies-articles-title {
+  margin-bottom: 60px;
 }

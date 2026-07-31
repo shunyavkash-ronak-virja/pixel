@@ -399,7 +399,7 @@ if (canvas) {
 // Articles Filter JS
 // ================================
 const tabs = document.querySelectorAll(".articles-filter-tab");
-const cards = document.querySelectorAll(".blog-card");
+const cards = document.querySelectorAll(".articles-card");
 const searchInput = document.getElementById("blogSearch");
 const loadMoreBtn = document.querySelector(".articles-blog-load-btn");
 
@@ -415,7 +415,10 @@ if (tabs.length && cards.length && searchInput && loadMoreBtn) {
     let matchedCards = [];
 
     cards.forEach((card) => {
-      const category = card.querySelector(".blog-card-caption").textContent.trim().toLowerCase();
+      const category = card
+        .querySelector(".articles-card-caption")
+        .textContent.trim()
+        .toLowerCase();
       const categoryMatch = activeCategory === "all" || category === activeCategory;
       const searchMatch = searchValue === "" || category.includes(searchValue);
 
@@ -531,21 +534,23 @@ if (typeof Splide !== "undefined" && document.querySelector(".case-study-hero-sl
   });
 }
 
-document.addEventListener("DOMContentLoaded", function () {
-  var main = new Splide(".featured-slider.splide", {
-    type: "fade",
-    perPage: 1,
-    pagination: false,
-  });
+if (typeof Splide !== "undefined" && document.querySelector(".featured-slider.splide")) {
+  document.addEventListener("DOMContentLoaded", function () {
+    var main = new Splide(".featured-slider.splide", {
+      type: "fade",
+      perPage: 1,
+      pagination: false,
+    });
 
-  var thumbnails = new Splide(".featured-thumbnail-slider.splide", {
-    perPage: 1,
-    gap: 10,
-    arrows: false,
-    pagination: false,
-  });
+    var thumbnails = new Splide(".featured-thumbnail-slider.splide", {
+      perPage: 1,
+      gap: 10,
+      arrows: false,
+      pagination: false,
+    });
 
-  main.sync(thumbnails);
-  main.mount();
-  thumbnails.mount();
-});
+    main.sync(thumbnails);
+    main.mount();
+    thumbnails.mount();
+  });
+}

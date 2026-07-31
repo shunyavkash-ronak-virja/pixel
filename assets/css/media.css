@@ -212,11 +212,11 @@
     margin-bottom: 52px;
   }
 
-  .blog-card-content-block {
+  .articles-card-content-block {
     padding: 18px 16px;
   }
 
-  .blog-card-title {
+  .articles-card-title {
     margin-block: 14px 12px;
   }
 
@@ -271,7 +271,7 @@ Blog Listing Page
     padding-bottom: 108px;
   }
 
-  .articles-blog-wrapper {
+  .articles-card-wrapper {
     grid-template-columns: repeat(2, 1fr);
     gap: 18px;
   }
@@ -687,17 +687,17 @@ Case Study Page
     gap: 20px;
   }
 
-  .blog-card-content-block {
+  .articles-card-content-block {
     padding-block: 16px;
   }
 
-  .blog-card-caption {
+  .articles-card-caption {
     font-size: 12px;
     line-height: var(--line-height-1);
     padding: 4px;
   }
 
-  .blog-card-title {
+  .articles-card-title {
     font-size: 18px;
   }
 
@@ -1067,7 +1067,7 @@ Blog Listing Page
     padding-bottom: 80px;
   }
 
-  .articles-blog-wrapper {
+  .articles-card-wrapper {
     grid-template-columns: repeat(1, 1fr);
     gap: 16px;
   }
@@ -1138,7 +1138,7 @@ Case Study Page
 Blog Listing Page
 ===================================================== */
   /* ----- Articles Section ----- */
-  .articles-blog-wrapper {
+  .articles-card-wrapper {
     gap: 12px;
   }
 
