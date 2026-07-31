@@ -1467,3 +1467,69 @@ Case Study Page
 .cta-banner-description {
   margin-top: 25px;
 }
+
+/* =====================================================
+Case Study Details Page
+===================================================== */
+/* ----- Case Study Details Section ----- */
+.case-study-details-section-spacing {
+  padding-top: 60px;
+}
+
+.case-study-details-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.case-study-details-content-size {
+  max-width: 790px;
+}
+
+.case-study-details-img-content {
+  aspect-ratio: 1/ 0.41;
+}
+
+.case-study-details-description {
+  margin-top: 20px;
+}
+
+.case-study-details-media-wrapper {
+  display: flex;
+}
+
+.case-study-details-groupimg-first,
+.case-study-details-groupimg-second {
+  aspect-ratio: 1 / 0.82513;
+}
+
+.case-study-details-groupimg-first {
+  max-width: 468px;
+}
+
+.case-study-details-groupimg-second {
+  max-width: 812px;
+}
+
+.case-study-details-img-content-big {
+  aspect-ratio: 1 / 0.52426;
+}
+
+.case-study-details-counter-wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+  margin-top: 40px;
+}
+
+.case-study-details-counter-num {
+  font-family: var(--font-family-inter);
+  letter-spacing: -0.1px;
+}
+
+.case-study-details-counter-description {
+  margin-top: 8px;
+  font-size: 18px;
+  line-height: var(--line-height-1);
+  letter-spacing: -0.1px;
+}
