@@ -353,6 +353,19 @@ Case Study Page
   .case-studies-articles-title {
     margin-bottom: 50px;
   }
+
+  /* ----- CTA Banner Section ----- */
+  .cta-banner-section-spacing {
+    padding-bottom: 134px;
+  }
+
+  .cta-banner-wrapper {
+    padding-block: 50px;
+  }
+
+  .cta-banner-description {
+    margin-top: 18px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -971,6 +984,31 @@ Case Study Page
   .case-studies-articles-title {
     margin-bottom: 40px;
   }
+
+  /* ----- CTA Banner Section ----- */
+  .cta-banner-section-spacing {
+    padding-bottom: 108px;
+  }
+
+  .cta-banner-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .cta-banner-content {
+    width: 100%;
+    max-width: 522px;
+  }
+
+  .cta-banner-wrapper {
+    padding-block: 40px;
+  }
+
+  .cta-banner-description {
+    font-size: 14px;
+    line-height: var(--line-height-1_642);
+    margin-top: 12px;
+  }
 }
 
 @media (max-width: 575px) {
@@ -1149,6 +1187,11 @@ Case Study Page
   .case-studies-articles-section-spacing {
     padding-block: 100px 60px;
   }
+
+  /* ----- CTA Banner Section ----- */
+  .cta-banner-section-spacing {
+    padding-bottom: 80px;
+  }
 }
 
 @media (max-width: 424px) {
@@ -1175,5 +1218,10 @@ Case Study Page
   /* ----- Case Study Hero Section ----- */
   .case-study-hero-slide {
     max-width: 330px;
+  }
+
+  /* ----- CTA Banner Section ----- */
+  .cta-banner-content {
+    max-width: 284px;
   }
 }

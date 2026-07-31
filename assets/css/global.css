@@ -181,7 +181,7 @@ main {
   margin-inline: auto;
 }
 
-.container:not(:where(.container-saping-0)),
+.container:not(:where(.container-spacing-0)),
 .container-inline-spacing {
   padding-inline: 30px;
 }
@@ -191,21 +191,21 @@ main {
 }
 
 @media (max-width: 991px) {
-  .container:not(:where(.container-saping-0)),
+  .container:not(:where(.container-spacing-0)),
   .container-inline-spacing {
     padding-inline: 20px;
   }
 }
 
 @media (max-width: 767px) {
-  .container:not(:where(.container-saping-0)),
+  .container:not(:where(.container-spacing-0)),
   .container-inline-spacing {
     padding-inline: 16px;
   }
 }
 
 @media (max-width: 575px) {
-  .container:not(:where(.container-saping-0)),
+  .container:not(:where(.container-spacing-0)),
   .container-inline-spacing {
     padding-inline: 12px;
   }

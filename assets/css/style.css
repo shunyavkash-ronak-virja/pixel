@@ -1431,3 +1431,39 @@ Case Study Page
 .case-studies-articles-img-content {
   aspect-ratio: 1 / 0.71672;
 }
+
+/* ----- CTA Banner Section ----- */
+.cta-banner-section-spacing {
+  padding-bottom: 160px;
+}
+
+.cta-banner-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  padding-block: 60px;
+  border: var(--border) var(--pelati-24);
+  filter: blur(4)
+    drop-shadow(
+      0 0.5px 0.5px 0 var(--obsidian),
+      0 1px 1px -0.5px var(--obsidian),
+      0 2px 2px -1px var(--obsidian),
+      0 3px 3px -1.5px var(--obsidian),
+      0 5px 5px -2.5px var(--obsidian),
+      0 8px 8px -3px var(--obsidian)
+    );
+  box-shadow:
+    inset 0 0 250px -135px var(--pelati-8),
+    inset 0 0 250px -111px var(--pelati-8),
+    inset 0 0 211.7px -0.5px var(--pelati-8);
+}
+
+.cta-banner-content {
+  width: 60%;
+  max-width: 718px;
+}
+
+.cta-banner-description {
+  margin-top: 25px;
+}
