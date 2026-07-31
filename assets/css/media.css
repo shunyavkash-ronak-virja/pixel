@@ -213,11 +213,15 @@
   }
 
   .articles-card-content-block {
-    padding: 18px 16px;
+    padding-block: 18px;
+  }
+
+  .articles-card-caption {
+    margin-bottom: 14px;
   }
 
   .articles-card-title {
-    margin-block: 14px 12px;
+    margin-bottom: 12px;
   }
 
   /* ----- CTA Section ----- */
@@ -339,6 +343,15 @@ Case Study Page
 
   .featured-thumbnail-slider {
     margin-bottom: 28px;
+  }
+
+  /* ----- Featured Section ----- */
+  .case-studies-articles-section-spacing {
+    padding-block: 140px 100px;
+  }
+
+  .case-studies-articles-title {
+    margin-bottom: 50px;
   }
 }
 
@@ -949,6 +962,15 @@ Case Study Page
     bottom: -40px;
     transform: translateY(40px);
   }
+
+  /* ----- Featured Section ----- */
+  .case-studies-articles-section-spacing {
+    padding-block: 120px 80px;
+  }
+
+  .case-studies-articles-title {
+    margin-bottom: 40px;
+  }
 }
 
 @media (max-width: 575px) {
@@ -1121,6 +1143,11 @@ Case Study Page
 
   .featured-slider-title {
     font-size: 20px;
+  }
+
+  /* ----- Featured Section ----- */
+  .case-studies-articles-section-spacing {
+    padding-block: 100px 60px;
   }
 }
 

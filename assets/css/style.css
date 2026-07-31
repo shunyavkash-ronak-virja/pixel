@@ -777,7 +777,7 @@
 }
 
 .articles-card-content-block {
-  padding: 20px 18px;
+  padding: 20px 16px;
   background-color: var(--black-100);
   border-top: var(--border) var(--white-12);
 }
@@ -787,6 +787,7 @@
   line-height: var(--line-height-1_714);
   text-transform: uppercase;
   padding-inline: 8px;
+  margin-bottom: 16px;
   background-color: var(--pelati-12);
   border: var(--border) var(--pelati-24);
   filter: blur(4)
@@ -809,7 +810,7 @@
 }
 
 .articles-card-title {
-  margin-block: 16px 14px;
+  margin-bottom: 14px;
   font-size: 20px;
   line-height: 1;
 }
@@ -1425,4 +1426,8 @@ Case Study Page
 
 .case-studies-articles-title {
   margin-bottom: 60px;
+}
+
+.case-studies-articles-img-content {
+  aspect-ratio: 1 / 0.71672;
 }
