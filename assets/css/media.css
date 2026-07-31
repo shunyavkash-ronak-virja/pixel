@@ -320,6 +320,26 @@ Blog Details Page
   .related-articles-title {
     margin-bottom: 54px;
   }
+
+  /* =====================================================
+Case Study Page
+===================================================== */
+  /* ----- Featured Section ----- */
+  .featured-section-top-spacing {
+    padding-top: 108px;
+  }
+
+  .featured-section-spacing {
+    padding-block: 50px 86px;
+  }
+
+  .featured-section-title {
+    margin-bottom: 50px;
+  }
+
+  .featured-thumbnail-slider {
+    margin-bottom: 28px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -891,6 +911,44 @@ Case Study Page
   .case-study-hero-info {
     padding: 8px;
   }
+
+  /* ----- Featured Section ----- */
+  .featured-section-top-spacing {
+    padding-top: 96px;
+  }
+
+  .featured-section-spacing {
+    padding-block: 40px 112px;
+  }
+
+  .featured-section-title {
+    margin-bottom: 40px;
+  }
+
+  .featured-thumbnail-slider {
+    margin-bottom: 24px;
+  }
+
+  .featured-contents {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .featured-slider-arrow-wrapper .splide__arrow--prev {
+    left: 0;
+    right: auto;
+  }
+
+  .featured-slider-arrow-wrapper .splide__arrow--next {
+    right: auto;
+    left: 44px;
+  }
+
+  .featured-slider-arrow-wrapper .splide__arrow {
+    top: auto;
+    bottom: -40px;
+    transform: translateY(40px);
+  }
 }
 
 @media (max-width: 575px) {
@@ -1054,6 +1112,15 @@ Case Study Page
 
   .case-study-hero-slide {
     max-width: 380px;
+  }
+
+  /* ----- Featured Section ----- */
+  .featured-section-top-spacing {
+    padding-top: 80px;
+  }
+
+  .featured-slider-title {
+    font-size: 20px;
   }
 }
 

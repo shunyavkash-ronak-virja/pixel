@@ -543,12 +543,6 @@ document.addEventListener("DOMContentLoaded", function () {
     gap: 10,
     arrows: false,
     pagination: false,
-    breakpoints: {
-      600: {
-        fixedWidth: 60,
-        fixedHeight: 44,
-      },
-    },
   });
 
   main.sync(thumbnails);
