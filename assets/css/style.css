@@ -1281,10 +1281,10 @@ Case Study Page
 
 .our-clients-wrapper {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
-.our-clients-logo-block {
+.clients-card {
   height: 120px;
   display: flex;
   justify-content: center;
@@ -1294,7 +1294,7 @@ Case Study Page
   opacity: 40%;
 }
 
-.our-clients-logo-block:hover {
+.clients-card:hover {
   opacity: 100%;
   border-color: var(--white-12);
   filter: blur(4)
@@ -1312,20 +1312,20 @@ Case Study Page
     inset 0 1px 75.1px -0.5px var(--white-4);
 }
 
-.our-clients-logo-stack {
+.clients-stack {
   outline: var(--border) var(--white-8);
 }
 
-.our-clients-block-arrow-top::before,
+/* .our-clients-block-arrow-top::before,
 .our-clients-block-arrow-top::after,
 .our-clients-block-arrow-bottom::before,
 .our-clients-block-arrow-bottom::after {
   content: "";
   position: absolute;
-  /* background-color: var(--white); */
-}
+  background-color: var(--white);
+} */
 
-.our-clients-block-arrow-top::before {
+/* .our-clients-block-arrow-top::before {
   width: 1px;
   height: 5px;
   left: 0;
@@ -1351,9 +1351,55 @@ Case Study Page
   height: 5px;
   right: 0;
   bottom: -1px;
+} */
+
+.clients-stack::before,
+.clients-stack::after,
+.clients-card::before {
+  content: "";
+  position: absolute;
+  background-color: var(--white);
 }
 
-.our-clients-logo-img {
+.clients-stack::before {
+  top: 0;
+  left: -2px;
+  width: 5px;
+  height: 1px;
+}
+
+.clients-stack::after {
+  top: -2px;
+  left: 0;
+  width: 1px;
+  height: 5px;
+}
+
+.clients-stack:nth-child(4n + 1)::before,
+.clients-stack:nth-child(-n + 4)::before,
+.clients-stack:nth-child(4n + 1)::after,
+.clients-stack:nth-child(-n + 4)::after {
+  display: none;
+}
+
+.clients-card::before {
+  width: 4px;
+  height: 4px;
+  top: -2px;
+  left: -2px;
+}
+
+/* .clients-card:not(:nth-child(4n + 1)::before),
+.clients-card:not(:nth-child(-n + 4)::before) {
+  display: none;
+} */
+
+.clients-card:nth-child(-n + 4)::before {
+  /* display: none; */
+  background-color: green;
+}
+
+.clients-logo {
   max-width: 138px;
   max-height: 32px;
 }
