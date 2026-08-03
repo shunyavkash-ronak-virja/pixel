@@ -554,3 +554,18 @@ if (typeof Splide !== "undefined" && document.querySelector(".featured-slider.sp
     thumbnails.mount();
   });
 }
+
+if (typeof Splide !== "undefined" && document.querySelector(".casestudy-testimonial.splide")) {
+  document.addEventListener("DOMContentLoaded", function () {
+    var splide = new Splide(".casestudy-testimonial.splide", {
+      type: "fade",
+      autoplay: true,
+      rewind: true,
+      pagination: false,
+      interval: 5000,
+      speed: 800,
+      easing: "ease-in-out",
+    });
+    splide.mount();
+  });
+}

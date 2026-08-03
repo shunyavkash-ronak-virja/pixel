@@ -1,5 +1,6 @@
 :root {
   --black: #000000;
+  --black-16: #00000029;
   --black-80: #000000cc;
   --black-100: #04040e;
   --black-200: #05050e;
@@ -19,11 +20,13 @@
   --white-16: #ffffff29;
   --white-20: #ffffff33;
   --white-24: #ffffff3d;
+  --white-25: #ffffff40;
   --white-27: #ffffff45;
   --white-32: #ffffff52;
   --white-50: #ffffff80;
   --white-52: #ffffff85;
   --white-60: #ffffff99;
+  --white-63: #ffffffa3;
   --white-72: #ffffffb8;
   --white-80: #ffffffcc;
   --primary: #f0f0f0;
@@ -380,6 +383,11 @@ input:focus {
 }
 
 .section-caption span {
+  color: var(--white);
+}
+
+.section-caption-outline {
+  border-inline-color: var(--white-24);
   color: var(--white);
 }
 

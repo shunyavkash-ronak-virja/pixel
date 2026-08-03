@@ -931,12 +931,9 @@ Blog Listing Page
 }
 
 .blogs-highlights-caption {
-  border-inline-color: var(--white-24);
-  color: var(--white);
   padding: 6px 8px;
-  font-size: 14px;
-  font-weight: 400;
   line-height: var(--line-height-1_428);
+  font-weight: 400;
 }
 
 .blogs-highlights-date {
@@ -1584,4 +1581,53 @@ Case Study Details Page
   font-weight: 400;
   line-height: var(--line-height-1);
   letter-spacing: -0.1px;
+}
+
+/* ----- Case Study Testimonial Section ----- */
+.casestudy-testimonial-section-spacing {
+  padding-block: 80px;
+  box-shadow: inset 0 0 250px 0 var(--pelati-12);
+}
+
+.casestudy-testimonial-caption {
+  font-size: 12px;
+  line-height: var(--line-height-1_666);
+  padding: 4px 12px;
+  margin-bottom: 12px;
+}
+
+.casestudy-testimonial {
+  max-width: 812px;
+}
+
+.casestudy-testimonial-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.casestudy-testimonial-description {
+  margin-block: 24px 30px;
+  line-height: var(--line-height-1_562);
+}
+
+.casestudy-testimonial-author-avatar {
+  width: 56px;
+  aspect-ratio: 1;
+  margin-bottom: 30px;
+  justify-self: center;
+}
+
+.casestudy-testimonial-author-name {
+  line-height: var(--line-height-1);
+}
+
+.casestudy-testimonial-author-caption {
+  margin-top: 8px;
+  font-size: 12px;
+  line-height: var(--line-height-1);
+  font-weight: 400;
+  letter-spacing: -0.1px;
+  color: var(--white-63);
 }

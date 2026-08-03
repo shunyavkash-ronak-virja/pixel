@@ -382,6 +382,15 @@ Case Study Details Page
   .case-study-details-counter-wrapper {
     margin-top: 34px;
   }
+
+  /* ----- Case Study Testimonial Section ----- */
+  .casestudy-testimonial-section-spacing {
+    padding-block: 70px;
+  }
+
+  .casestudy-testimonial-author-avatar {
+    margin-bottom: 24px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1064,6 +1073,24 @@ Case Study Details Page
   .case-study-details-counter-wrapper {
     margin-top: 28px;
     flex-direction: column;
+  }
+
+  /* ----- Case Study Testimonial Section ----- */
+  .casestudy-testimonial-section-spacing {
+    padding-block: 60px;
+  }
+
+  .casestudy-testimonial {
+    max-width: 100%;
+  }
+
+  .casestudy-testimonial-description {
+    font-size: 14px;
+    line-height: var(--line-height-1_642);
+  }
+
+  .casestudy-testimonial-author-avatar {
+    margin-bottom: 16px;
   }
 }
 
