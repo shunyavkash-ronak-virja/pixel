@@ -1631,3 +1631,8 @@ Case Study Details Page
   letter-spacing: -0.1px;
   color: var(--white-63);
 }
+
+/* ----- Casestudy Detail Blog Section ----- */
+.casestudy-detail-blog-spacing {
+  padding-block: 80px 120px;
+}
