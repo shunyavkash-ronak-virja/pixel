@@ -1636,3 +1636,32 @@ Case Study Details Page
 .casestudy-detail-blog-spacing {
   padding-block: 80px 120px;
 }
+
+/* =====================================================
+About Us Page
+===================================================== */
+/* ----- About Us Section ----- */
+.about-us-section {
+  box-shadow: inset 0 0 250px 0 var(--pelati-12);
+}
+
+.about-us-section-spacing {
+  padding-block: 122px 116px;
+}
+
+.about-us-wrapper {
+  max-width: 582px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-us-wrapper .section-caption {
+  margin-bottom: 16px;
+}
+
+.about-us-description {
+  max-width: 514px;
+  line-height: var(--line-height-1_625);
+  margin-block: 20px 44px;
+}

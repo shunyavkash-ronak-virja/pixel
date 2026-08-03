@@ -396,6 +396,18 @@ Case Study Details Page
   .casestudy-detail-blog-spacing {
     padding-block: 70px 100px;
   }
+
+  /* =====================================================
+About Us Page
+===================================================== */
+  /* ----- About Us Section ----- */
+  .about-us-section-spacing {
+    padding-block: 98px 82px;
+  }
+
+  .about-us-description {
+    margin-bottom: 40px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1102,6 +1114,20 @@ Case Study Details Page
   .casestudy-detail-blog-spacing {
     padding-block: 60px 80px;
   }
+
+  /* =====================================================
+About Us Page
+===================================================== */
+  /* ----- About Us Section ----- */
+  .about-us-section-spacing {
+    padding-block: 74px 48px;
+  }
+
+  .about-us-description {
+    margin-bottom: 36px;
+    font-size: 14px;
+    line-height: var(--line-height-1_642);
+  }
 }
 
 @media (max-width: 575px) {
@@ -1303,6 +1329,18 @@ Case Study Details Page
   /* ----- Casestudy Detail Blog Section ----- */
   .casestudy-detail-blog-spacing {
     padding-bottom: 60px;
+  }
+
+  /* =====================================================
+About Us Page
+===================================================== */
+  /* ----- About Us Section ----- */
+  .about-us-section-spacing {
+    padding-block: 52px 14px;
+  }
+
+  .about-us-wrapper {
+    max-width: 100%;
   }
 }
 
