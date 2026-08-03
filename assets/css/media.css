@@ -366,6 +366,22 @@ Case Study Page
   .cta-banner-description {
     margin-top: 18px;
   }
+
+  /* =====================================================
+Case Study Details Page
+===================================================== */
+  /* ----- Case Study Details Section ----- */
+  .case-study-details-wrapper {
+    gap: 50px;
+  }
+
+  .case-study-details-counter-description {
+    font-size: 16px;
+  }
+
+  .case-study-details-counter-wrapper {
+    margin-top: 34px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1009,6 +1025,46 @@ Case Study Page
     line-height: var(--line-height-1_642);
     margin-top: 12px;
   }
+
+  /* =====================================================
+Case Study Details Page
+===================================================== */
+  /* ----- Case Study Details Section ----- */
+  .case-study-details-wrapper {
+    gap: 40px;
+  }
+
+  .case-study-details-content-size {
+    max-width: 100%;
+  }
+
+  .case-study-details-description {
+    font-size: 14px;
+    line-height: var(--line-height-1_642);
+  }
+
+  .case-study-details-counter-description {
+    font-size: 14px;
+  }
+
+  .case-study-details-media-wrapper {
+    flex-direction: column;
+  }
+
+  .case-study-details-group-img-first,
+  .case-study-details-group-img-second {
+    max-width: 100%;
+    aspect-ratio: 1 / 0.64;
+  }
+
+  .case-study-details-group-img-first img {
+    object-position: top;
+  }
+
+  .case-study-details-counter-wrapper {
+    margin-top: 28px;
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 575px) {
@@ -1191,6 +1247,20 @@ Case Study Page
   /* ----- CTA Banner Section ----- */
   .cta-banner-section-spacing {
     padding-bottom: 80px;
+  }
+
+  /* =====================================================
+Case Study Details Page
+===================================================== */
+  /* ----- Case Study Details Section ----- */
+  .case-study-details-img-content,
+  .case-study-details-img-content-big {
+    aspect-ratio: 1 / 0.64;
+  }
+
+  .case-study-details-group-img-first,
+  .case-study-details-group-img-second {
+    aspect-ratio: 1 / 0.908;
   }
 }
 

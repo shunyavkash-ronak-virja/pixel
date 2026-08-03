@@ -1532,11 +1532,15 @@ Case Study Details Page
   max-width: 790px;
 }
 
+.case-study-details-description {
+  line-height: var(--line-height-1_562);
+}
+
 .case-study-details-img-content {
   aspect-ratio: 1/ 0.41;
 }
 
-.case-study-details-description {
+.case-study-details-title-description {
   margin-top: 20px;
 }
 
@@ -1544,16 +1548,16 @@ Case Study Details Page
   display: flex;
 }
 
-.case-study-details-groupimg-first,
-.case-study-details-groupimg-second {
+.case-study-details-group-img-first,
+.case-study-details-group-img-second {
   aspect-ratio: 1 / 0.82513;
 }
 
-.case-study-details-groupimg-first {
+.case-study-details-group-img-first {
   max-width: 468px;
 }
 
-.case-study-details-groupimg-second {
+.case-study-details-group-img-second {
   max-width: 812px;
 }
 
@@ -1564,18 +1568,20 @@ Case Study Details Page
 .case-study-details-counter-wrapper {
   display: flex;
   justify-content: space-between;
-  gap: 18px;
+  gap: 36px 18px;
   margin-top: 40px;
 }
 
 .case-study-details-counter-num {
   font-family: var(--font-family-inter);
   letter-spacing: -0.1px;
+  line-height: var(--line-height-1);
 }
 
 .case-study-details-counter-description {
   margin-top: 8px;
   font-size: 18px;
+  font-weight: 400;
   line-height: var(--line-height-1);
   letter-spacing: -0.1px;
 }
