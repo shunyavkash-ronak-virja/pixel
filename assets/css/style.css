@@ -1665,3 +1665,8 @@ About Us Page
   line-height: var(--line-height-1_625);
   margin-block: 20px 44px;
 }
+
+/* ----- Our Clients Section ----- */
+.about-us-clients-section-spacing {
+  padding-top: 48px;
+}

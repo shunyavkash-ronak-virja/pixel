@@ -408,6 +408,11 @@ About Us Page
   .about-us-description {
     margin-bottom: 40px;
   }
+
+  /* ----- Our Clients Section ----- */
+  .about-us-clients-section-spacing {
+    padding-top: 38px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1127,6 +1132,11 @@ About Us Page
     margin-bottom: 36px;
     font-size: 14px;
     line-height: var(--line-height-1_642);
+  }
+
+  /* ----- Our Clients Section ----- */
+  .about-us-clients-section-spacing {
+    padding-top: 28px;
   }
 }
 
