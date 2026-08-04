@@ -1,6 +1,7 @@
 :root {
   --black: #000000;
   --black-16: #00000029;
+  --black-75: #000000bf;
   --black-80: #000000cc;
   --black-100: #04040e;
   --black-200: #05050e;
@@ -1051,4 +1052,27 @@ h6:not(:where(.h1, .h2, .h3, .h4, .h5)) {
   .media-breakout {
     margin-inline: -12px;
   }
+}
+
+/* ----- Discovery Call Modal ----- */
+.discovery-call-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 999;
+  display: flex;
+  padding: 20px;
+  background: var(--black-75);
+  overflow: auto;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.discovery-call-content {
+  max-width: 960px;
+  margin: auto;
+  background-color: var(--black-100);
+  display: flex;
+  align-items: start;
+  border: var(--border) var(--white-8);
 }
