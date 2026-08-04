@@ -413,6 +413,20 @@ About Us Page
   .about-us-clients-section-spacing {
     padding-top: 38px;
   }
+
+  /* ----- Our Mission Section ----- */
+  .our-mission-title-spacing {
+    padding-bottom: 42px;
+  }
+
+  .our-mission-img-content {
+    aspect-ratio: 1 / 0.51;
+  }
+
+  .our-mission-description {
+    padding-block: 20px;
+    padding-inline: 16px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1138,6 +1152,32 @@ About Us Page
   .about-us-clients-section-spacing {
     padding-top: 28px;
   }
+
+  /* ----- Our Mission Section ----- */
+  .our-mission-title-spacing {
+    padding-bottom: 24px;
+  }
+
+  .our-mission-title {
+    max-width: 100%;
+  }
+
+  .our-mission-content-spacing {
+    padding-inline: 16px;
+  }
+
+  .our-mission-content {
+    position: static;
+    padding: 0;
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .our-mission-description {
+    padding-inline: 8px;
+    font-size: 14px;
+    line-height: var(--line-height-1_642);
+  }
 }
 
 @media (max-width: 575px) {
@@ -1346,11 +1386,20 @@ About Us Page
 ===================================================== */
   /* ----- About Us Section ----- */
   .about-us-section-spacing {
-    padding-block: 52px 14px;
+    padding-block: 52px;
   }
 
   .about-us-wrapper {
     max-width: 100%;
+  }
+
+  /* ----- Our Mission Section ----- */
+  .our-mission-title-spacing {
+    padding-bottom: 12px;
+  }
+
+  .our-mission-content-spacing {
+    padding-inline: 12px;
   }
 }
 
@@ -1383,5 +1432,13 @@ Case Study Page
   /* ----- CTA Banner Section ----- */
   .cta-banner-content {
     max-width: 284px;
+  }
+
+  /* =====================================================
+About Us Page
+===================================================== */
+  /* ----- Our Mission Section ----- */
+  .our-mission-img-content {
+    aspect-ratio: 1 / 0.437;
   }
 }
