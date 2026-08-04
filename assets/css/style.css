@@ -1752,7 +1752,7 @@ About Us Page
 }
 
 .our-team-card {
-  max-width: 332px;
+  max-width: 334px;
   border: var(--border) var(--black-400);
 }
 
@@ -1780,4 +1780,28 @@ About Us Page
 
 .team-member-caption {
   line-height: var(--line-height-1_562);
+}
+
+/* ----- Our Core Values Section ----- */
+.our-core-values-title-spacing {
+  padding-bottom: 60px;
+}
+
+.content-highlight-wrapper {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+
+.content-highlight-spacing {
+  /* 12 10 */
+  padding-block: 120px 60px;
+}
+
+.content-highlight-title {
+  max-width: 556px;
+}
+
+.content-highlight-description {
+  max-width: 434px;
 }
