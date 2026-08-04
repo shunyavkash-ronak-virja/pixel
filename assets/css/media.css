@@ -1219,6 +1219,10 @@ About Us Page
   }
 
   /* ----- Our Team Section ----- */
+  .our-team-section .section-border {
+    border: none;
+  }
+
   .our-team-head-spacing {
     padding-bottom: 32px;
   }
