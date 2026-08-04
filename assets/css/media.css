@@ -427,6 +427,45 @@ About Us Page
     padding-block: 20px;
     padding-inline: 16px;
   }
+
+  /* ----- Our Team Section ----- */
+  .our-team-head-spacing {
+    padding-bottom: 46px;
+  }
+
+  .our-team-head-wrapper {
+    gap: 16px;
+  }
+
+  .our-team-pixel-img {
+    max-width: 52px;
+  }
+
+  .our-team-card-spacing {
+    padding-inline: 22px;
+  }
+
+  .our-team-card {
+    max-width: 272px;
+  }
+
+  .our-team-profile {
+    padding-inline: 24px;
+    padding-top: 24px;
+  }
+
+  .team-member-details {
+    padding: 10px;
+  }
+
+  .team-member-name {
+    font-size: 16px;
+  }
+
+  .team-member-caption {
+    font-size: 14px;
+    line-height: var(--line-height-1_041);
+  }
 }
 
 @media (max-width: 767px) {
@@ -1178,6 +1217,34 @@ About Us Page
     font-size: 14px;
     line-height: var(--line-height-1_642);
   }
+
+  /* ----- Our Team Section ----- */
+  .our-team-head-spacing {
+    padding-bottom: 32px;
+  }
+
+  .our-team-head-wrapper {
+    gap: 12px;
+  }
+
+  .our-team-pixel-img {
+    display: none;
+  }
+
+  .our-team-card-spacing {
+    padding-inline: 14px;
+  }
+
+  .our-team-profile {
+    padding-inline: 20px;
+    padding-top: 20px;
+  }
+
+  .team-member-name {
+    font-size: 14px;
+    line-height: var(--line-height-1);
+    letter-spacing: -0.07px;
+  }
 }
 
 @media (max-width: 575px) {
@@ -1400,6 +1467,19 @@ About Us Page
 
   .our-mission-content-spacing {
     padding-inline: 12px;
+  }
+
+  /* ----- Our Team Section ----- */
+  .our-team-head-spacing {
+    padding-bottom: 20px;
+  }
+
+  .our-team-card-spacing {
+    padding-inline: 8px;
+  }
+
+  .our-team-card {
+    max-width: 212px;
   }
 }
 

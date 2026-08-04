@@ -1743,11 +1743,11 @@ About Us Page
   padding-inline: 30px;
 }
 
-.our-team-card-spacing:first-child {
+.our-team-wrapper > .our-team-card-spacing:nth-child(2) {
   padding-left: 0;
 }
 
-.our-team-card-spacing:last-child {
+.our-team-wrapper > .our-team-card-spacing:nth-child(4) {
   padding-right: 0;
 }
 
@@ -1759,6 +1759,7 @@ About Us Page
 .our-team-profile {
   padding-inline: 30px;
   padding-top: 30px;
+  aspect-ratio: 1 /0.91519;
 }
 
 .team-member-details {
