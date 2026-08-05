@@ -1843,3 +1843,22 @@ About Us Page
   margin-top: 20px;
   line-height: var(--line-height-1_562);
 }
+
+/* ----- Remote Team Section ----- */
+.remote-team-section-spacing {
+  padding-top: 160px;
+}
+
+.remote-team-head-wrapper {
+  max-width: 716px;
+  margin-bottom: 60px;
+}
+
+.remote-team-description {
+  line-height: var(--line-height-1_562);
+}
+
+.earth-img-content {
+  max-width: 938px;
+  aspect-ratio: 1 / 0.5;
+}
