@@ -1791,11 +1791,16 @@ About Us Page
   display: flex;
   align-items: start;
   justify-content: space-between;
+  gap: 32px 24px;
 }
 
 .content-highlight-spacing {
-  /* 12 10 */
   padding-block: 120px 60px;
+}
+
+.content-highlight-title,
+.content-highlight-description {
+  width: 50%;
 }
 
 .content-highlight-title {
@@ -1804,4 +1809,37 @@ About Us Page
 
 .content-highlight-description {
   max-width: 434px;
+}
+
+.value-card-wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.value-card {
+  padding-block: 30px;
+  padding-inline: 24px 28px;
+}
+
+.value-card:not(:last-child) {
+  border-right: var(--border) var(--black-400);
+}
+
+.value-card-wrapper > .value-card:first-child {
+  padding-left: 30px;
+}
+
+.value-card-wrapper > .value-card:last-child {
+  padding-right: 30px;
+}
+
+.value-card-title {
+  font-size: 24px;
+  line-height: var(--line-height-1_041);
+  color: var(--pelati-100);
+}
+
+.value-card-description {
+  margin-top: 20px;
+  line-height: var(--line-height-1_562);
 }
