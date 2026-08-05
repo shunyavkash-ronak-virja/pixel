@@ -493,6 +493,19 @@ About Us Page
   .remote-team-head-wrapper {
     margin-bottom: 50px;
   }
+
+  /* ----- Our Clients Section ----- */
+  .our-achievements-title-spacing {
+    padding-block: 150px 50px;
+  }
+
+  .our-achievements-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .our-achievements-btn-spacing {
+    padding-block: 46px 144px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1325,6 +1338,32 @@ About Us Page
   .remote-team-description {
     line-height: var(--line-height-1_642);
   }
+
+  /* ----- Our Clients Section ----- */
+  .our-achievements-title-spacing {
+    padding-bottom: 40px;
+  }
+
+  .our-achievements-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .our-achievements-icon-wrapper {
+    width: 44px;
+  }
+
+  .our-achievements-card-title {
+    font-size: 20px;
+  }
+
+  .our-achievements-description {
+    font-size: 14px;
+    line-height: var(--line-height-1_642);
+  }
+
+  .our-achievements-btn-spacing {
+    padding-bottom: 128px;
+  }
 }
 
 @media (max-width: 575px) {
@@ -1590,6 +1629,15 @@ About Us Page
 
   .earth-img-content {
     aspect-ratio: 1 / 0.665;
+  }
+
+  /* ----- Our Clients Section ----- */
+  .our-achievements-title-spacing {
+    padding-bottom: 30px;
+  }
+
+  .our-achievements-btn-spacing {
+    padding-bottom: 110px;
   }
 }
 

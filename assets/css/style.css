@@ -1862,3 +1862,98 @@ About Us Page
   max-width: 938px;
   aspect-ratio: 1 / 0.5;
 }
+
+/* ----- Our Clients Section ----- */
+.our-achievements-title {
+  max-width: 878px;
+}
+
+.our-achievements-title-spacing {
+  padding-block: 160px 60px;
+}
+
+.our-achievements-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.our-achievements-card {
+  padding: 32px 30px;
+  border: var(--border) var(--black-400);
+  transition: all 0.3s ease-in-out;
+}
+
+.our-achievements-card:hover {
+  border-color: var(--pelati-24);
+  filter: blur(4)
+    drop-shadow(
+      0 0.5px 0.5px 0 var(--white-80),
+      0 1px 1px -0.5px var(--white-80),
+      0 2px 2px -1px var(--white-80),
+      0 3px 3px -1.5px var(--white-80),
+      0 5px 5px -2.5px var(--white-80),
+      0 8px 8px -3px var(--white-80)
+    );
+  box-shadow:
+    inset 0 0 250px -135px var(--pelati-8),
+    inset 0 0 250px -111px var(--pelati-8),
+    inset 0 0 211.7px -0.5px var(--pelati-8);
+}
+
+.our-achievements-pixel-overlay {
+  max-width: 274px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  transition: all 0.3s ease-in-out;
+}
+
+.our-achievements-title-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.our-achievements-icon-wrapper {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 48px;
+}
+
+.achievements-icon {
+  position: absolute;
+  transition: all 0.3s ease-in-out;
+}
+
+.our-achievements-pixel-overlay,
+.achievements-icon-primary {
+  opacity: 0;
+}
+
+.our-achievements-card:hover {
+  .achievements-icon-white {
+    opacity: 0;
+  }
+
+  .our-achievements-pixel-overlay,
+  .achievements-icon-primary {
+    opacity: 1;
+  }
+}
+
+.our-achievements-card-title {
+  font-size: 24px;
+  line-height: var(--line-height-1_041);
+}
+
+.our-achievements-description {
+  margin-top: 20px;
+  line-height: var(--line-height-1_562);
+}
+
+.our-achievements-btn-spacing {
+  padding-block: 60px 160px;
+}
