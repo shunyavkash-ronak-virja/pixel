@@ -1076,3 +1076,15 @@ h6:not(:where(.h1, .h2, .h3, .h4, .h5)) {
   align-items: start;
   border: var(--border) var(--white-8);
 }
+
+.discovery-call-caption {
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 1.63;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  background-color: var(--pelati-8);
+  border: var(--border) var(--pelati-20);
+  color: var(--pelati);
+}
