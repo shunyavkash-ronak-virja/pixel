@@ -506,6 +506,27 @@ About Us Page
   .our-achievements-btn-spacing {
     padding-block: 46px 144px;
   }
+
+  /* =====================================================
+Process Page
+===================================================== */
+  /* ----- Process Hero Section ----- */
+  .process-hero-section-spacing {
+    padding-block: 50px 100px;
+  }
+
+  .process-hero-caption {
+    margin-top: 14px;
+  }
+
+  .process-hero-description {
+    margin-bottom: 40px;
+  }
+
+  /* ----- Process Hero Section ----- */
+  .counter-block {
+    padding: 24px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1364,6 +1385,33 @@ About Us Page
   .our-achievements-btn-spacing {
     padding-bottom: 128px;
   }
+
+  /* =====================================================
+Process Page
+===================================================== */
+  /* ----- Process Hero Section ----- */
+  .process-hero-section-spacing {
+    padding-block: 40px 80px;
+  }
+
+  .process-hero-caption {
+    margin-top: 8px;
+  }
+
+  .process-hero-description {
+    margin-bottom: 36px;
+  }
+
+  .process-launch-caption-wrapper,
+  .process-hero-outline {
+    width: auto;
+    margin-inline: -16px;
+  }
+
+  /* ----- Process Hero Section ----- */
+  .counter-block {
+    padding: 24px;
+  }
 }
 
 @media (max-width: 575px) {
@@ -1638,6 +1686,19 @@ About Us Page
 
   .our-achievements-btn-spacing {
     padding-bottom: 110px;
+  }
+
+  /* =====================================================
+Process Page
+===================================================== */
+  /* ----- Process Hero Section ----- */
+  .process-hero-section-spacing {
+    padding-block: 30px 58px;
+  }
+
+  .process-launch-caption-wrapper,
+  .process-hero-outline {
+    margin-inline: -12px;
   }
 }
 

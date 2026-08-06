@@ -1957,3 +1957,102 @@ About Us Page
 .our-achievements-btn-spacing {
   padding-block: 60px 160px;
 }
+
+/* =====================================================
+Process Page
+===================================================== */
+/* ----- Process Hero Section ----- */
+.process-hero-section-spacing {
+  padding-block: 60px 120px;
+}
+
+.gradient-shade-img {
+  width: 100%;
+  max-width: 695px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.process-launch-caption-wrapper,
+.process-hero-outline {
+  max-width: 746px;
+}
+
+.process-launch-caption {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 5px 6px;
+  border: var(--border) var(--white-16);
+  background-color: var(--white-4);
+}
+
+.process-launch-block-icon {
+  width: 12px;
+}
+
+.process-launch-content {
+  font-size: 12px;
+  line-height: var(--line-height-1);
+  font-weight: 400;
+  letter-spacing: 0.02em;
+}
+
+.process-hero-outline {
+  border: var(--border);
+  border-image: linear-gradient(to bottom, var(--black-500), var(--transparent)) 1;
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+}
+
+.process-hero-wrapper {
+  max-width: 1036px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.process-hero-caption {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: var(--line-height-1);
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  padding: 4px 8px;
+  margin-block: 20px 12px;
+  border: var(--border) var(--white-12);
+  backdrop-filter: blur(4px);
+}
+
+.process-hero-description {
+  margin-block: 20px 44px;
+}
+
+/* ----- Process Hero Section ----- */
+.counter-wrapper {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.counter-block {
+  padding: 28px 30px;
+  border-bottom: var(--border) var(--white-8);
+  flex-grow: 1;
+}
+
+.counter-block:not(:first-child) {
+  border-left: var(--border) var(--white-8);
+}
+
+.counter-numb {
+  font-size: 32px;
+  line-height: var(--line-height-1);
+}
+
+.counter-description {
+  margin-top: 12px;
+}
