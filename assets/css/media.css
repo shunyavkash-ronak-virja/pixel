@@ -1410,7 +1410,7 @@ Process Page
 
   /* ----- Process Hero Section ----- */
   .counter-block {
-    padding: 24px;
+    padding: 20px;
   }
 }
 
@@ -1699,6 +1699,11 @@ Process Page
   .process-launch-caption-wrapper,
   .process-hero-outline {
     margin-inline: -12px;
+  }
+
+  /* ----- Process Hero Section ----- */
+  .counter-block {
+    padding: 16px;
   }
 }
 
