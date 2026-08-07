@@ -872,6 +872,7 @@ h6:not(:where(.h1, .h2, .h3, .h4, .h5)) {
 .icon-btn-secondary,
 .icon-secondary-gradient {
   border: var(--border) var(--white-24);
+  background-color: var(--white-2);
   filter: blur(4)
     drop-shadow(
       0 0.5px 0.5px 0 var(--obsidian),
@@ -887,7 +888,9 @@ h6:not(:where(.h1, .h2, .h3, .h4, .h5)) {
     inset 0 1px 2px -0.5px var(--white-2);
 }
 
-.icon-btn-secondary:hover {
+.icon-btn-secondary-group:hover .icon-btn-secondary,
+.icon-btn-secondary:has(+ .icon-btn-secondary-group),
+.icon-btn-secondary:hover:not(.icon-btn-secondary-group .icon-btn-secondary) {
   border-color: var(--white-52);
   filter: blur(4)
     drop-shadow(
