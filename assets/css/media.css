@@ -527,6 +527,19 @@ Process Page
   .counter-block {
     padding: 24px;
   }
+
+  /* ----- Process Timeline Section ----- */
+  .process-timeline-section-spacing {
+    padding-block: 124px 138px;
+  }
+
+  .process-timeline-block {
+    gap: 18px;
+  }
+
+  .process-timeline-block:not(:last-child) .process-timeline-content {
+    margin-bottom: 26px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1412,6 +1425,50 @@ Process Page
   .counter-block {
     padding: 20px;
   }
+
+  /* ----- Process Timeline Section ----- */
+  .process-timeline-section-spacing {
+    padding-block: 88px 116px;
+  }
+
+  .process-timeline-wrapper {
+    flex-direction: column;
+  }
+
+  .process-timeline-title,
+  .process-timeline-stack {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .process-timeline-title,
+  .process-timeline-mark {
+    position: static;
+  }
+
+  .process-timeline-block {
+    gap: 12px;
+  }
+  .process-timeline-block:not(:last-child) {
+    margin-bottom: 26px;
+  }
+
+  .process-timeline-marks-block {
+    margin-top: 0;
+  }
+
+  .process-timeline-block:not(:last-child) .process-timeline-marks-block::before {
+    height: calc(100% - 40px);
+    margin-top: 0;
+  }
+
+  .process-timeline-content {
+    max-width: 100%;
+  }
+
+  .process-timeline-block:not(:last-child) .process-timeline-content {
+    margin-bottom: 0;
+  }
 }
 
 @media (max-width: 575px) {
@@ -1704,6 +1761,15 @@ Process Page
   /* ----- Process Hero Section ----- */
   .counter-block {
     padding: 16px;
+  }
+
+  /* ----- Process Timeline Section ----- */
+  .process-timeline-section-spacing {
+    padding-block: 50px 90px;
+  }
+
+  .process-timeline-block:not(:last-child) {
+    margin-bottom: 16px;
   }
 }
 
