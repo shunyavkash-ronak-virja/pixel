@@ -37,7 +37,7 @@
     left: 20px;
   }
 
-  .clients-site-showcase {
+  .home-clients-site-showcase {
     margin-top: 54px;
   }
 
@@ -572,6 +572,18 @@ FAQ Page
   .faqs-wrapper-large-spacing {
     padding-block: 34px 60px;
   }
+
+  /* =====================================================
+Web Design Hero Page
+===================================================== */
+  /* ----- Web Design Hero Section ----- */
+  .web-design-hero-head-spacing {
+    padding-bottom: 50px;
+  }
+
+  .web-design-hero-description {
+    margin-bottom: 36px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -620,7 +632,7 @@ FAQ Page
     padding-left: 16px !important;
   }
 
-  .clients-site-showcase {
+  .home-clients-site-showcase {
     display: none;
   }
 
@@ -1593,6 +1605,21 @@ FAQ Page
   .faqs-wrapper-large-spacing {
     padding-top: 0;
   }
+
+  /* =====================================================
+Web Design Hero Page
+===================================================== */
+  /* ----- Web Design Hero Section ----- */
+  .web-design-hero-head-spacing {
+    padding-bottom: 62px;
+  }
+
+  .web-design-hero-head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 }
 
 @media (max-width: 575px) {
@@ -1910,6 +1937,14 @@ Contact Us Page
 
   .contact-us-media-wraper {
     gap: 12px;
+  }
+
+  /* =====================================================
+Web Design Hero Page
+===================================================== */
+  /* ----- Web Design Hero Section ----- */
+  .clients-site-slide {
+    max-width: 330px;
   }
 }
 

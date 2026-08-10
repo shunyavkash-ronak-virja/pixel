@@ -101,7 +101,7 @@
   max-width: 138px;
 }
 
-.clients-site-showcase {
+.home-clients-site-showcase {
   margin-top: 68px;
 }
 
@@ -2397,4 +2397,17 @@ FAQ Page
 
 .faqs-wrapper-large-spacing {
   padding-block: 50px 68px;
+}
+
+/* =====================================================
+Web Design Hero Page
+===================================================== */
+/* ----- Web Design Hero Section ----- */
+.web-design-hero-head-spacing {
+  padding-bottom: 40px;
+}
+
+.web-design-hero-description {
+  margin-block: 20px 40px;
+  max-width: 620px;
 }

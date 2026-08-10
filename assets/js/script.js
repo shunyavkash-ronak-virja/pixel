@@ -82,6 +82,12 @@ if (typeof Splide !== "undefined" && document.querySelector(".clients-site-showc
         991: {
           gap: "24px",
         },
+        767: {
+          gap: "20px",
+        },
+        575: {
+          gap: "12px",
+        },
       },
     });
     splide.mount();
