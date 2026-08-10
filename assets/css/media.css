@@ -540,6 +540,30 @@ Process Page
   .process-timeline-block:not(:last-child) .process-timeline-content {
     margin-bottom: 26px;
   }
+
+  /* =====================================================
+Contact Us Page
+===================================================== */
+  /* ----- Contact Us Section ----- */
+  .contact-us-wrapper {
+    --contact-us-top-spacing: 100px;
+  }
+
+  .contact-us-section-spacing {
+    padding-bottom: 120px;
+  }
+
+  .contact-us-input-field-wrapper {
+    gap: 16px;
+  }
+
+  .contact-us-input-wrapper {
+    flex-direction: column;
+  }
+
+  .contact-us-media-wraper {
+    padding-block: 24px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1469,6 +1493,83 @@ Process Page
   .process-timeline-block:not(:last-child) .process-timeline-content {
     margin-bottom: 0;
   }
+
+  /* =====================================================
+Contact Us Page
+===================================================== */
+  /* ----- Contact Us Section ----- */
+  .contact-us-wrapper {
+    --contact-us-top-spacing: 80px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .contact-us-section-spacing {
+    padding-bottom: 80px;
+  }
+
+  .contact-us-content {
+    gap: 0;
+    border-right: none;
+  }
+
+  .contact-us-form-tab-outline.section-mark-top::after,
+  .contact-us-form-tab-outline .section-mark-bottom::after,
+  .contact-us-content-border::before {
+    display: none;
+  }
+
+  .contact-us-content-wrapper {
+    max-width: 100%;
+  }
+
+  .contact-us-content-border {
+    border-top: none;
+  }
+
+  .contact-us-content-head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .contact-us-caption {
+    margin-bottom: 12px;
+  }
+
+  .contact-us-description {
+    margin-block: 16px 24px;
+    font-size: 14px;
+    line-height: var(--line-height-1_642);
+  }
+
+  .contact-us-item {
+    font-size: 14px;
+  }
+
+  .contact-us-content-block {
+    padding-block: 24px;
+    border-top: var(--border) var(--black-400);
+  }
+
+  .contact-us-form {
+    padding-top: 0;
+  }
+
+  .contact-us-form-tab-outline {
+    border-block: none;
+    margin-block: 32px 40px;
+  }
+
+  .contact-us-form-tab-wrapper {
+    border: var(--border) var(--black-400);
+    margin-inline: auto;
+  }
+
+  .contact-us-form-tab {
+    font-size: 14px;
+    line-height: var(--line-height-1_428);
+  }
 }
 
 @media (max-width: 575px) {
@@ -1770,6 +1871,22 @@ Process Page
 
   .process-timeline-block:not(:last-child) {
     margin-bottom: 16px;
+  }
+
+  /* =====================================================
+Contact Us Page
+===================================================== */
+  /* ----- Contact Us Section ----- */
+  .contact-us-wrapper {
+    --contact-us-top-spacing: 60px;
+  }
+
+  .contact-us-section-spacing {
+    padding-bottom: 40px;
+  }
+
+  .contact-us-media-wraper {
+    gap: 12px;
   }
 }
 

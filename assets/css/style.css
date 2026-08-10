@@ -2207,10 +2207,18 @@ Contact Us Page
 .contact-us-content {
   padding-top: var(--contact-us-top-spacing);
   border-right: var(--border) var(--black-400);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 32px;
 }
 
 .contact-us-content-border {
   border-top: var(--border) var(--white-8);
+}
+
+.contact-us-content-border.section-mark-top::after {
+  display: none;
 }
 
 .contact-us-content-wrapper {
@@ -2246,9 +2254,9 @@ Contact Us Page
   display: flex;
   align-items: center;
   gap: 20px;
+  flex-wrap: wrap;
   border-block: var(--border) var(--white-8);
   padding-block: 32px;
-  margin-top: 32px;
 }
 
 .contact-us-media-list {
@@ -2266,11 +2274,24 @@ Contact Us Page
   padding-top: var(--contact-us-top-spacing);
 }
 
+.contact-us-form-tab-outline {
+  border-block: var(--border) var(--white-8);
+  margin-bottom: 24px;
+}
+
+.contact-us-form-tab-outline.section-mark-top::before,
+.contact-us-form-tab-outline .section-mark-bottom::before {
+  display: none;
+}
+
 .contact-us-form-tab-wrapper {
   padding: 8px;
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 8px;
+  flex-wrap: wrap;
+  border-right: var(--border) var(--white-8);
 }
 
 .contact-us-form-tab {
@@ -2278,6 +2299,8 @@ Contact Us Page
   background-color: var(--white-1);
   padding: 8px 12px;
   color: var(--white-32);
+  font-weight: 400;
+  line-height: var(--line-height-1_25);
   filter: blur(4)
     drop-shadow(
       0 0.5px 0.5px 0 var(--obsidian),
@@ -2303,4 +2326,50 @@ Contact Us Page
     inset 0 8px 24px -4px var(--pelati-16),
     inset 0 0.5px 0.5px 0px var(--pelati-16),
     inset 0 1px 2px -0.5px var(--pelati-12);
+}
+
+.contact-us-form-spacing {
+  padding-inline: 16px;
+}
+
+.contact-us-input-field-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  row-gap: 24px;
+}
+
+.contact-us-input-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: start;
+  gap: 16px 12px;
+}
+
+.contact-us-input-stack {
+  width: 100%;
+}
+
+.contact-us-input-label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.contact-us-input {
+  border-color: var(--black-400);
+  background-color: var(--black-200);
+}
+
+.contact-us-textarea {
+  resize: none;
+  display: block;
+  width: 100%;
+  min-height: 188px;
+  font-family: inherit;
+}
+
+.contact-us-fom-btn {
+  width: 100%;
+  max-width: none;
+  margin-top: 20px;
 }

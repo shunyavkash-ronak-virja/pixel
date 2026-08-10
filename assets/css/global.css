@@ -288,7 +288,8 @@ input {
   background-color: var(--transparent);
 }
 
-input:focus {
+input:focus,
+textarea:focus {
   outline: none;
 }
 
@@ -965,10 +966,6 @@ h6:not(:where(.h1, .h2, .h3, .h4, .h5)) {
 
 @media (max-width: 575px) {
   .icon-btn {
-    width: 36px;
-  }
-
-  .icon-btn {
     width: 32px;
   }
 
@@ -982,7 +979,7 @@ h6:not(:where(.h1, .h2, .h3, .h4, .h5)) {
 }
 
 /* ----- Inputs Css ----- */
-.input-stack {
+.input-block {
   width: 100%;
   position: relative;
 }
@@ -991,6 +988,11 @@ h6:not(:where(.h1, .h2, .h3, .h4, .h5)) {
   border: var(--border) var(--white-24);
   line-height: var(--line-height-1_5);
   color: var(--white);
+  background-color: var(--white-2);
+  padding: 8px 12px;
+}
+
+.input-field-gradient {
   filter: blur(4)
     drop-shadow(
       0 0.5px 0.5px 0 var(--obsidian),
@@ -1004,18 +1006,17 @@ h6:not(:where(.h1, .h2, .h3, .h4, .h5)) {
     inset 0 8px 24px -4px var(--white-4),
     inset 0 0.5px 0.5px 0px var(--white-2),
     inset 0 1px 2px -0.5px var(--white-2);
-  background-color: var(--white-2);
-  padding: 8px 12px;
 }
 
 .input-overlay {
   width: 100%;
   max-width: 36px;
-  height: 100%;
+  height: calc(100% - 2px);
   border-left: var(--border) var(--white);
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 50%;
+  left: 1px;
+  transform: translateY(-50%);
   z-index: 4;
   background: linear-gradient(90deg, rgba(255, 255, 255, 0.12) 0%, rgba(255, 255, 255, 0) 100%);
   opacity: 0;
