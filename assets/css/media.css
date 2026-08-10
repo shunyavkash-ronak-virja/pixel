@@ -183,15 +183,15 @@
     padding-block: 72px 52px;
   }
 
-  .faq-head-wrapper {
-    max-width: 100%;
+  .faqs-caption {
+    margin-bottom: 18px;
   }
 
-  .faqs-contact-btn {
-    margin-top: 36px;
+  .faqs-description {
+    margin-block: 16px 36px;
   }
 
-  .faqs-wrapper {
+  .faqs-wrapper-small-spacing {
     padding-block: 18px;
   }
 
@@ -564,6 +564,14 @@ Contact Us Page
   .contact-us-media-wraper {
     padding-block: 24px;
   }
+
+  /* =====================================================
+FAQ Page
+===================================================== */
+  /* ----- FAQ Section ----- */
+  .faqs-wrapper-large-spacing {
+    padding-block: 34px 60px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -861,6 +869,10 @@ Contact Us Page
     grid-template-columns: repeat(1, 1fr);
   }
 
+  .faq-head-wrapper {
+    max-width: 100%;
+  }
+
   .faq-block-spacing {
     padding-block: 80px 40px;
   }
@@ -873,6 +885,9 @@ Contact Us Page
   .faqs-wrapper {
     border-left: none;
     border-top: var(--border) var(--black-300);
+  }
+
+  .faqs-wrapper-small-spacing {
     padding-block: 0;
   }
 
@@ -1569,6 +1584,14 @@ Contact Us Page
   .contact-us-form-tab {
     font-size: 14px;
     line-height: var(--line-height-1_428);
+  }
+
+  /* =====================================================
+FAQ Page
+===================================================== */
+  /* ----- FAQ Section ----- */
+  .faqs-wrapper-large-spacing {
+    padding-top: 0;
   }
 }
 

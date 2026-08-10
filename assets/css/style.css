@@ -673,7 +673,6 @@
 }
 
 /* ----- FAQ Section ----- */
-
 .faq-wrapper {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -684,15 +683,20 @@
 }
 
 .faq-head-wrapper {
+  display: flex;
+  flex-direction: column;
   max-width: 448px;
 }
 
-.faqs-contact-btn {
-  margin-top: 40px;
+.faqs-description {
+  margin-block: 18px 40px;
 }
 
 .faqs-wrapper {
   border-left: var(--border) var(--black-300);
+}
+
+.faqs-wrapper-small-spacing {
   padding-block: 30px;
 }
 
@@ -2372,4 +2376,25 @@ Contact Us Page
   width: 100%;
   max-width: none;
   margin-top: 20px;
+}
+
+/* =====================================================
+FAQ Page
+===================================================== */
+/* ----- FAQ Section ----- */
+.faq-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.faq-head-spacing {
+  padding-block: 85px 40px;
+}
+
+.faqs-caption {
+  margin-bottom: 24px;
+}
+
+.faqs-wrapper-large-spacing {
+  padding-block: 50px 68px;
 }
