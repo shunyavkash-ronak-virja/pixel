@@ -24,9 +24,11 @@
   --white-24: #ffffff3d;
   --white-25: #ffffff40;
   --white-27: #ffffff45;
+  --white-30: #ffffff4d;
   --white-32: #ffffff52;
   --white-50: #ffffff80;
   --white-52: #ffffff85;
+  --white-55: #ffffff8c;
   --white-60: #ffffff99;
   --white-63: #ffffffa3;
   --white-72: #ffffffb8;
@@ -1062,6 +1064,8 @@ h6:not(:where(.h1, .h2, .h3, .h4, .h5)) {
 
 /* ----- Discovery Call Modal ----- */
 .discovery-call-modal {
+  --modal-inline-spacing: 30px;
+  --modal-block-spacing: 48px;
   position: fixed;
   inset: 0;
   z-index: 999;
@@ -1069,8 +1073,8 @@ h6:not(:where(.h1, .h2, .h3, .h4, .h5)) {
   padding: 20px;
   background: var(--black-75);
   overflow: auto;
-  opacity: 0;
-  visibility: hidden;
+  /* opacity: 0;
+  visibility: hidden; */
   transition: all 0.3s ease-in-out;
 }
 
@@ -1083,6 +1087,11 @@ h6:not(:where(.h1, .h2, .h3, .h4, .h5)) {
   border: var(--border) var(--white-8);
 }
 
+.discovery-call-content-block {
+  padding: var(--modal-block-spacing) var(--modal-inline-spacing);
+  max-width: 400px;
+}
+
 .discovery-call-caption {
   font-size: 10px;
   font-weight: 400;
@@ -1093,4 +1102,63 @@ h6:not(:where(.h1, .h2, .h3, .h4, .h5)) {
   background-color: var(--pelati-8);
   border: var(--border) var(--pelati-20);
   color: var(--pelati);
+  margin-bottom: 24px;
+}
+
+.discovery-call-title {
+  font-size: 30px;
+  line-height: var(--line-height-1_1);
+  letter-spacing: -2px;
+}
+
+.discovery-call-description {
+  margin-block: 16px 32px;
+  color: var(--white-55);
+}
+
+.discovery-call-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.discovery-call-list {
+  color: var(--white-55);
+}
+
+.discovery-call-item::marker {
+  width: 4px;
+  aspect-ratio: 1;
+  background: var(--pelati);
+}
+
+.discovery-call-form {
+  padding: var(--modal-block-spacing) var(--modal-inline-spacing);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.discovery-call-input-wrapper {
+  display: flex;
+  gap: 16px;
+}
+
+.discovery-call-form-label {
+  display: block;
+  color: var(--white-30);
+  font-size: 10px;
+  line-height: 1.63;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 6px;
+}
+
+.discovery-call-form-input {
+  border-color: var(--white-8);
+  background-color: var(--black-200);
+}
+
+.discovery-call-form-input::placeholder {
+  color: var(--white-24);
 }
