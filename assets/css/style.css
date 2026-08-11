@@ -2581,3 +2581,22 @@ SEO Page
 .seo-hero-description {
   margin-block: 20px 40px;
 }
+
+/* ----- Pixel Promises Section ----- */
+.pixel-promises-spacing {
+  padding-block: 120px 60px;
+  border-top: var(--border) var(--white-8);
+}
+
+.pixel-promises-head {
+  max-width: 706px;
+}
+
+.pixel-promises-description {
+  max-width: 592px;
+}
+
+.pixel-promises-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
