@@ -9,6 +9,9 @@
     <!----- Favicon ----->
     <link rel="icon" href="assets/images/icons/favicon.png" type="image/x-icon">
 
+    <!----- Nice select css ----->
+    <link rel="stylesheet" href="assets/css/nice-select.css">
+
     <!----- Fancybox css ----->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
 
@@ -1302,17 +1305,45 @@
                             </div>
                         </div>
                         <div class="input-stack">
-                            <label class="discovery-call-form-label" for="name">Name</label>
+                            <label class="discovery-call-form-label" for="name">Company</label>
                             <div class="input-block">
-                                <input class="input-field discovery-call-form-input" type="text" id="name" placeholder="Your name" required>
+                                <input class="input-field discovery-call-form-input" type="text" id="name" placeholder="Your company" required>
                                 <span class="input-overlay"></span>
                             </div>
+                        </div>
+                        <div class="input-stack">
+                            <label class="discovery-call-form-label" for="email">Email</label>
+                            <div class="input-block">
+                                <input class="input-field discovery-call-form-input" type="email" id="email" placeholder="your@email.com" required>
+                                <span class="input-overlay"></span>
+                            </div>
+                        </div>
+                        <div class="input-stack">
+                            <label class="discovery-call-form-label" for="phone">Phone <span class="discovery-call-form-label-span">(optional)</span> </label>
+                            <div class="input-block">
+                                <input class="input-field discovery-call-form-input" type="number" id="phone" placeholder="+61 400 000 000">
+                                <span class="input-overlay"></span>
+                            </div>
+                        </div>
+                        <div class="discovery-call-outline grid-span-width"></div>
+                        <div class="grid-span-width input-stack">
+                            <label class="discovery-call-form-label" for="looking-to-build">What are you looking to build? </label>
+                            <select name="input-field discovery-call-form-input looking-to-build" id="looking-to-build">
+                                <option value="build-option" selected>Select an option...</option>
+                                <option value="build-option">Select an option...</option>
+                                <option value="build-option">Select an option...</option>
+                            </select>
                         </div>
                     </div>
                 </form>
             </div>
         </div>
     </main>
+
+    <!-- Nice select js -->
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/jquery.nice-select.js"></script>
+
 
     <!----- Fancybox js ----->
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>

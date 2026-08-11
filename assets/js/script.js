@@ -594,3 +594,10 @@ if (typeof Splide !== "undefined" && document.querySelector(".customer-review-sl
     splide.mount();
   });
 }
+
+// ================================
+// Select Js
+// ================================
+$(document).ready(function () {
+  $("select").niceSelect();
+});

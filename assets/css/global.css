@@ -1142,7 +1142,9 @@ h6:not(:where(.h1, .h2, .h3, .h4, .h5)) {
 }
 
 .discovery-call-input-wrapper {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: start;
   gap: 16px;
 }
 
@@ -1156,6 +1158,10 @@ h6:not(:where(.h1, .h2, .h3, .h4, .h5)) {
   margin-bottom: 6px;
 }
 
+.discovery-call-form-label-span {
+  color: var(--white-20);
+}
+
 .discovery-call-form-input {
   border-color: var(--white-8);
   background-color: var(--black-200);
@@ -1163,4 +1169,12 @@ h6:not(:where(.h1, .h2, .h3, .h4, .h5)) {
 
 .discovery-call-form-input::placeholder {
   color: var(--white-24);
+}
+
+.discovery-call-outline {
+  border: var(--border) var(--white-6);
+}
+
+.grid-span-width {
+  grid-column: span 2;
 }
