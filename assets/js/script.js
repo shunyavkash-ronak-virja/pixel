@@ -575,3 +575,22 @@ if (typeof Splide !== "undefined" && document.querySelector(".casestudy-testimon
     splide.mount();
   });
 }
+
+// ================================
+// Clients Site Showcase
+// ================================
+if (typeof Splide !== "undefined" && document.querySelector(".customer-review-slider.splide")) {
+  document.addEventListener("DOMContentLoaded", function () {
+    var splide = new Splide(".customer-review-slider.splide", {
+      autoplay: true,
+      type: "fade",
+      rewind: true,
+      gap: "28px",
+      pagination: false,
+      interval: 5000,
+      speed: 800,
+      easing: "ease-in-out",
+    });
+    splide.mount();
+  });
+}

@@ -614,6 +614,23 @@ Web Design Hero Page
   .blank-block {
     display: none;
   }
+
+  /* ----- Customer Review Section ----- */
+  .customer-review-spacing {
+    padding-bottom: 174px;
+  }
+
+  .customer-review-info-wrapper {
+    gap: 16px;
+  }
+
+  .customer-review-title {
+    font-size: 32px;
+  }
+
+  .customer-review-arrow-wrapper {
+    bottom: -120px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1723,6 +1740,21 @@ Web Design Hero Page
   .brisbane-content-description {
     margin-top: 16px;
   }
+
+  /* ----- Customer Review Section ----- */
+  .customer-review-slider {
+    max-width: 100%;
+  }
+
+  .customer-review-title {
+    font-size: 24px;
+  }
+
+  .customer-review-author-name,
+  .customer-review-author-caption {
+    font-size: 14px;
+    line-height: var(--line-height-1_642);
+  }
 }
 
 @media (max-width: 575px) {
@@ -2058,6 +2090,20 @@ Web Design Hero Page
 
   .brisbane-img {
     max-width: 240px;
+  }
+
+  /* ----- Customer Review Section ----- */
+  .customer-review-content {
+    gap: 26px;
+  }
+
+  .customer-review-icon {
+    width: 20px;
+  }
+
+  .customer-review-title {
+    font-size: 18px;
+    line-height: var(--line-height-1_333);
   }
 }
 
