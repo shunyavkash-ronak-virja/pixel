@@ -2397,7 +2397,7 @@ FAQ Page
 }
 
 /* =====================================================
-Web Design Hero Page
+Web Design Page
 ===================================================== */
 /* ----- Web Design Hero Section ----- */
 .web-design-hero-head-spacing {
@@ -2556,4 +2556,28 @@ Web Design Hero Page
 
 .customer-review-arrow-wrapper .icon-btn {
   position: static;
+}
+
+/* =====================================================
+SEO Page
+===================================================== */
+/* ----- SEO Hero Section ----- */
+.seo-hero-spacing {
+  background-image: url(../images/sections/hero-section/hero-outline-overlay.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-block: 82px 40px;
+}
+
+.seo-hero-wrapper {
+  display: flex;
+}
+
+.seo-hero-content {
+  width: 58%;
+  max-width: 600px;
+}
+
+.seo-hero-description {
+  margin-block: 20px 40px;
 }

@@ -574,7 +574,7 @@ FAQ Page
   }
 
   /* =====================================================
-Web Design Hero Page
+Web Design Page
 ===================================================== */
   /* ----- Web Design Hero Section ----- */
   .web-design-hero-head-spacing {
@@ -630,6 +630,14 @@ Web Design Hero Page
 
   .customer-review-arrow-wrapper {
     bottom: -120px;
+  }
+
+  /* =====================================================
+SEO Page
+===================================================== */
+  /* ----- SEO Hero Section ----- */
+  .seo-hero-spacing {
+    padding-block: 60px;
   }
 }
 
@@ -1654,7 +1662,7 @@ FAQ Page
   }
 
   /* =====================================================
-Web Design Hero Page
+Web Design Page
 ===================================================== */
   /* ----- Web Design Hero Section ----- */
   .web-design-hero-head-spacing {
@@ -1754,6 +1762,26 @@ Web Design Hero Page
   .customer-review-author-caption {
     font-size: 14px;
     line-height: var(--line-height-1_642);
+  }
+
+  /* =====================================================
+SEO Page
+===================================================== */
+  /* ----- SEO Hero Section ----- */
+  .seo-hero-wrapper {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 36px;
+  }
+
+  .seo-hero-content {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .seo-hero-description {
+    margin-bottom: 32px;
   }
 }
 
@@ -2075,7 +2103,7 @@ Contact Us Page
   }
 
   /* =====================================================
-Web Design Hero Page
+Web Design Page
 ===================================================== */
   /* ----- Web Design Hero Section ----- */
   .clients-site-slide {
