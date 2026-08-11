@@ -584,6 +584,36 @@ Web Design Hero Page
   .web-design-hero-description {
     margin-bottom: 36px;
   }
+
+  /* ----- Brisbane Section ----- */
+  .brisbane-head-spacing {
+    padding-bottom: 50px;
+  }
+
+  .brisbane-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .brisbane-content-block {
+    padding-bottom: 30px;
+  }
+
+  .brisbane-content-block:nth-child(3n)::before {
+    left: -1px;
+  }
+
+  .brisbane-content-block:nth-child(3n + 1)::after,
+  .brisbane-content-block:nth-child(3n)::before {
+    width: 1px;
+  }
+
+  .brisbane-content-description {
+    margin-top: 20px;
+  }
+
+  .blank-block {
+    display: none;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1620,6 +1650,79 @@ Web Design Hero Page
     align-items: center;
     text-align: center;
   }
+
+  /* ----- Brisbane Section ----- */
+  .brisbane-head-spacing {
+    padding-bottom: 40px;
+  }
+
+  .brisbane-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .brisbane-wrapper > .brisbane-img-content:nth-child(2) {
+    order: 0;
+  }
+
+  .brisbane-wrapper > .brisbane-content-block:nth-child(1) {
+    order: 1;
+  }
+
+  .brisbane-wrapper > .brisbane-img-content:nth-child(5) {
+    order: 2;
+  }
+
+  .brisbane-wrapper > .brisbane-content-block:nth-child(6) {
+    order: 3;
+  }
+
+  .brisbane-wrapper > .brisbane-img-content:nth-child(8) {
+    order: 4;
+  }
+
+  .brisbane-wrapper > .brisbane-content-block:nth-child(7) {
+    order: 5;
+  }
+
+  .brisbane-wrapper > .brisbane-img-content:nth-child(11) {
+    order: 6;
+  }
+
+  .brisbane-wrapper > .brisbane-content-block:nth-child(12) {
+    order: 7;
+  }
+
+  .brisbane-content-block:nth-child(3n + 1)::before,
+  .brisbane-content-block:nth-child(3n)::after,
+  .brisbane-content-block:nth-child(3n + 1)::after,
+  .brisbane-content-block:nth-child(3n)::before {
+    display: none;
+  }
+
+  .brisbane-img-content,
+  .brisbane-content-block {
+    border: none;
+    padding-inline: 16px;
+  }
+
+  .brisbane-content-block {
+    padding-bottom: 36px;
+  }
+
+  .brisbane-img-content {
+    justify-content: start;
+    border-top: 2px solid var(--pelati-500);
+    padding-top: 28px;
+  }
+
+  .brisbane-content-title {
+    font-size: 20px;
+    line-height: var(--line-height-1_25);
+  }
+
+  .brisbane-content-description {
+    margin-top: 16px;
+  }
 }
 
 @media (max-width: 575px) {
@@ -1945,6 +2048,16 @@ Web Design Hero Page
   /* ----- Web Design Hero Section ----- */
   .clients-site-slide {
     max-width: 330px;
+  }
+
+  /* ----- Brisbane Section ----- */
+  .brisbane-img-content,
+  .brisbane-content-block {
+    padding-inline: 12px;
+  }
+
+  .brisbane-img {
+    max-width: 240px;
   }
 }
 
