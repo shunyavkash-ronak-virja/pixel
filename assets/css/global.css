@@ -436,9 +436,7 @@ h3,
 .h4,
 h4,
 .h5,
-h5,
-.h6,
-h6 {
+h5 {
   line-height: var(--line-height-1_1);
   font-family: var(--font-family-britti-sans);
 }
