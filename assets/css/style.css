@@ -632,8 +632,8 @@
 
 .client-testimonials-description {
   font-size: 24px;
+  font-weight: 600;
   line-height: var(--line-height-1_333);
-  font-size: 600;
   font-family: var(--font-family-britti-sans);
 }
 
@@ -2666,4 +2666,15 @@ SEO Page
 
 .design-principles-description {
   max-width: 752px;
+}
+
+/* ----- Process Timeline Section ----- */
+.web-development-timeline-title {
+  width: 100%;
+  max-width: 522px;
+}
+
+.web-development-timeline-description {
+  margin-top: 24px;
+  max-width: 498px;
 }

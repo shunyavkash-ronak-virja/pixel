@@ -942,7 +942,23 @@ SEO Page
 
   .client-testimonials-content {
     align-items: center;
+    gap: 20px;
+  }
+
+  .client-testimonials-description {
+    font-size: 18px;
+    line-height: var(--line-height-1_333);
     text-align: center;
+  }
+
+  .client-testimonials-author-name,
+  .client-testimonials-author-caption {
+    font-size: 14px;
+    line-height: var(--line-height-1_642);
+  }
+
+  .client-testimonials-info {
+    gap: 16px;
   }
 
   .client-testimonials-arrow-wrapper .icon-btn {
