@@ -2409,7 +2409,7 @@ Web Design Page
   max-width: 620px;
 }
 
-/* ----- Brisbane Section ----- */
+/* ----- Key Considerations Section ----- */
 .brisbane-head-spacing {
   padding-block: 40px 60px;
 }
@@ -2418,38 +2418,38 @@ Web Design Page
   max-width: 752px;
 }
 
-.brisbane-wrapper {
+.key-considerations-wrapper {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   border-block: var(--border) var(--white-8);
 }
 
-.brisbane-content-block {
+.key-considerations-block {
   padding: 24px 20px;
   border-block: var(--border) var(--black-400);
 }
 
-.brisbane-content-block:first-child {
+.key-considerations-block:first-child {
   border-top: none;
 }
 
-.brisbane-content-block:last-child {
+.key-considerations-block:last-child {
   border-bottom: none;
 }
 
-.brisbane-content-title {
+.key-considerations-title {
   font-size: 24px;
   line-height: var(--line-height-1_041);
 }
 
-.brisbane-content-description {
+.key-considerations-description {
   font-size: 14px;
   line-height: var(--line-height-1_785);
   margin-top: 24px;
 }
 
-.brisbane-content-block:nth-child(3n + 1)::after,
-.brisbane-content-block:nth-child(3n)::before {
+.key-considerations-block:nth-child(3n + 1)::after,
+.key-considerations-block:nth-child(3n)::before {
   content: "";
   width: 2px;
   height: calc(100% - 2px);
@@ -2459,16 +2459,16 @@ Web Design Page
   transform: translateY(-50%);
 }
 
-.brisbane-content-block:nth-child(3n + 1)::after {
+.key-considerations-block:nth-child(3n + 1)::after {
   right: 0;
 }
 
-.brisbane-content-block:nth-child(3n)::before {
+.key-considerations-block:nth-child(3n)::before {
   left: 0;
 }
 
-.brisbane-content-block:nth-child(3n + 1)::before,
-.brisbane-content-block:nth-child(3n)::after {
+.key-considerations-block:nth-child(3n + 1)::before,
+.key-considerations-block:nth-child(3n)::after {
   content: "";
   width: 2px;
   aspect-ratio: 1;
@@ -2476,22 +2476,52 @@ Web Design Page
   background-color: var(--pelati);
 }
 
-.brisbane-content-block:nth-child(3n + 1)::before {
+.key-considerations-block:nth-child(3n + 1)::before {
   bottom: -1px;
   left: -1px;
 }
 
-.brisbane-content-block:nth-child(3n)::after {
+.key-considerations-block:nth-child(3n)::after {
   top: -1px;
   right: -1px;
 }
 
-.brisbane-img-content {
+.key-considerations-img-content {
   border-inline: var(--border) var(--black-400);
   display: flex;
   align-items: center;
   justify-content: center;
   padding-inline: 20px;
+}
+
+.key-considerations-list {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.key-considerations-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.key-considerations-item-mark-block {
+  width: 16px;
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.key-considerations-item-icon {
+  width: 57%;
+}
+
+.key-considerations-item-content {
+  font-size: 14px;
+  line-height: var(--line-height-1_785);
 }
 
 /* ----- Customer Review Section ----- */
@@ -2618,4 +2648,17 @@ SEO Page
 
 .pixel-promises-card-description {
   margin-top: 16px;
+}
+
+/* ----- Design Principles Section ----- */
+.design-principles-head-spacing {
+  padding-block: 160px 60px;
+}
+
+.design-principles-head {
+  max-width: 900px;
+}
+
+.design-principles-description {
+  max-width: 752px;
 }

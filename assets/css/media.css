@@ -585,34 +585,43 @@ Web Design Page
     margin-bottom: 36px;
   }
 
-  /* ----- Brisbane Section ----- */
+  /* ----- Key Considerations Section ----- */
   .brisbane-head-spacing {
     padding-bottom: 50px;
   }
 
-  .brisbane-wrapper {
+  .key-considerations-wrapper {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .brisbane-content-block {
+  .key-considerations-block {
     padding-bottom: 30px;
   }
 
-  .brisbane-content-block:nth-child(3n)::before {
+  .key-considerations-block:nth-child(3n)::before {
     left: -1px;
   }
 
-  .brisbane-content-block:nth-child(3n + 1)::after,
-  .brisbane-content-block:nth-child(3n)::before {
+  .key-considerations-block:nth-child(3n + 1)::after,
+  .key-considerations-block:nth-child(3n)::before {
     width: 1px;
   }
 
-  .brisbane-content-description {
+  .key-considerations-description {
     margin-top: 20px;
   }
 
   .blank-block {
     display: none;
+  }
+
+  .design-principles-head-spacing {
+    padding-bottom: 50px;
+  }
+
+  .key-considerations-list {
+    margin-top: 20px;
+    gap: 10px;
   }
 
   /* ----- Customer Review Section ----- */
@@ -773,6 +782,10 @@ SEO Page
   }
 
   /* ----- Why It Matters Section ----- */
+  .why-it-matters-head-description {
+    max-width: 100%;
+  }
+
   .highlight-wrapper {
     flex-direction: column;
     gap: 28px;
@@ -1689,77 +1702,98 @@ Web Design Page
     text-align: center;
   }
 
-  /* ----- Brisbane Section ----- */
+  .web-design-hero-description {
+    max-width: 100%;
+  }
+
+  /* ----- Key Considerations Section ----- */
   .brisbane-head-spacing {
     padding-bottom: 40px;
   }
 
-  .brisbane-wrapper {
+  .brisbane-head-wrapper {
+    max-width: 100%;
+  }
+
+  .key-considerations-wrapper {
     grid-template-columns: repeat(1, 1fr);
   }
 
-  .brisbane-wrapper > .brisbane-img-content:nth-child(2) {
+  .key-considerations-wrapper > .key-considerations-img-content:nth-child(2) {
     order: 0;
   }
 
-  .brisbane-wrapper > .brisbane-content-block:nth-child(1) {
+  .key-considerations-wrapper > .key-considerations-block:nth-child(1) {
     order: 1;
   }
 
-  .brisbane-wrapper > .brisbane-img-content:nth-child(5) {
+  .key-considerations-wrapper > .key-considerations-img-content:nth-child(5) {
     order: 2;
   }
 
-  .brisbane-wrapper > .brisbane-content-block:nth-child(6) {
+  .key-considerations-wrapper > .key-considerations-block:nth-child(6) {
     order: 3;
   }
 
-  .brisbane-wrapper > .brisbane-img-content:nth-child(8) {
+  .key-considerations-wrapper > .key-considerations-img-content:nth-child(8) {
     order: 4;
   }
 
-  .brisbane-wrapper > .brisbane-content-block:nth-child(7) {
+  .key-considerations-wrapper > .key-considerations-block:nth-child(7) {
     order: 5;
   }
 
-  .brisbane-wrapper > .brisbane-img-content:nth-child(11) {
+  .key-considerations-wrapper > .key-considerations-img-content:nth-child(11) {
     order: 6;
   }
 
-  .brisbane-wrapper > .brisbane-content-block:nth-child(12) {
+  .key-considerations-wrapper > .key-considerations-block:nth-child(12) {
     order: 7;
   }
 
-  .brisbane-content-block:nth-child(3n + 1)::before,
-  .brisbane-content-block:nth-child(3n)::after,
-  .brisbane-content-block:nth-child(3n + 1)::after,
-  .brisbane-content-block:nth-child(3n)::before {
+  .key-considerations-block:nth-child(3n + 1)::before,
+  .key-considerations-block:nth-child(3n)::after,
+  .key-considerations-block:nth-child(3n + 1)::after,
+  .key-considerations-block:nth-child(3n)::before {
     display: none;
   }
 
-  .brisbane-img-content,
-  .brisbane-content-block {
+  .key-considerations-img-content,
+  .key-considerations-block {
     border: none;
     padding-inline: 16px;
   }
 
-  .brisbane-content-block {
+  .key-considerations-block {
     padding-bottom: 36px;
   }
 
-  .brisbane-img-content {
+  .key-considerations-img-content {
     justify-content: start;
     border-top: 2px solid var(--pelati-500);
     padding-top: 28px;
   }
 
-  .brisbane-content-title {
+  .key-considerations-title {
     font-size: 20px;
     line-height: var(--line-height-1_25);
   }
 
-  .brisbane-content-description {
+  .key-considerations-description {
     margin-top: 16px;
+  }
+
+  .design-principles-head-spacing {
+    padding-bottom: 40px;
+  }
+
+  .key-considerations-item {
+    gap: 8px;
+  }
+
+  .key-considerations-list {
+    margin-top: 16px;
+    gap: 8px;
   }
 
   /* ----- Customer Review Section ----- */
@@ -1803,7 +1837,8 @@ SEO Page
     padding-block: 92px 48px;
   }
 
-  .pixel-promises-head {
+  .pixel-promises-head,
+  .pixel-promises-description {
     max-width: 100%;
   }
 
@@ -2147,13 +2182,13 @@ Web Design Page
     max-width: 330px;
   }
 
-  /* ----- Brisbane Section ----- */
-  .brisbane-img-content,
-  .brisbane-content-block {
+  /* ----- Key Considerations Section ----- */
+  .key-considerations-img-content,
+  .key-considerations-block {
     padding-inline: 12px;
   }
 
-  .brisbane-img {
+  .key-considerations-img {
     max-width: 240px;
   }
 
