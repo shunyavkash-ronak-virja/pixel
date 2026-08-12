@@ -1593,7 +1593,7 @@ Process Page
     max-width: 100%;
   }
 
-  .process-timeline-title,
+  .process-timeline-head,
   .process-timeline-mark {
     position: static;
   }

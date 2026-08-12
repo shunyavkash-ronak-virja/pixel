@@ -2059,7 +2059,6 @@ Process Page
 }
 
 /* ----- Process Timeline Section ----- */
-/* 36 22 */
 .process-timeline-section-spacing {
   padding-block: 160px;
 }
@@ -2071,11 +2070,14 @@ Process Page
   gap: 56px 24px;
 }
 
-.process-timeline-title {
-  width: 48%;
-  max-width: 450px;
+.process-timeline-head {
+  width: 44%;
   position: sticky;
   top: 86px;
+}
+
+.process-timeline-title {
+  max-width: 450px;
 }
 
 .process-timeline-stack {
@@ -2139,6 +2141,7 @@ Process Page
 }
 
 .process-timeline-content {
+  width: 100%;
   max-width: 566px;
   border: var(--border) var(--white-12);
   padding: 24px 16px;
@@ -2177,6 +2180,10 @@ Process Page
 
 .process-timeline-description-wrapper + .process-timeline-card-subtitle {
   margin-top: 24px;
+}
+
+.process-timeline-card-title + .process-timeline-description {
+  margin-top: 16px;
 }
 
 .process-timeline-description-wrapper {
@@ -2670,11 +2677,18 @@ SEO Page
 
 /* ----- Process Timeline Section ----- */
 .web-development-timeline-title {
-  width: 100%;
   max-width: 522px;
 }
 
 .web-development-timeline-description {
   margin-top: 24px;
-  max-width: 498px;
+  max-width: 508px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.web-development-timeline-section
+  .process-timeline-block:not(:last-child)
+  .process-timeline-content {
+  margin-bottom: 24px;
 }
