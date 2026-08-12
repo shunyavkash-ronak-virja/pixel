@@ -639,6 +639,19 @@ SEO Page
   .seo-hero-spacing {
     padding-block: 60px;
   }
+
+  /* ----- Pixel Promises Section ----- */
+  .pixel-promises-spacing {
+    padding-block: 106px 54px;
+  }
+
+  .pixel-promises-card {
+    padding-block: 24px;
+  }
+
+  .pixel-promises-icon {
+    margin-bottom: 24px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1783,6 +1796,30 @@ SEO Page
   .seo-hero-description {
     margin-bottom: 32px;
   }
+
+  /* ----- Pixel Promises Section ----- */
+
+  .pixel-promises-spacing {
+    padding-block: 92px 48px;
+  }
+
+  .pixel-promises-head {
+    max-width: 100%;
+  }
+
+  .pixel-promises-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .pixel-promises-card:not(:last-child) {
+    border-right: none;
+    border-bottom: var(--border) var(--white-10);
+  }
+
+  .pixel-promises-icon {
+    width: 32px;
+    margin-bottom: 16px;
+  }
 }
 
 @media (max-width: 575px) {
@@ -2132,6 +2169,15 @@ Web Design Page
   .customer-review-title {
     font-size: 18px;
     line-height: var(--line-height-1_333);
+  }
+
+  /* ----- Pixel Promises Section ----- */
+  .pixel-promises-spacing {
+    padding-block: 80px 40px;
+  }
+
+  .pixel-promises-icon {
+    width: 28px;
   }
 }
 

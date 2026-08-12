@@ -2599,4 +2599,23 @@ SEO Page
 .pixel-promises-wrapper {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  background-color: var(--black-200);
+}
+
+.pixel-promises-card {
+  padding-block: 30px;
+}
+
+.pixel-promises-card:not(:last-child) {
+  border-right: var(--border) var(--white-10);
+}
+
+.pixel-promises-icon {
+  width: 38px;
+  aspect-ratio: 1;
+  margin-bottom: 30px;
+}
+
+.pixel-promises-card-description {
+  margin-top: 16px;
 }
