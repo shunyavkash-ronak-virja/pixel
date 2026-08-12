@@ -2592,23 +2592,24 @@ Web Design Page
 SEO Page
 ===================================================== */
 /* ----- SEO Hero Section ----- */
-.seo-hero-spacing {
+.value-hero-spacing {
   background-image: url(../images/sections/hero-section/hero-outline-overlay.png);
   background-size: cover;
   background-repeat: no-repeat;
   padding-block: 82px 40px;
 }
 
-.seo-hero-wrapper {
+.value-hero-wrapper {
   display: flex;
+  justify-content: space-between;
 }
 
-.seo-hero-content {
+.value-hero-content {
   width: 58%;
   max-width: 600px;
 }
 
-.seo-hero-description {
+.value-hero-description {
   margin-block: 20px 40px;
 }
 
