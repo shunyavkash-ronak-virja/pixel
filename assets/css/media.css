@@ -661,6 +661,10 @@ SEO Page
   .pixel-promises-icon {
     margin-bottom: 24px;
   }
+
+  .web-developmen-promises-description {
+    font-size: 16px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1832,7 +1836,6 @@ SEO Page
   }
 
   /* ----- Pixel Promises Section ----- */
-
   .pixel-promises-spacing {
     padding-block: 92px 48px;
   }
@@ -1854,6 +1857,11 @@ SEO Page
   .pixel-promises-icon {
     width: 32px;
     margin-bottom: 16px;
+  }
+
+  .web-developmen-promises-description {
+    font-size: 14px;
+    line-height: var(--line-height-1_642);
   }
 }
 
