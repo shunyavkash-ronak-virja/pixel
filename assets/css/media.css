@@ -538,7 +538,19 @@ Process Page
   }
 
   .process-timeline-block:not(:last-child) .process-timeline-content {
-    margin-bottom: 26px;
+    margin-bottom: 30px;
+  }
+
+  .process-timeline-v2-section .process-timeline-mark {
+    width: 34px;
+  }
+
+  .process-timeline-v2-section .process-timeline-content {
+    padding: 18px 12px;
+  }
+
+  .process-timeline-v2-description {
+    font-size: 16px;
   }
 
   /* =====================================================
@@ -1587,10 +1599,8 @@ Process Page
     flex-direction: column;
   }
 
-  .process-timeline-title,
-  .process-timeline-stack {
-    width: 100%;
-    max-width: 100%;
+  .process-timeline-v2-section .process-timeline-wrapper {
+    gap: 40px;
   }
 
   .process-timeline-head,
@@ -1598,11 +1608,33 @@ Process Page
     position: static;
   }
 
+  .process-timeline-head,
+  .process-timeline-stack {
+    width: 100%;
+  }
+
+  .process-timeline-title,
+  .process-timeline-v2-description,
+  .process-timeline-stack {
+    max-width: 100%;
+  }
+
+  .process-timeline-head {
+    text-align: center;
+  }
+
+  .process-timeline-v2-description {
+    margin-top: 16px;
+    font-size: 14px;
+    line-height: var(--line-height-1_642);
+  }
+
   .process-timeline-block {
     gap: 12px;
   }
+
   .process-timeline-block:not(:last-child) {
-    margin-bottom: 26px;
+    margin-bottom: 24px;
   }
 
   .process-timeline-marks-block {
@@ -1618,8 +1650,17 @@ Process Page
     max-width: 100%;
   }
 
-  .process-timeline-block:not(:last-child) .process-timeline-content {
+  .process-timeline-block:not(:last-child) .process-timeline-content,
+  .process-timeline-v2-section .process-timeline-block:not(:last-child) .process-timeline-content {
     margin-bottom: 0;
+  }
+
+  .process-timeline-v2-section .process-timeline-mark {
+    width: 28px;
+  }
+
+  .process-timeline-v2-section .process-timeline-content {
+    padding-block: 12px;
   }
 
   /* =====================================================
@@ -2180,6 +2221,21 @@ Process Page
 
   .process-timeline-block:not(:last-child) {
     margin-bottom: 16px;
+  }
+
+  .process-timeline-v2-section .process-timeline-card-title {
+    font-size: 24px;
+  }
+
+  .process-timeline-v2-section .process-timeline-mark {
+    width: 20px;
+  }
+
+  .process-timeline-v2-section
+    .process-timeline-block:not(:last-child)
+    .process-timeline-marks-block::before {
+    height: calc(100% - 32px);
+    top: 32px;
   }
 
   /* =====================================================

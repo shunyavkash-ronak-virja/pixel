@@ -2676,19 +2676,17 @@ SEO Page
 }
 
 /* ----- Process Timeline Section ----- */
-.web-development-timeline-title {
+.process-timeline-v2-title {
   max-width: 522px;
 }
 
-.web-development-timeline-description {
+.process-timeline-v2-description {
   margin-top: 24px;
   max-width: 508px;
   font-size: 18px;
   font-weight: 400;
 }
 
-.web-development-timeline-section
-  .process-timeline-block:not(:last-child)
-  .process-timeline-content {
+.process-timeline-v2-section .process-timeline-block:not(:last-child) .process-timeline-content {
   margin-bottom: 24px;
 }

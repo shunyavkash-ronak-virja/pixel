@@ -598,6 +598,8 @@ if (typeof Splide !== "undefined" && document.querySelector(".customer-review-sl
 // ================================
 // Select Js
 // ================================
-$(document).ready(function () {
-  $("select").niceSelect();
-});
+if (typeof Splide !== "undefined" && document.querySelector("select")) {
+  $(document).ready(function () {
+    $("select").niceSelect();
+  });
+}
