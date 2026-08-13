@@ -2663,15 +2663,15 @@ SEO Page
 }
 
 /* ----- Design Principles Section ----- */
-.design-principles-head-spacing {
+.key-considerations-head-spacing {
   padding-block: 160px 60px;
 }
 
-.design-principles-head {
+.key-considerations-head {
   max-width: 900px;
 }
 
-.design-principles-description {
+.key-considerations-description {
   max-width: 752px;
 }
 
@@ -2689,4 +2689,9 @@ SEO Page
 
 .process-timeline-v2-section .process-timeline-block:not(:last-child) .process-timeline-content {
   margin-bottom: 24px;
+}
+
+/* ----- Key Considerations Section ----- */
+.web-developments-key-considerations .key-considerations-head-spacing {
+  padding-top: 0;
 }
