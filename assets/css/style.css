@@ -2742,3 +2742,38 @@ Digital Roadmap Page
 .digital-roadmap-clients-spacing {
   padding-block: 48px;
 }
+
+/* ----- Digital Roadmap Section ----- */
+.digital-roadmap-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  --digital-roadmap-spacing: 80px 76px;
+}
+
+.digital-roadmap-head,
+.digital-roadmap-details {
+  display: flex;
+  flex-direction: column;
+  padding-block: var(--digital-roadmap-spacing);
+}
+
+.digital-roadmap-head {
+  justify-content: space-between;
+  gap: 10px;
+  border-right: var(--border) var(--white-8);
+}
+
+.digital-roadmap-price-number {
+  font-size: 50px;
+  line-height: var(--line-height-1);
+  font-weight: 600;
+  display: inline-block;
+}
+
+.digital-roadmap-details {
+  gap: 28px;
+}
+
+.digital-roadmap-description {
+  max-width: 488px;
+}

@@ -694,6 +694,11 @@ Digital Roadmap Page
   .digital-roadmap-clients-spacing {
     padding-block: 40px;
   }
+
+  /* ----- Digital Roadmap Section ----- */
+  .digital-roadmap-details {
+    gap: 22px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1948,6 +1953,31 @@ Digital Roadmap Page
 
   .digital-roadmap-hero-description {
     margin-bottom: 36px;
+  }
+
+  /* ----- Digital Roadmap Section ----- */
+  .digital-roadmap-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+    text-align: center;
+    gap: 16px;
+    --digital-roadmap-spacing: 60px 56px;
+  }
+
+  .digital-roadmap-head {
+    border-right: none;
+    padding-bottom: 0;
+  }
+
+  .digital-roadmap-details {
+    align-items: center;
+    gap: 16px;
+    padding-top: 0;
+  }
+
+  .digital-roadmap-description {
+    max-width: 100%;
+    font-size: 14px;
+    line-height: var(--line-height-1_642);
   }
 }
 
