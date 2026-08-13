@@ -494,7 +494,7 @@ About Us Page
     margin-bottom: 50px;
   }
 
-  /* ----- Our Clients Section ----- */
+  /* ----- Our Achievements Section ----- */
   .our-achievements-title-spacing {
     padding-block: 150px 50px;
   }
@@ -505,6 +505,10 @@ About Us Page
 
   .our-achievements-btn-spacing {
     padding-block: 46px 144px;
+  }
+
+  .digital-roadmap-achievements-title-spacing {
+    padding-block: 108px 50px;
   }
 
   /* =====================================================
@@ -1559,7 +1563,7 @@ About Us Page
     line-height: var(--line-height-1_642);
   }
 
-  /* ----- Our Clients Section ----- */
+  /* ----- Our Achievements Section ----- */
   .our-achievements-title-spacing {
     padding-bottom: 40px;
   }
@@ -1583,6 +1587,10 @@ About Us Page
 
   .our-achievements-btn-spacing {
     padding-bottom: 128px;
+  }
+
+  .digital-roadmap-achievements-title-spacing {
+    padding-block: 96px 40px;
   }
 
   /* =====================================================
@@ -2250,13 +2258,17 @@ About Us Page
     aspect-ratio: 1 / 0.665;
   }
 
-  /* ----- Our Clients Section ----- */
+  /* ----- Our Achievements Section ----- */
   .our-achievements-title-spacing {
     padding-bottom: 30px;
   }
 
   .our-achievements-btn-spacing {
     padding-bottom: 110px;
+  }
+
+  .digital-roadmap-achievements-title-spacing {
+    padding-block: 85px 30px;
   }
 
   /* =====================================================
