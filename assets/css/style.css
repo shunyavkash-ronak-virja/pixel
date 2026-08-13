@@ -2777,3 +2777,8 @@ Digital Roadmap Page
 .digital-roadmap-description {
   max-width: 488px;
 }
+
+.digital-roadmap-highlights-spacing {
+  padding-block: 32px;
+  border-color: var(--white-8);
+}

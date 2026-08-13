@@ -1979,6 +1979,10 @@ Digital Roadmap Page
     font-size: 14px;
     line-height: var(--line-height-1_642);
   }
+
+  .digital-roadmap-highlights-spacing {
+    padding-block: 25px;
+  }
 }
 
 @media (max-width: 575px) {
