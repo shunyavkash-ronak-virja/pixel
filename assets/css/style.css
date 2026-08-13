@@ -2695,3 +2695,50 @@ SEO Page
 .web-developments-key-considerations .key-considerations-head-spacing {
   padding-top: 0;
 }
+
+/* =====================================================
+Digital Roadmap Page
+===================================================== */
+/* ----- Digital Roadmap Hero Section ----- */
+.digital-roadmap-hero-wrapper {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.digital-roadmap-hero-spacing {
+  padding-block: 100px 190px;
+}
+
+.digital-roadmap-hero-section .hero-title::before {
+  left: -1px;
+  top: 100px;
+}
+
+.digital-roadmap-hero-description {
+  margin-block: 20px 40px;
+  max-width: 472px;
+}
+
+.digital-roadmap-hero-left-img,
+.digital-roadmap-hero-right-img {
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
+  width: 36%;
+  max-width: 324px;
+}
+
+.digital-roadmap-hero-left-img {
+  left: 0;
+}
+
+.digital-roadmap-hero-right-img {
+  right: 0;
+}
+
+/* ----- Our Clients Section ----- */
+.digital-roadmap-clients-spacing {
+  padding-block: 48px;
+}
