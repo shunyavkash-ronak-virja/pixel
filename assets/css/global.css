@@ -40,6 +40,7 @@
   --pelati-300: #fd3134;
   --pelati-400: #f02828;
   --pelati-500: #f22a2e;
+  --pelati-600: #ce1215;
   --pelati-1: #ff333703;
   --pelati-8: #ff333714;
   --pelati-12: #ff33371f;
@@ -81,7 +82,7 @@
 }
 
 .text-primary {
-  color: #ff3337;
+  color: var(--pelati);
 }
 
 .text-secondary {
@@ -89,7 +90,7 @@
 }
 
 .text-gradient {
-  background: linear-gradient(180deg, #ff3337 0%, #ce1215 100%);
+  background: linear-gradient(180deg, var(--pelati) 0%, var(--pelati-600) 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
