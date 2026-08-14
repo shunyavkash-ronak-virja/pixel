@@ -2202,6 +2202,55 @@ Process Page
   color: var(--white-60);
 }
 
+/* Web Development Time Line */
+.process-timeline-v2-title {
+  max-width: 522px;
+}
+
+.timeline-description-v2 {
+  margin-top: 24px;
+  max-width: 508px;
+}
+
+.timeline-head-description {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.process-timeline-v2-section .process-timeline-block:not(:last-child) .process-timeline-content {
+  margin-bottom: 24px;
+}
+
+/* Digital Roadmap Time Line */
+.timeline-user-detail {
+  margin-top: 100px;
+}
+
+.timeline-user-avatar {
+  width: 124px;
+  aspect-ratio: 1;
+}
+
+.timeline-user-description {
+  max-width: 468px;
+  margin-block: 16px 20px;
+}
+
+.timeline-user-name {
+  font-size: 24px;
+  line-height: var(--line-height-1_1);
+  font-family: var(--font-family-britti-sans);
+}
+
+.timeline-user-caption {
+  margin-top: 4px;
+  font-weight: 400;
+}
+
+.desktop-hide {
+  display: none;
+}
+
 /* =====================================================
 Contact Us Page
 ===================================================== */
@@ -2677,22 +2726,6 @@ SEO Page
 
 .key-considerations-description {
   max-width: 752px;
-}
-
-/* ----- Process Timeline Section ----- */
-.process-timeline-v2-title {
-  max-width: 522px;
-}
-
-.process-timeline-v2-description {
-  margin-top: 24px;
-  max-width: 508px;
-  font-size: 18px;
-  font-weight: 400;
-}
-
-.process-timeline-v2-section .process-timeline-block:not(:last-child) .process-timeline-content {
-  margin-bottom: 24px;
 }
 
 /* ----- Key Considerations Section ----- */

@@ -553,8 +553,12 @@ Process Page
     padding: 18px 12px;
   }
 
-  .process-timeline-v2-description {
+  .timeline-head-description {
     font-size: 16px;
+  }
+
+  .timeline-user-detail {
+    margin-top: 74px;
   }
 
   /* =====================================================
@@ -1629,6 +1633,10 @@ Process Page
     flex-direction: column;
   }
 
+  .process-timeline-head {
+    text-align: center;
+  }
+
   .process-timeline-v2-section .process-timeline-wrapper {
     gap: 40px;
   }
@@ -1644,17 +1652,21 @@ Process Page
   }
 
   .process-timeline-title,
-  .process-timeline-v2-description,
-  .process-timeline-stack {
+  .timeline-description-v2,
+  .process-timeline-stack,
+  .timeline-user-description {
     max-width: 100%;
   }
 
-  .process-timeline-head {
-    text-align: center;
+  .timeline-description-v2 {
+    margin-top: 16px;
   }
 
-  .process-timeline-v2-description {
-    margin-top: 16px;
+  .timeline-user-description {
+    margin-block: 12px;
+  }
+
+  .timeline-head-description {
     font-size: 14px;
     line-height: var(--line-height-1_642);
   }
@@ -1691,6 +1703,27 @@ Process Page
 
   .process-timeline-v2-section .process-timeline-content {
     padding-block: 12px;
+  }
+
+  .timeline-user-detail {
+    margin-top: 48px;
+  }
+
+  .desktop-show {
+    display: none;
+  }
+
+  .desktop-hide {
+    display: block;
+  }
+
+  .timeline-user-name {
+    font-size: 20px;
+  }
+
+  .timeline-user-caption {
+    font-size: 14px;
+    line-height: var(--line-height-1_642);
   }
 
   /* =====================================================
@@ -2311,6 +2344,10 @@ Process Page
     .process-timeline-marks-block::before {
     height: calc(100% - 32px);
     top: 32px;
+  }
+
+  .timeline-user-detail {
+    margin-top: 20px;
   }
 
   /* =====================================================
