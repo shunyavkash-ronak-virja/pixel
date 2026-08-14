@@ -1035,6 +1035,37 @@ h6:not(:where(.h1, .h2, .h3, .h4, .h5)) {
   color: var(--white-24);
 }
 
+/* ----- Global Checkbox ----- */
+.primary-checkbox {
+  appearance: none;
+  width: 16px;
+  aspect-ratio: 1;
+  border: var(--border) var(--black-400);
+  background-color: var(--transparent);
+  transition: all 0.3s ease-in-out;
+}
+
+.primary-checkbox::before {
+  content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="%23e3e3e3"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg>');
+  width: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.primary-checkbox:checked {
+  background-color: var(--pelati);
+}
+
+.primary-checkbox:checked::before {
+  opacity: 1;
+  visibility: visible;
+}
+
 /* ----- Scrollbar Css ----- */
 .scroll-bar::-webkit-scrollbar {
   height: 4px;
@@ -1146,6 +1177,10 @@ h6:not(:where(.h1, .h2, .h3, .h4, .h5)) {
   grid-template-columns: repeat(2, 1fr);
   align-items: start;
   gap: 16px;
+}
+
+.input-stack {
+  width: 100%;
 }
 
 .discovery-call-form-label {

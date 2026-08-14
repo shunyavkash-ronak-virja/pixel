@@ -707,6 +707,23 @@ Digital Roadmap Page
   .digital-roadmap-details {
     gap: 22px;
   }
+
+  /* ----- Ready For Change Section ----- */
+  .ready-for-change-spacing {
+    padding-block: 108px;
+  }
+
+  .ready-for-change-head {
+    margin-bottom: 50px;
+  }
+
+  .ready-for-change-form {
+    padding: 18px;
+  }
+
+  .ready-for-change-form-btn {
+    margin-top: 34px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -2024,6 +2041,47 @@ Digital Roadmap Page
   .digital-roadmap-highlights-spacing {
     padding-block: 25px;
   }
+
+  /* ----- Ready For Change Section ----- */
+  .ready-for-change-spacing {
+    padding-block: 96px;
+  }
+
+  .ready-for-change-head-description {
+    margin-top: 10px;
+  }
+
+  .ready-for-change-wrapper {
+    max-width: 100%;
+  }
+
+  .ready-for-change-head {
+    margin-bottom: 42px;
+  }
+
+  .ready-for-change-form {
+    padding: 0;
+    border: none;
+  }
+
+  .ready-for-change-label,
+  .ready-for-change-options-caption {
+    line-height: var(--line-height-1_785);
+  }
+
+  .ready-for-change-label,
+  .ready-for-change-option-stack,
+  .ready-for-change-options-caption {
+    font-size: 14px;
+  }
+
+  .ready-for-change-option-wrapper {
+    margin-top: 10px;
+  }
+
+  .ready-for-change-form-btn {
+    margin-top: 24px;
+  }
 }
 
 @media (max-width: 575px) {
@@ -2413,6 +2471,16 @@ Digital Roadmap Page
   /* ----- Digital Roadmap Hero Section ----- */
   .digital-roadmap-hero-spacing {
     padding-top: 60px;
+  }
+
+  /* ----- Ready For Change Section ----- */
+  .ready-for-change-spacing {
+    padding-block: 80px;
+  }
+
+  .ready-for-change-input-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 18px;
   }
 }
 

@@ -2819,3 +2819,68 @@ Digital Roadmap Page
   padding-block: 32px;
   border-color: var(--white-8);
 }
+
+/* ----- Ready For Change Section ----- */
+.ready-for-change-spacing {
+  padding-block: 120px;
+  box-shadow: inset 0 0 250px 0 var(--pelati-12);
+  background-color: var(--pelati-1);
+}
+
+.ready-for-change-wrapper {
+  max-width: 656px;
+}
+
+.ready-for-change-head {
+  margin-bottom: 60px;
+}
+
+.ready-for-change-head-description {
+  margin-top: 20px;
+}
+
+.ready-for-change-form {
+  border: var(--border) var(--black-400);
+  padding: 24px;
+}
+
+.ready-for-change-input-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px 12px;
+}
+
+.ready-for-change-label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.ready-for-change-input {
+  border-color: var(--black-400);
+  background-color: var(--black-200);
+}
+
+.ready-for-change-options-block {
+  margin-top: 24px;
+}
+
+.ready-for-change-option-wrapper {
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.ready-for-change-option-stack {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.ready-for-change-form-btn {
+  width: 100%;
+  max-width: none;
+  margin-top: 44px;
+}
