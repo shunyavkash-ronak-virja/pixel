@@ -192,7 +192,7 @@
                                     <div class="contact-us-input-stack">
                                         <label class="text-secondary contact-us-input-label" for="phone-number">Phone Number</label>
                                         <div class="input-block">
-                                            <input class="input-field contact-us-input" type="number" id="phone-number" required>
+                                            <input class="input-field contact-us-input" type="tel" id="phone-number" inputmode="numeric" minlength="10" maxlength="10" oninput="this.value = this.value.replace(/[^0-9+() -]/g, '')" required>
                                             <span class="input-overlay"></span>
                                         </div>
                                     </div>

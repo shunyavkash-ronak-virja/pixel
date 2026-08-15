@@ -279,6 +279,7 @@ ol {
 button {
   font-family: inherit;
   font-size: inherit;
+  font-weight: inherit;
   line-height: inherit;
   background-color: var(--transparent);
   border: none;
@@ -286,7 +287,8 @@ button {
   color: inherit;
 }
 
-input {
+input,
+textarea {
   width: 100%;
   font-family: inherit;
   font-size: inherit;
@@ -1111,18 +1113,52 @@ h6:not(:where(.h1, .h2, .h3, .h4, .h5)) {
   transition: all 0.3s ease-in-out;
 }
 
+.discovery-call-modal.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.discovery-call-modal-close-btn {
+  width: 28px;
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: var(--border) var(--white-8);
+  color: var(--white-50);
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  z-index: 2;
+  transition: all 0.3s ease-in-out;
+}
+
+.discovery-call-modal-close-icon {
+  width: 60%;
+}
+
+.discovery-call-modal-close-btn:hover {
+  border-color: var(--white-60);
+  color: var(--white-72);
+}
+
 .discovery-call-content {
   max-width: 960px;
   margin: auto;
   background-color: var(--black-100);
   display: flex;
-  align-items: start;
   border: var(--border) var(--white-8);
 }
 
-.discovery-call-content-block {
+.discovery-call-content-wrapper {
+  display: flex;
+  flex-direction: column;
   padding: var(--modal-block-spacing) var(--modal-inline-spacing);
   max-width: 400px;
+}
+
+.discovery-call-content-block {
+  flex-grow: 1;
 }
 
 .discovery-call-caption {
@@ -1159,10 +1195,42 @@ h6:not(:where(.h1, .h2, .h3, .h4, .h5)) {
   color: var(--white-55);
 }
 
-.discovery-call-item::marker {
+.discovery-call-item {
+  position: relative;
+  padding-left: 16px;
+}
+
+.discovery-call-item::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 0;
   width: 4px;
   aspect-ratio: 1;
   background: var(--pelati);
+}
+
+.discovery-call-modal-shortcut {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.discovery-call-modal-shortcut-label {
+  color: var(--white-20);
+}
+
+.discovery-call-modal-shortcut-label,
+.discovery-call-modal-shortcut-key {
+  font-size: 10px;
+  line-height: var(--line-height-1_1);
+  letter-spacing: 1px;
+}
+
+.discovery-call-modal-shortcut-key {
+  border: var(--border) var(--white-10);
+  padding: 1px 4px;
+  color: var(--white-30);
 }
 
 .discovery-call-form {
@@ -1170,6 +1238,12 @@ h6:not(:where(.h1, .h2, .h3, .h4, .h5)) {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  border-left: var(--border) var(--white-8);
+}
+
+.discovery-call-form.section-mark-top::after,
+.discovery-call-form .section-mark-bottom::after {
+  display: none;
 }
 
 .discovery-call-input-wrapper {
@@ -1212,4 +1286,20 @@ h6:not(:where(.h1, .h2, .h3, .h4, .h5)) {
 
 .grid-span-width {
   grid-column: span 2;
+}
+
+.discovery-call-textarea {
+  min-height: 60px;
+  resize: none;
+}
+
+.discovery-call-btn {
+  padding-inline: 8px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.discovery-call-btn-icon {
+  width: 16px;
 }
