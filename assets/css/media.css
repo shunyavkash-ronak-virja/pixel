@@ -726,6 +726,21 @@ Digital Roadmap Page
   }
 
   /* ----- Related Services Section ----- */
+  .related-services-spacing {
+    padding-bottom: 100px;
+  }
+
+  .related-services-head {
+    margin-bottom: 50px;
+  }
+
+  .related-services-wrapper {
+    gap: 14px;
+  }
+
+  .related-services-card {
+    padding-inline: 20px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -2084,6 +2099,51 @@ Digital Roadmap Page
   .ready-for-change-form-btn {
     margin-top: 24px;
   }
+
+  /* ----- Related Services Section ----- */
+  .related-services-spacing {
+    padding-block: 80px 0;
+  }
+
+  .related-services-head {
+    margin-bottom: 40px;
+  }
+
+  .related-services-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0;
+    margin-inline: -16px;
+  }
+
+  .related-services-card {
+    min-height: auto;
+    border: none;
+    padding-inline: 16px;
+  }
+
+  .related-services-card-outline {
+    display: block;
+    border-top: var(--border) var(--white-8);
+  }
+
+  .related-services-title-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  .related-services-icon-wrapper {
+    margin-bottom: 0;
+    flex-shrink: 0;
+  }
+
+  .related-services-card-description {
+    margin-bottom: 24px;
+    font-size: 14px;
+    line-height: var(--line-height-1_642);
+  }
 }
 
 @media (max-width: 575px) {
@@ -2483,6 +2543,23 @@ Digital Roadmap Page
   .ready-for-change-input-wrapper {
     grid-template-columns: repeat(1, 1fr);
     row-gap: 18px;
+  }
+
+  /* ----- Related Services Section ----- */
+  .related-services-head {
+    margin-bottom: 30px;
+  }
+
+  .related-services-wrapper {
+    margin-inline: -12px;
+  }
+
+  .related-services-card {
+    padding-inline: 12px;
+  }
+
+  .related-services-icon-wrapper {
+    width: 36px;
   }
 }
 

@@ -1946,6 +1946,7 @@ About Us Page
 }
 
 .our-achievements-card-title {
+  width: 80%;
   font-size: 24px;
   line-height: var(--line-height-1_041);
 }
@@ -2973,4 +2974,7 @@ Digital Roadmap Page
   .related-services-icon-white {
     opacity: 0;
   }
+}
+.related-services-card-outline {
+  display: none;
 }
