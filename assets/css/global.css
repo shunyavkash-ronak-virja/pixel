@@ -985,6 +985,18 @@ h6:not(:where(.h1, .h2, .h3, .h4, .h5)) {
 }
 
 /* ----- Inputs Css ----- */
+.input-label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 767px) {
+  .input-label {
+    font-size: 14px;
+    line-height: var(--line-height-1_785);
+  }
+}
+
 .input-block {
   width: 100%;
   position: relative;

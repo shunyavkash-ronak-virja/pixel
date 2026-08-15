@@ -741,6 +741,19 @@ Digital Roadmap Page
   .related-services-card {
     padding-inline: 20px;
   }
+
+  /* ----- Project Contact Section ----- */
+  .project-contact-wrapper {
+    --project-contact-spacing: 70px;
+  }
+
+  .project-contact-form-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .project-contact-textarea-stack {
+    grid-column: auto;
+  }
 }
 
 @media (max-width: 767px) {
@@ -2144,6 +2157,46 @@ Digital Roadmap Page
     font-size: 14px;
     line-height: var(--line-height-1_642);
   }
+
+  /* ----- Project Contact Section ----- */
+  .project-contact-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+    --project-contact-spacing: 60px 40px;
+  }
+
+  .project-contact-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .project-contact-caption {
+    margin-bottom: 12px;
+  }
+
+  .project-contact-description {
+    margin-top: 16px;
+  }
+
+  .project-contact-form {
+    border-top: var(--border) var(--white-8);
+    padding-top: 40px;
+  }
+
+  .project-contact-form-title {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .project-contact-form-title-block {
+    padding-bottom: 16px;
+  }
+
+  .project-contact-form-block {
+    padding-top: 16px;
+    border-top: none;
+  }
 }
 
 @media (max-width: 575px) {
@@ -2560,6 +2613,12 @@ Digital Roadmap Page
 
   .related-services-icon-wrapper {
     width: 36px;
+  }
+
+  /* ----- Project Contact Section ----- */
+  .project-contact-form-title-block,
+  .project-contact-form-block {
+    padding-inline: 12px;
   }
 }
 

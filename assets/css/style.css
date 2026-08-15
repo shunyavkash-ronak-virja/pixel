@@ -2412,11 +2412,6 @@ Contact Us Page
   width: 100%;
 }
 
-.contact-us-input-label {
-  display: block;
-  margin-bottom: 10px;
-}
-
 .contact-us-input {
   border-color: var(--black-400);
   background-color: var(--black-200);
@@ -2977,4 +2972,73 @@ Digital Roadmap Page
 }
 .related-services-card-outline {
   display: none;
+}
+
+/* ----- Project Contact Section ----- */
+.project-contact-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  --project-contact-spacing: 80px 100px;
+}
+
+.project-contact-content,
+.project-contact-form {
+  padding-block: var(--project-contact-spacing);
+}
+
+.project-contact-caption {
+  margin-bottom: 16px;
+}
+
+.project-contact-description {
+  margin-block: 20px 40px;
+}
+
+.project-contact-form {
+  border-left: var(--border) var(--white-8);
+}
+
+.project-contact-form-title-block {
+  padding-bottom: 28px;
+}
+
+.project-contact-form-title {
+  max-width: 498px;
+}
+
+.project-contact-form-title-block,
+.project-contact-form-block {
+  padding-inline: 16px;
+}
+
+.project-contact-form-block {
+  border-top: var(--border) var(--white-8);
+  padding-top: 24px;
+}
+
+.project-contact-form-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px 16px;
+}
+
+.project-contact-input,
+.project-contact-textarea {
+  border-color: var(--black-400);
+  background-color: var(--black-200);
+}
+
+.project-contact-textarea-stack {
+  grid-column: span 2;
+}
+
+.project-contact-textarea {
+  resize: none;
+  min-height: 188px;
+}
+
+.project-contact-fom-btn {
+  width: 100%;
+  max-width: none;
+  margin-top: 20px;
 }
