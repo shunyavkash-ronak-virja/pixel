@@ -1316,3 +1316,12 @@ h6:not(:where(.h1, .h2, .h3, .h4, .h5)) {
 .discovery-call-btn-icon {
   width: 16px;
 }
+
+/* ----- Progress Timeline ----- */
+.progress-timeline {
+  padding-block: 16px;
+}
+
+.progress-timeline svg {
+  display: block;
+}
