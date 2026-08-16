@@ -49,6 +49,7 @@
   --pelati-24: #ff33373d;
   --pelati-25: #ff333740;
   --pelati-40: #ff333766;
+  --pelati-58: #f0282894;
   --pelati-60: #ff3337a1;
   --obsidian: #07011308;
   --transparent: transparent;
@@ -97,15 +98,45 @@
 }
 
 /* ----- Background Glow ----- */
-.background-glow {
-  width: 100%;
-  height: 399px;
+.background-glow-wrapper {
   position: absolute;
-  top: 870px;
+  top: 836px;
   left: 0;
+  width: 100%;
+  height: 370px;
   z-index: -1;
+}
+
+.background-glow-inner {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1676px;
+  height: 100%;
+  filter: blur(220px);
   background-color: var(--pelati-400);
-  filter: blur(622.7px);
+}
+
+.background-glow-wrapper img {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4132px;
+  height: 2064px;
+  filter: blur(622px);
+}
+
+@media (max-width: 575px) {
+  .background-glow-wrapper {
+    height: 450px;
+    top: 576px;
+  }
+
+  .background-glow-inner {
+    background-color: var(--pelati-58);
+  }
 }
 
 html {
@@ -147,6 +178,7 @@ footer {
 }
 
 main {
+  position: relative;
   margin-top: auto;
   overflow: hidden;
 }
