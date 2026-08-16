@@ -144,7 +144,7 @@ if (
 // ================================
 // Partners Showcase JS
 // ================================
-if (typeof Splide !== "undefined" && document.querySelector(".blog-card-slider")) {
+if (typeof Splide !== "undefined" && document.querySelector(".partners-showcase-slider")) {
   new Splide(".partners-showcase-slider", {
     type: "loop",
     gap: "30px",
@@ -660,3 +660,87 @@ if (typeof Splide !== "undefined" && document.querySelector(".casestudy-testimon
     splide.mount();
   });
 }
+
+// ================================
+// Clients Site Showcase
+// ================================
+if (typeof Splide !== "undefined" && document.querySelector(".customer-review-slider.splide")) {
+  document.addEventListener("DOMContentLoaded", function () {
+    var splide = new Splide(".customer-review-slider.splide", {
+      autoplay: true,
+      type: "fade",
+      rewind: true,
+      gap: "28px",
+      pagination: false,
+      interval: 5000,
+      speed: 800,
+      easing: "ease-in-out",
+    });
+    splide.mount();
+  });
+}
+
+// ================================
+// Select Js
+// ================================
+if (typeof Splide !== "undefined" && document.querySelector("select")) {
+  $(document).ready(function () {
+    $("select").niceSelect();
+  });
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  const modal = document.querySelector('[data-modal="discovery-call"]');
+
+  if (!modal) return;
+
+  const openButtons = document.querySelectorAll('[data-modal-open="discovery-call"]');
+
+  const closeButton = modal.querySelector(".discovery-call-modal-close-btn");
+
+  // Open modal
+  const openModal = () => {
+    modal.classList.add("open");
+    document.body.style.overflow = "hidden";
+  };
+
+  // Close modal
+  const closeModal = () => {
+    modal.classList.remove("open");
+    document.body.style.overflow = "";
+  };
+
+  // Open from buttons
+  openButtons.forEach((button) => {
+    button.addEventListener("click", (event) => {
+      event.preventDefault();
+      openModal();
+    });
+  });
+
+  // Close from close button
+  closeButton?.addEventListener("click", closeModal);
+
+  // Close when clicking the overlay
+  modal.addEventListener("click", (event) => {
+    if (event.target === modal) {
+      closeModal();
+    }
+  });
+
+  // Keyboard controls
+  document.addEventListener("keydown", (event) => {
+    // Ignore keyboard shortcuts while typing in form fields
+    const isTyping = event.target.matches("input, textarea, select");
+
+    // Press B to open
+    if (event.key.toLowerCase() === "b" && !isTyping && !modal.classList.contains("open")) {
+      openModal();
+    }
+
+    // Press Escape to close
+    if (event.key === "Escape" && modal.classList.contains("open")) {
+      closeModal();
+    }
+  });
+});

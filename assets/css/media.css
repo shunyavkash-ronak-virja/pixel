@@ -191,7 +191,7 @@
     margin-block: 16px 36px;
   }
 
-  .faqs-wrapper-small-spacing {
+  .faqs-list-spacing {
     padding-block: 18px;
   }
 
@@ -205,6 +205,19 @@
 
   .faq-content.active .faq-answer {
     padding-top: 18px;
+  }
+
+  .faq-primary-list .faq-content {
+    padding-block: 20px;
+  }
+
+  .faq-block-spacing-v2,
+  .primary-faqs-list-spacing {
+    padding-block: 68px 46px;
+  }
+
+  .faq-list {
+    margin-top: 30px;
   }
 
   /* ----- Latest News Section ----- */
@@ -494,7 +507,7 @@ About Us Page
     margin-bottom: 50px;
   }
 
-  /* ----- Our Clients Section ----- */
+  /* ----- Our Achievements Section ----- */
   .our-achievements-title-spacing {
     padding-block: 150px 50px;
   }
@@ -505,6 +518,10 @@ About Us Page
 
   .our-achievements-btn-spacing {
     padding-block: 46px 144px;
+  }
+
+  .digital-roadmap-achievements-title-spacing {
+    padding-block: 108px 50px;
   }
 
   /* =====================================================
@@ -538,7 +555,23 @@ Process Page
   }
 
   .process-timeline-block:not(:last-child) .process-timeline-content {
-    margin-bottom: 26px;
+    margin-bottom: 30px;
+  }
+
+  .process-timeline-v2-section .process-timeline-mark {
+    width: 34px;
+  }
+
+  .process-timeline-v2-section .process-timeline-content {
+    padding: 18px 12px;
+  }
+
+  .timeline-head-description {
+    font-size: 16px;
+  }
+
+  .timeline-user-detail {
+    margin-top: 74px;
   }
 
   /* =====================================================
@@ -574,7 +607,7 @@ FAQ Page
   }
 
   /* =====================================================
-Web Design Hero Page
+Web Design Page
 ===================================================== */
   /* ----- Web Design Hero Section ----- */
   .web-design-hero-head-spacing {
@@ -583,6 +616,177 @@ Web Design Hero Page
 
   .web-design-hero-description {
     margin-bottom: 36px;
+  }
+
+  /* ----- Key Considerations Section ----- */
+  .brisbane-head-spacing {
+    padding-bottom: 50px;
+  }
+
+  .key-considerations-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .key-considerations-block {
+    padding-bottom: 30px;
+  }
+
+  .key-considerations-block:nth-child(3n)::before {
+    left: -1px;
+  }
+
+  .key-considerations-block:nth-child(3n + 1)::after,
+  .key-considerations-block:nth-child(3n)::before {
+    width: 1px;
+  }
+
+  .key-considerations-description {
+    margin-top: 20px;
+  }
+
+  .blank-block {
+    display: none;
+  }
+
+  .key-considerations-head-spacing {
+    padding-bottom: 50px;
+  }
+
+  .key-considerations-list {
+    margin-top: 20px;
+    gap: 10px;
+  }
+
+  /* ----- Customer Review Section ----- */
+  .customer-review-spacing {
+    padding-bottom: 174px;
+  }
+
+  .customer-review-info-wrapper {
+    gap: 16px;
+  }
+
+  .customer-review-title {
+    font-size: 32px;
+  }
+
+  .customer-review-arrow-wrapper {
+    bottom: -120px;
+  }
+
+  /* =====================================================
+SEO Page
+===================================================== */
+  /* ----- SEO Hero Section ----- */
+  .value-hero-spacing {
+    padding-block: 60px;
+  }
+
+  /* ----- Pixel Promises Section ----- */
+  .pixel-promises-spacing {
+    padding-block: 106px 54px;
+  }
+
+  .pixel-promises-card {
+    padding-block: 24px;
+  }
+
+  .pixel-promises-icon {
+    margin-bottom: 24px;
+  }
+
+  .web-developmen-promises-description {
+    font-size: 16px;
+  }
+
+  /* =====================================================
+Digital Roadmap Page
+===================================================== */
+  /* ----- Digital Roadmap Hero Section ----- */
+  .digital-roadmap-hero-spacing {
+    padding-top: 86px;
+  }
+
+  .digital-roadmap-hero-section .hero-title::before {
+    top: 86px;
+  }
+
+  /* ----- Our Clients Section ----- */
+  .digital-roadmap-clients-spacing {
+    padding-block: 40px;
+  }
+
+  /* ----- Digital Roadmap Section ----- */
+  .digital-roadmap-details {
+    gap: 22px;
+  }
+
+  /* ----- Ready For Change Section ----- */
+  .ready-for-change-spacing {
+    padding-block: 108px;
+  }
+
+  .ready-for-change-head {
+    margin-bottom: 50px;
+  }
+
+  .ready-for-change-form {
+    padding: 18px;
+  }
+
+  .ready-for-change-form-btn {
+    margin-top: 34px;
+  }
+
+  /* ----- Related Services Section ----- */
+  .related-services-spacing {
+    padding-bottom: 100px;
+  }
+
+  .related-services-head {
+    margin-bottom: 50px;
+  }
+
+  .related-services-wrapper {
+    gap: 14px;
+  }
+
+  .related-services-card {
+    padding-inline: 20px;
+  }
+
+  /* =====================================================
+laravel Page
+===================================================== */
+  /* ----- Project Contact Section ----- */
+  .project-contact-wrapper {
+    --project-contact-spacing: 70px;
+  }
+
+  .project-contact-form-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .project-contact-textarea-stack {
+    grid-column: auto;
+  }
+
+  /* ----- Our Achievements Section ----- */
+  .laravels-achievements-title-spacing {
+    padding-block: 106px 50px;
+  }
+
+  .laravels-our-achievements-btn-spacing {
+    padding-block: 48px 106px;
+  }
+
+  /* ----- Partners Showcase Section ----- */
+  .laravels-partners-showcase-head-spacing {
+    padding-block: 80px 48px;
+  }
+
+  .laravels-partners-showcase-spacing {
+    padding-bottom: 80px;
   }
 }
 
@@ -705,6 +909,10 @@ Web Design Hero Page
   }
 
   /* ----- Why It Matters Section ----- */
+  .why-it-matters-head-description {
+    max-width: 100%;
+  }
+
   .highlight-wrapper {
     flex-direction: column;
     gap: 28px;
@@ -857,7 +1065,23 @@ Web Design Hero Page
 
   .client-testimonials-content {
     align-items: center;
+    gap: 20px;
+  }
+
+  .client-testimonials-description {
+    font-size: 18px;
+    line-height: var(--line-height-1_333);
     text-align: center;
+  }
+
+  .client-testimonials-author-name,
+  .client-testimonials-author-caption {
+    font-size: 14px;
+    line-height: var(--line-height-1_642);
+  }
+
+  .client-testimonials-info {
+    gap: 16px;
   }
 
   .client-testimonials-arrow-wrapper .icon-btn {
@@ -899,7 +1123,7 @@ Web Design Hero Page
     border-top: var(--border) var(--black-300);
   }
 
-  .faqs-wrapper-small-spacing {
+  .faqs-list-spacing {
     padding-block: 0;
   }
 
@@ -920,6 +1144,23 @@ Web Design Hero Page
     padding-top: 14px;
   }
 
+  .faq-primary-list .faq-content {
+    padding-block: 16px;
+  }
+
+  .faq-block-spacing-v2 {
+    padding-block: 56px 36px;
+  }
+
+  .primary-faqs-list-spacing {
+    padding-top: 0;
+    padding-bottom: 36px;
+  }
+
+  .faq-list {
+    align-self: start;
+    margin-top: 20px;
+  }
   /* ----- Latest News Section ----- */
   .latest-news-head {
     align-items: center;
@@ -1424,7 +1665,7 @@ About Us Page
     line-height: var(--line-height-1_642);
   }
 
-  /* ----- Our Clients Section ----- */
+  /* ----- Our Achievements Section ----- */
   .our-achievements-title-spacing {
     padding-bottom: 40px;
   }
@@ -1448,6 +1689,10 @@ About Us Page
 
   .our-achievements-btn-spacing {
     padding-bottom: 128px;
+  }
+
+  .digital-roadmap-achievements-title-spacing {
+    padding-block: 96px 40px;
   }
 
   /* =====================================================
@@ -1486,22 +1731,51 @@ Process Page
     flex-direction: column;
   }
 
-  .process-timeline-title,
+  .process-timeline-head {
+    text-align: center;
+  }
+
+  .process-timeline-v2-section .process-timeline-wrapper {
+    gap: 40px;
+  }
+
+  .process-timeline-head,
+  .process-timeline-mark {
+    position: static;
+  }
+
+  .process-timeline-head,
   .process-timeline-stack {
     width: 100%;
-    max-width: 100%;
   }
 
   .process-timeline-title,
-  .process-timeline-mark {
-    position: static;
+  .timeline-description-v2,
+  .process-timeline-stack,
+  .timeline-user-description,
+  .timeline-description-v3 {
+    max-width: 100%;
+  }
+
+  .timeline-head-description {
+    margin-top: 16px;
+  }
+
+  .timeline-user-description {
+    margin-block: 12px;
+  }
+
+  .timeline-head-description {
+    font-size: 14px;
+    line-height: var(--line-height-1_642);
   }
 
   .process-timeline-block {
     gap: 12px;
   }
+
   .process-timeline-block:not(:last-child) {
-    margin-bottom: 26px;
+    margin-bottom: 24px;
   }
 
   .process-timeline-marks-block {
@@ -1517,8 +1791,43 @@ Process Page
     max-width: 100%;
   }
 
-  .process-timeline-block:not(:last-child) .process-timeline-content {
+  .process-timeline-block:not(:last-child) .process-timeline-content,
+  .process-timeline-v2-section .process-timeline-block:not(:last-child) .process-timeline-content {
     margin-bottom: 0;
+  }
+
+  .process-timeline-v2-section .process-timeline-mark {
+    width: 28px;
+  }
+
+  .process-timeline-v2-section .process-timeline-content {
+    padding-block: 12px;
+  }
+
+  .timeline-user-detail {
+    margin-top: 48px;
+  }
+
+  .desktop-show {
+    display: none;
+  }
+
+  .desktop-hide {
+    display: block;
+  }
+
+  .timeline-user-name {
+    font-size: 20px;
+  }
+
+  .timeline-user-caption {
+    font-size: 14px;
+    line-height: var(--line-height-1_642);
+  }
+
+  .timeline-description-btn {
+    margin-top: 36px;
+    justify-self: center;
   }
 
   /* =====================================================
@@ -1607,7 +1916,7 @@ FAQ Page
   }
 
   /* =====================================================
-Web Design Hero Page
+Web Design Page
 ===================================================== */
   /* ----- Web Design Hero Section ----- */
   .web-design-hero-head-spacing {
@@ -1619,6 +1928,351 @@ Web Design Hero Page
     flex-direction: column;
     align-items: center;
     text-align: center;
+  }
+
+  .web-design-hero-description {
+    max-width: 100%;
+  }
+
+  /* ----- Key Considerations Section ----- */
+  .brisbane-head-spacing {
+    padding-bottom: 40px;
+  }
+
+  .brisbane-head-wrapper {
+    max-width: 100%;
+  }
+
+  .key-considerations-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .key-considerations-wrapper > .key-considerations-img-content:nth-child(2) {
+    order: 0;
+  }
+
+  .key-considerations-wrapper > .key-considerations-block:nth-child(1) {
+    order: 1;
+  }
+
+  .key-considerations-wrapper > .key-considerations-img-content:nth-child(5) {
+    order: 2;
+  }
+
+  .key-considerations-wrapper > .key-considerations-block:nth-child(6) {
+    order: 3;
+  }
+
+  .key-considerations-wrapper > .key-considerations-img-content:nth-child(8) {
+    order: 4;
+  }
+
+  .key-considerations-wrapper > .key-considerations-block:nth-child(7) {
+    order: 5;
+  }
+
+  .key-considerations-wrapper > .key-considerations-img-content:nth-child(11) {
+    order: 6;
+  }
+
+  .key-considerations-wrapper > .key-considerations-block:nth-child(12) {
+    order: 7;
+  }
+
+  .key-considerations-block:nth-child(3n + 1)::before,
+  .key-considerations-block:nth-child(3n)::after,
+  .key-considerations-block:nth-child(3n + 1)::after,
+  .key-considerations-block:nth-child(3n)::before {
+    display: none;
+  }
+
+  .key-considerations-img-content,
+  .key-considerations-block {
+    border: none;
+    padding-inline: 16px;
+  }
+
+  .key-considerations-block {
+    padding-bottom: 36px;
+  }
+
+  .key-considerations-img-content {
+    justify-content: start;
+    border-top: 2px solid var(--pelati-500);
+    padding-top: 28px;
+  }
+
+  .key-considerations-title {
+    font-size: 20px;
+    line-height: var(--line-height-1_25);
+  }
+
+  .key-considerations-description {
+    margin-top: 16px;
+  }
+
+  .key-considerations-head-spacing {
+    padding-bottom: 40px;
+  }
+
+  .key-considerations-item {
+    gap: 8px;
+  }
+
+  .key-considerations-list {
+    margin-top: 16px;
+    gap: 8px;
+  }
+
+  /* ----- Customer Review Section ----- */
+  .customer-review-slider {
+    max-width: 100%;
+  }
+
+  .customer-review-title {
+    font-size: 24px;
+  }
+
+  .customer-review-author-name,
+  .customer-review-author-caption {
+    font-size: 14px;
+    line-height: var(--line-height-1_642);
+  }
+
+  /* =====================================================
+SEO Page
+===================================================== */
+  /* ----- SEO Hero Section ----- */
+  .value-hero-wrapper {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 36px;
+  }
+
+  .value-hero-content {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .value-hero-description {
+    margin-bottom: 32px;
+  }
+
+  /* ----- Pixel Promises Section ----- */
+  .pixel-promises-spacing {
+    padding-block: 92px 48px;
+  }
+
+  .pixel-promises-head,
+  .pixel-promises-description {
+    max-width: 100%;
+  }
+
+  .pixel-promises-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .pixel-promises-card:not(:last-child) {
+    border-right: none;
+    border-bottom: var(--border) var(--white-10);
+  }
+
+  .pixel-promises-icon {
+    width: 32px;
+    margin-bottom: 16px;
+  }
+
+  .web-developmen-promises-description {
+    font-size: 14px;
+    line-height: var(--line-height-1_642);
+  }
+
+  /* =====================================================
+Digital Roadmap Page
+===================================================== */
+  /* ----- Digital Roadmap Hero Section ----- */
+  .digital-roadmap-hero-spacing {
+    padding-top: 72px;
+  }
+
+  .digital-roadmap-hero-description {
+    margin-bottom: 36px;
+  }
+
+  /* ----- Digital Roadmap Section ----- */
+  .digital-roadmap-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+    text-align: center;
+    gap: 16px;
+    --digital-roadmap-spacing: 60px 56px;
+  }
+
+  .digital-roadmap-head {
+    border-right: none;
+    padding-bottom: 0;
+  }
+
+  .digital-roadmap-details {
+    align-items: center;
+    gap: 16px;
+    padding-top: 0;
+  }
+
+  .digital-roadmap-description {
+    max-width: 100%;
+    font-size: 14px;
+    line-height: var(--line-height-1_642);
+  }
+
+  .digital-roadmap-highlights-spacing {
+    padding-block: 25px;
+  }
+
+  /* ----- Ready For Change Section ----- */
+  .ready-for-change-spacing {
+    padding-block: 96px;
+  }
+
+  .ready-for-change-head-description {
+    margin-top: 10px;
+  }
+
+  .ready-for-change-wrapper {
+    max-width: 100%;
+  }
+
+  .ready-for-change-head {
+    margin-bottom: 42px;
+  }
+
+  .ready-for-change-form {
+    padding: 0;
+    border: none;
+  }
+
+  .ready-for-change-label,
+  .ready-for-change-options-caption {
+    line-height: var(--line-height-1_785);
+  }
+
+  .ready-for-change-label,
+  .ready-for-change-option-stack,
+  .ready-for-change-options-caption {
+    font-size: 14px;
+  }
+
+  .ready-for-change-option-wrapper {
+    margin-top: 10px;
+  }
+
+  .ready-for-change-form-btn {
+    margin-top: 24px;
+  }
+
+  /* ----- Related Services Section ----- */
+  .related-services-spacing {
+    padding-block: 80px 0;
+  }
+
+  .related-services-head {
+    margin-bottom: 40px;
+  }
+
+  .related-services-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0;
+    margin-inline: -16px;
+  }
+
+  .related-services-card {
+    min-height: auto;
+    border: none;
+    padding-inline: 16px;
+  }
+
+  .related-services-card-outline {
+    display: block;
+    border-top: var(--border) var(--white-8);
+  }
+
+  .related-services-title-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  .related-services-icon-wrapper {
+    margin-bottom: 0;
+    flex-shrink: 0;
+  }
+
+  .related-services-card-description {
+    margin-bottom: 24px;
+    font-size: 14px;
+    line-height: var(--line-height-1_642);
+  }
+  /* =====================================================
+laravel Page
+===================================================== */
+  /* ----- Project Contact Section ----- */
+  .project-contact-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+    --project-contact-spacing: 60px 40px;
+  }
+
+  .project-contact-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .project-contact-caption {
+    margin-bottom: 12px;
+  }
+
+  .project-contact-description {
+    margin-top: 16px;
+  }
+
+  .project-contact-form {
+    border-top: var(--border) var(--white-8);
+    padding-top: 40px;
+  }
+
+  .project-contact-form-title {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .project-contact-form-title-block {
+    padding-bottom: 16px;
+  }
+
+  .project-contact-form-block {
+    padding-top: 16px;
+    border-top: none;
+  }
+
+  /* ----- Our Achievements Section ----- */
+  .laravels-achievements-title-spacing {
+    padding-block: 92px 40px;
+  }
+
+  .laravels-our-achievements-btn-spacing {
+    padding-block: 36px 92px;
+  }
+
+  /* ----- Partners Showcase Section ----- */
+  .laravels-partners-showcase-head-spacing {
+    padding-block: 60px 36px;
+  }
+
+  .laravels-partners-showcase-spacing {
+    padding-bottom: 60px;
   }
 }
 
@@ -1689,6 +2343,17 @@ Web Design Hero Page
     padding-top: 12px;
   }
 
+  .faq-primary-list .faq-content {
+    padding-block: 12px;
+  }
+
+  .faq-block-spacing-v2 {
+    padding-block: 44px 26px;
+  }
+
+  .primary-faqs-list-spacing {
+    padding-bottom: 26px;
+  }
   /* ----- Latest News Section ----- */
   .latest-news-head {
     margin-bottom: 36px;
@@ -1887,13 +2552,17 @@ About Us Page
     aspect-ratio: 1 / 0.665;
   }
 
-  /* ----- Our Clients Section ----- */
+  /* ----- Our Achievements Section ----- */
   .our-achievements-title-spacing {
     padding-bottom: 30px;
   }
 
   .our-achievements-btn-spacing {
     padding-bottom: 110px;
+  }
+
+  .digital-roadmap-achievements-title-spacing {
+    padding-block: 85px 30px;
   }
 
   /* =====================================================
@@ -1923,6 +2592,25 @@ Process Page
     margin-bottom: 16px;
   }
 
+  .process-timeline-v2-section .process-timeline-card-title {
+    font-size: 24px;
+  }
+
+  .process-timeline-v2-section .process-timeline-mark {
+    width: 20px;
+  }
+
+  .process-timeline-v2-section
+    .process-timeline-block:not(:last-child)
+    .process-timeline-marks-block::before {
+    height: calc(100% - 32px);
+    top: 32px;
+  }
+
+  .timeline-user-detail {
+    margin-top: 20px;
+  }
+
   /* =====================================================
 Contact Us Page
 ===================================================== */
@@ -1940,11 +2628,106 @@ Contact Us Page
   }
 
   /* =====================================================
-Web Design Hero Page
+Web Design Page
 ===================================================== */
   /* ----- Web Design Hero Section ----- */
   .clients-site-slide {
     max-width: 330px;
+  }
+
+  /* ----- Key Considerations Section ----- */
+  .key-considerations-img-content,
+  .key-considerations-block {
+    padding-inline: 12px;
+  }
+
+  .key-considerations-img {
+    max-width: 240px;
+  }
+
+  /* ----- Customer Review Section ----- */
+  .customer-review-content {
+    gap: 26px;
+  }
+
+  .customer-review-icon {
+    width: 20px;
+  }
+
+  .customer-review-title {
+    font-size: 18px;
+    line-height: var(--line-height-1_333);
+  }
+
+  /* ----- Pixel Promises Section ----- */
+  .pixel-promises-spacing {
+    padding-block: 80px 40px;
+  }
+
+  .pixel-promises-icon {
+    width: 28px;
+  }
+
+  /* =====================================================
+Digital Roadmap Page
+===================================================== */
+  /* ----- Digital Roadmap Hero Section ----- */
+  .digital-roadmap-hero-spacing {
+    padding-top: 60px;
+  }
+
+  /* ----- Ready For Change Section ----- */
+  .ready-for-change-spacing {
+    padding-block: 80px;
+  }
+
+  .ready-for-change-input-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 18px;
+  }
+
+  /* ----- Related Services Section ----- */
+  .related-services-head {
+    margin-bottom: 30px;
+  }
+
+  .related-services-wrapper {
+    margin-inline: -12px;
+  }
+
+  .related-services-card {
+    padding-inline: 12px;
+  }
+
+  .related-services-icon-wrapper {
+    width: 36px;
+  }
+
+  /* =====================================================
+laravel Page
+===================================================== */
+  /* ----- Project Contact Section ----- */
+  .project-contact-form-title-block,
+  .project-contact-form-block {
+    padding-inline: 12px;
+  }
+
+  /* ----- Our Achievements Section ----- */
+  .laravels-achievements-title-spacing {
+    padding-top: 80px;
+  }
+
+  .laravels-our-achievements-btn-spacing {
+    padding-block: 28px 80px;
+  }
+
+  /* ----- Partners Showcase Section ----- */
+  .laravels-partners-showcase-head-spacing {
+    padding-block: 40px 24px;
+  }
+
+  .laravels-partners-showcase-spacing {
+    padding-bottom: 40px;
   }
 }
 
