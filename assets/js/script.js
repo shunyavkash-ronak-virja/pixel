@@ -214,6 +214,246 @@ if (typeof Fancybox !== "undefined") {
 }
 
 // ================================
+// Animated CTA Box Canvas
+// Exact readable equivalent of the production .boxCanvas implementation.
+// ================================
+const BOX_STYLES = [
+  // Figma screenshot 1: 2% fill, 4% border.
+  {
+    fill: "#FF333705",
+    border: "#FF33370A",
+    largeInset: "#FF333729",
+    topInset: "#FF333729",
+    edgeInset: "#FF33371F",
+  },
+  // Figma screenshot 2: 4% fill, 12% border.
+  {
+    fill: "#FF33370A",
+    border: "#FF33371F",
+    largeInset: "#FF333729",
+    topInset: "#FF333729",
+    edgeInset: "#FF33371F",
+  },
+  // Figma screenshot 3: 12% fill, 24% border.
+  {
+    fill: "#FF33371F",
+    border: "#FF33373D",
+    largeInset: "#FF333729",
+    topInset: "#FF333729",
+    edgeInset: "#FF33371F",
+  },
+];
+
+const OUTER_BOX_SHADOWS = [
+  { offsetY: 0.5, blur: 0.5, color: "#07011308" },
+  { offsetY: 1, blur: 1, color: "#07011308" },
+  { offsetY: 2, blur: 2, color: "#07011308" },
+  { offsetY: 3, blur: 3, color: "#07011308" },
+  { offsetY: 5, blur: 5, color: "#07011308" },
+  { offsetY: 8, blur: 8, color: "#07011308" },
+];
+
+document.querySelectorAll(".boxCanvasWrapper").forEach((wrapper) => {
+  const canvas = wrapper.querySelector(".boxCanvas");
+  if (!canvas) return;
+
+  const context = canvas.getContext("2d");
+  const boxWidth = parseInt(wrapper.dataset.boxWidth, 10) || 40;
+  const boxHeight = parseInt(wrapper.dataset.boxHeight, 10) || 40;
+  const boxCount = 8;
+  const boxLifetime = 7000;
+  const fadeOutDelay = 300;
+  const minimumCellGap = 1;
+
+  let columns = 0;
+  let rows = 0;
+  let boxes = [];
+  let previousFrameTime = 0;
+
+  function findBoxPosition(ignoredBox = null) {
+    const availableCells = [];
+    const fallbackCells = [];
+
+    for (let y = 0; y < rows; y++) {
+      for (let x = 0; x < columns; x++) {
+        const overlapsExistingBox = boxes.some(
+          (box) => box !== ignoredBox && box.x === x && box.y === y,
+        );
+
+        if (!overlapsExistingBox) {
+          fallbackCells.push({ x, y });
+        }
+
+        const isTooCloseToAnotherBox = boxes.some(
+          (box) =>
+            box !== ignoredBox &&
+            Math.abs(box.x - x) <= minimumCellGap &&
+            Math.abs(box.y - y) <= minimumCellGap,
+        );
+
+        if (!isTooCloseToAnotherBox) {
+          availableCells.push({ x, y });
+        }
+      }
+    }
+
+    const candidates = availableCells.length ? availableCells : fallbackCells;
+    return candidates[Math.floor(Math.random() * candidates.length)];
+  }
+
+  function createBoxes() {
+    boxes = [];
+
+    for (let index = 0; index < boxCount; index++) {
+      const { x, y } = findBoxPosition();
+      boxes.push({
+        x,
+        y,
+        opacity: 0,
+        targetOpacity: 0.8 + Math.random() * 0.2,
+        style: BOX_STYLES[index % BOX_STYLES.length],
+        timer: Math.random() * boxLifetime,
+        duration: boxLifetime,
+        isSwitching: false,
+        switchProgress: 0,
+      });
+    }
+  }
+
+  function resizeCanvas() {
+    const { width, height } = wrapper.getBoundingClientRect();
+    canvas.width = width;
+    canvas.height = height;
+    columns = Math.floor(width / boxWidth);
+    rows = Math.floor(height / boxHeight);
+    createBoxes();
+  }
+
+  function drawGrid() {
+    context.strokeStyle = "rgba(255,255,255,0.05)";
+    context.lineWidth = 1;
+
+    for (let x = 0; x <= canvas.width; x += boxWidth) {
+      context.beginPath();
+      context.moveTo(x, 0);
+      context.lineTo(x, canvas.height);
+      context.stroke();
+    }
+
+    for (let y = 0; y <= canvas.height; y += boxHeight) {
+      context.beginPath();
+      context.moveTo(0, y);
+      context.lineTo(canvas.width, y);
+      context.stroke();
+    }
+  }
+
+  function hexToRgba(hex, opacityMultiplier = 1) {
+    const red = parseInt(hex.slice(1, 3), 16);
+    const green = parseInt(hex.slice(3, 5), 16);
+    const blue = parseInt(hex.slice(5, 7), 16);
+    const alpha = hex.length === 9 ? parseInt(hex.slice(7, 9), 16) / 255 : 1;
+    return `rgba(${red}, ${green}, ${blue}, ${alpha * opacityMultiplier})`;
+  }
+
+  function drawOuterShadows(x, y) {
+    OUTER_BOX_SHADOWS.forEach((shadow) => {
+      context.save();
+      context.fillStyle = "rgba(7,1,19,0.03)";
+      context.shadowColor = hexToRgba(shadow.color);
+      context.shadowBlur = shadow.blur;
+      context.shadowOffsetY = shadow.offsetY;
+      context.fillRect(x, y, boxWidth, boxHeight);
+      context.restore();
+    });
+  }
+
+  function drawInsetGlow(x, y, style, boxOpacity) {
+    context.save();
+    context.beginPath();
+    context.rect(x, y, boxWidth, boxHeight);
+    context.clip();
+
+    if (style.largeInset) {
+      const largeGlow = context.createLinearGradient(x, y, x, y + boxHeight);
+      largeGlow.addColorStop(0, hexToRgba(style.largeInset, boxOpacity));
+      largeGlow.addColorStop(0.6, hexToRgba(style.largeInset, boxOpacity * 0.25));
+      largeGlow.addColorStop(1, "rgba(255,51,55,0)");
+      context.fillStyle = largeGlow;
+      context.fillRect(x, y, boxWidth, boxHeight);
+    }
+
+    // 0px 0.5px 0.5px inset: the fine red highlight at the box top.
+    context.fillStyle = hexToRgba(style.topInset, boxOpacity);
+    context.fillRect(x, y, boxWidth, 0.5);
+
+    // 0px 1px 2px -0.5px inset: a very soft inner red edge.
+    const edgeGlow = context.createLinearGradient(x, y, x, y + 3);
+    edgeGlow.addColorStop(0, hexToRgba(style.edgeInset, boxOpacity));
+    edgeGlow.addColorStop(1, "rgba(255,51,55,0)");
+    context.fillStyle = edgeGlow;
+    context.fillRect(x, y + 0.5, boxWidth, 3);
+    context.restore();
+  }
+
+  function drawBoxes() {
+    boxes.forEach((box) => {
+      const x = box.x * boxWidth;
+      const y = box.y * boxHeight;
+
+      drawOuterShadows(x, y);
+      context.fillStyle = hexToRgba(box.style.fill, box.opacity);
+      context.fillRect(x, y, boxWidth, boxHeight);
+      drawInsetGlow(x, y, box.style, box.opacity);
+      context.strokeStyle = hexToRgba(box.style.border, box.opacity);
+      context.strokeRect(x, y, boxWidth, boxHeight);
+    });
+  }
+
+  function updateBoxes(elapsedTime) {
+    boxes.forEach((box) => {
+      box.opacity += (box.targetOpacity - box.opacity) * 0.08;
+      box.timer += elapsedTime;
+
+      if (box.timer >= box.duration && !box.isSwitching) {
+        box.targetOpacity = 0;
+        box.isSwitching = true;
+        box.switchProgress = 0;
+        box.timer = 0;
+      }
+
+      if (box.isSwitching) {
+        box.switchProgress += elapsedTime;
+      }
+
+      if (box.isSwitching && box.switchProgress > fadeOutDelay) {
+        const { x, y } = findBoxPosition(box);
+        box.x = x;
+        box.y = y;
+        box.opacity = 0;
+        box.targetOpacity = 0.8 + Math.random() * 0.2;
+        box.isSwitching = false;
+      }
+    });
+  }
+
+  function animate(frameTime) {
+    const elapsedTime = frameTime - previousFrameTime;
+    previousFrameTime = frameTime;
+
+    context.clearRect(0, 0, canvas.width, canvas.height);
+    drawGrid();
+    updateBoxes(elapsedTime);
+    drawBoxes();
+    requestAnimationFrame(animate);
+  }
+
+  resizeCanvas();
+  animate(0);
+  window.addEventListener("resize", resizeCanvas);
+});
+
+// ================================
 // FAQ JS
 // ================================
 document.querySelectorAll(".faq-question-block").forEach((question) => {
@@ -244,161 +484,6 @@ if (typeof Splide !== "undefined" && document.querySelector(".blog-card-slider")
     },
   });
   splide.mount();
-}
-
-// ================================
-// CTA Canvas
-// ================================
-const canvas = document.querySelector(".cta-background-canvas");
-if (canvas) {
-  const ctx = canvas.getContext("2d");
-  const CELL_WIDTH = 64;
-  const CELL_HEIGHT = 48;
-  const GRID_BORDER = "rgba(255,255,255,0.04)";
-  const opacityLevels = [1, 0.6, 0.45, 0.3, 0.2, 0.1];
-  let cells = [];
-  let cols = 0;
-  let rows = 0;
-
-  function resizeCanvas() {
-    const parent = canvas.parentElement;
-    canvas.width = parent.clientWidth;
-    canvas.height = parent.clientHeight;
-    cols = Math.ceil(canvas.width / CELL_WIDTH);
-    rows = Math.ceil(canvas.height / CELL_HEIGHT);
-    cells = [];
-    for (let y = 0; y < rows; y++) {
-      for (let x = 0; x < cols; x++) {
-        cells.push({
-          x: x * CELL_WIDTH,
-          y: y * CELL_HEIGHT,
-          opacity: 0,
-          target: 0,
-          speed: 0.08,
-        });
-      }
-    }
-  }
-  resizeCanvas();
-  new ResizeObserver(resizeCanvas).observe(canvas.parentElement);
-
-  /*--------------------------
-  Activate Random Cell
-  --------------------------*/
-  function activateRandomCell() {
-    const cell = cells[Math.floor(Math.random() * cells.length)];
-    cell.target = opacityLevels[Math.floor(Math.random() * opacityLevels.length)];
-  }
-
-  /*--------------------------
-  Create Animation Streams
-  --------------------------*/
-  for (let i = 0; i < 6; i++) {
-    setTimeout(() => {
-      activateRandomCell();
-      setInterval(
-        () => {
-          activateRandomCell();
-        },
-        350 + Math.random() * 300,
-      );
-    }, i * 220);
-  }
-
-  /*--------------------------
-  Draw Glow
-  --------------------------*/
-  function drawGlow(cell) {
-    const a = cell.opacity;
-    if (a < 0.01) return;
-    const x = cell.x;
-    const y = cell.y;
-    const w = CELL_WIDTH;
-    const h = CELL_HEIGHT;
-
-    // =====================================================
-    // Layer 1 : Large Soft Red Glow
-    // =====================================================
-    ctx.save();
-    ctx.shadowColor = `rgba(255,51,55,${0.45 * a})`;
-    ctx.shadowBlur = 28;
-    ctx.fillStyle = `rgba(255,51,55,${0.08 * a})`;
-    ctx.fillRect(x + 6, y + 6, w - 12, h - 12);
-    ctx.restore();
-
-    // =====================================================
-    // Layer 2 : White Bloom
-    // =====================================================
-    ctx.save();
-    ctx.shadowColor = `rgba(255,255,255,${0.9 * a})`;
-    ctx.shadowBlur = 10;
-    ctx.fillStyle = `rgba(255,51,55,${0.1 * a})`;
-    ctx.fillRect(x + 2, y + 2, w - 4, h - 4);
-    ctx.restore();
-
-    // =====================================================
-    // Layer 3 : Main Background
-    // =====================================================
-    ctx.save();
-    ctx.fillStyle = `rgba(255,51,55,${0.12 * a})`;
-    ctx.fillRect(x + 1, y + 1, w - 2, h - 2);
-
-    // =====================================================
-    // Top Glass Highlight
-    // =====================================================
-    const topGradient = ctx.createLinearGradient(x, y, x, y + h * 0.55);
-    topGradient.addColorStop(0, `rgba(255,255,255,${0.28 * a})`);
-    topGradient.addColorStop(0.45, `rgba(255,255,255,${0.08 * a})`);
-    topGradient.addColorStop(1, "rgba(255,255,255,0)");
-    ctx.fillStyle = topGradient;
-    ctx.fillRect(x + 1, y + 1, w - 2, h * 0.55);
-
-    // =====================================================
-    // Bottom Shadow
-    // =====================================================
-    const bottomGradient = ctx.createLinearGradient(x, y, x, y + h);
-    bottomGradient.addColorStop(0, "rgba(255,51,55,0)");
-    bottomGradient.addColorStop(1, `rgba(255,51,55,${0.18 * a})`);
-    ctx.fillStyle = bottomGradient;
-    ctx.fillRect(x + 1, y + 1, w - 2, h - 2);
-
-    // =====================================================
-    // Inner Highlight
-    // =====================================================
-    ctx.beginPath();
-    ctx.moveTo(x + 3, y + 2);
-    ctx.lineTo(x + w - 3, y + 2);
-    ctx.strokeStyle = `rgba(255,255,255,${0.35 * a})`;
-    ctx.lineWidth = 1;
-    ctx.stroke();
-
-    // =====================================================
-    // Red Border
-    // =====================================================
-    ctx.strokeStyle = `rgba(255,51,55,${0.12 * a})`;
-    ctx.lineWidth = 1;
-    ctx.strokeRect(x + 0.5, y + 0.5, w - 1, h - 1);
-    ctx.restore();
-  }
-
-  /*--------------------------
-  Animation Loop
-  --------------------------*/
-  function animate() {
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-    cells.forEach((cell) => {
-      // Keep Grid Border Always Visible
-      ctx.strokeStyle = GRID_BORDER;
-      ctx.lineWidth = 1;
-      ctx.strokeRect(cell.x, cell.y, CELL_WIDTH, CELL_HEIGHT);
-      // Animate
-      cell.opacity += (cell.target - cell.opacity) * cell.speed;
-      cell.target *= 0.988;
-      drawGlow(cell);
-    });
-    requestAnimationFrame(animate);
-  }
-  animate();
 }
 
 // ================================

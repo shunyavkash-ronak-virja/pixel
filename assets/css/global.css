@@ -148,6 +148,7 @@ footer {
 
 main {
   margin-top: auto;
+  overflow: hidden;
 }
 
 .section-spacing {
