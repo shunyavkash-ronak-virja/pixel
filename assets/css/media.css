@@ -742,6 +742,9 @@ Digital Roadmap Page
     padding-inline: 20px;
   }
 
+  /* =====================================================
+laravel Page
+===================================================== */
   /* ----- Project Contact Section ----- */
   .project-contact-wrapper {
     --project-contact-spacing: 70px;
@@ -753,6 +756,15 @@ Digital Roadmap Page
 
   .project-contact-textarea-stack {
     grid-column: auto;
+  }
+
+  /* ----- Our Achievements Section ----- */
+  .laravels-achievements-title-spacing {
+    padding-block: 106px 50px;
+  }
+
+  .laravels-our-achievements-btn-spacing {
+    padding-block: 48px 106px;
   }
 }
 
@@ -1701,11 +1713,12 @@ Process Page
   .process-timeline-title,
   .timeline-description-v2,
   .process-timeline-stack,
-  .timeline-user-description {
+  .timeline-user-description,
+  .timeline-description-v3 {
     max-width: 100%;
   }
 
-  .timeline-description-v2 {
+  .timeline-head-description {
     margin-top: 16px;
   }
 
@@ -1771,6 +1784,11 @@ Process Page
   .timeline-user-caption {
     font-size: 14px;
     line-height: var(--line-height-1_642);
+  }
+
+  .timeline-description-btn {
+    margin-top: 36px;
+    justify-self: center;
   }
 
   /* =====================================================
@@ -2157,7 +2175,9 @@ Digital Roadmap Page
     font-size: 14px;
     line-height: var(--line-height-1_642);
   }
-
+  /* =====================================================
+laravel Page
+===================================================== */
   /* ----- Project Contact Section ----- */
   .project-contact-wrapper {
     grid-template-columns: repeat(1, 1fr);
@@ -2196,6 +2216,15 @@ Digital Roadmap Page
   .project-contact-form-block {
     padding-top: 16px;
     border-top: none;
+  }
+
+  /* ----- Our Achievements Section ----- */
+  .laravels-achievements-title-spacing {
+    padding-block: 92px 40px;
+  }
+
+  .laravels-our-achievements-btn-spacing {
+    padding-block: 36px 92px;
   }
 }
 
@@ -2615,10 +2644,22 @@ Digital Roadmap Page
     width: 36px;
   }
 
+  /* =====================================================
+laravel Page
+===================================================== */
   /* ----- Project Contact Section ----- */
   .project-contact-form-title-block,
   .project-contact-form-block {
     padding-inline: 12px;
+  }
+
+  /* ----- Our Achievements Section ----- */
+  .laravels-achievements-title-spacing {
+    padding-top: 80px;
+  }
+
+  .laravels-our-achievements-btn-spacing {
+    padding-block: 28px 80px;
   }
 }
 

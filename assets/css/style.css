@@ -2203,19 +2203,23 @@ Process Page
   color: var(--white-60);
 }
 
+.timeline-description-btn {
+  margin-top: 40px;
+}
+
 /* Web Development Time Line */
 .process-timeline-v2-title {
   max-width: 522px;
 }
 
 .timeline-description-v2 {
-  margin-top: 24px;
   max-width: 508px;
 }
 
 .timeline-head-description {
   font-size: 18px;
   font-weight: 400;
+  margin-top: 24px;
 }
 
 .process-timeline-v2-section .process-timeline-block:not(:last-child) .process-timeline-content {
@@ -2250,6 +2254,11 @@ Process Page
 
 .desktop-hide {
   display: none;
+}
+
+/* Laravel Time Line */
+.timeline-description-v3 {
+  max-width: 492px;
 }
 
 /* =====================================================
@@ -2974,6 +2983,9 @@ Digital Roadmap Page
   display: none;
 }
 
+/* =====================================================
+laravel Page
+===================================================== */
 /* ----- Project Contact Section ----- */
 .project-contact-wrapper {
   display: grid;
@@ -3041,4 +3053,17 @@ Digital Roadmap Page
   width: 100%;
   max-width: none;
   margin-top: 20px;
+}
+
+/* ----- Our Achievements Section ----- */
+.laravels-achievements-title-spacing {
+  padding-block: 120px 60px;
+}
+
+.laravels-our-achievements-title {
+  max-width: 1062px;
+}
+
+.laravels-our-achievements-btn-spacing {
+  padding-block: 60px 120px;
 }
