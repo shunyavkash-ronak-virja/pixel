@@ -102,6 +102,7 @@ if (
   document.querySelector(".process-flow-item")
 ) {
   const items = document.querySelectorAll(".process-flow-item");
+  const contentItems = document.querySelectorAll(".process-flow-tab-content");
 
   let currentIndex = 0;
   let timer;
@@ -109,6 +110,7 @@ if (
   function activateItem(index) {
     items.forEach((item) => {
       item.classList.remove("active");
+      item.setAttribute("aria-pressed", "false");
 
       const effect = item.querySelector(".process-flow-time-line-effect");
 
@@ -122,6 +124,15 @@ if (
     if (!items[index]) return;
 
     items[index].classList.add("active");
+    items[index].setAttribute("aria-pressed", "true");
+
+    contentItems.forEach((contentItem) => {
+      contentItem.classList.remove("active");
+    });
+
+    if (contentItems[index]) {
+      contentItems[index].classList.add("active");
+    }
 
     clearTimeout(timer);
 
@@ -131,8 +142,16 @@ if (
     }, 6000);
   }
 
-  document.querySelectorAll(".process-flow-heade").forEach((header, index) => {
-    header.addEventListener("click", () => {
+  items.forEach((item, index) => {
+    item.addEventListener("click", () => {
+      currentIndex = index;
+      activateItem(currentIndex);
+    });
+
+    item.addEventListener("keydown", (event) => {
+      if (event.key !== "Enter" && event.key !== " ") return;
+
+      event.preventDefault();
       currentIndex = index;
       activateItem(currentIndex);
     });
