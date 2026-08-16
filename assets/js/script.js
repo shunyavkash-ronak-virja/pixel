@@ -744,3 +744,45 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+
+// ================================
+// Latest News - Show More JS
+// ================================
+
+document.querySelectorAll(".latest-news-section").forEach((section) => {
+  const cards = section.querySelectorAll(".articles-card");
+  const loadMoreBtn = section.querySelector(".articles-blog-load-btn");
+
+  if (!cards.length || !loadMoreBtn) return;
+
+  const INITIAL_COUNT = 3;
+  const LOAD_COUNT = 3;
+
+  let visibleCount = INITIAL_COUNT;
+
+  function updateCards() {
+    cards.forEach((card, index) => {
+      if (index < visibleCount) {
+        card.classList.remove("hide");
+      } else {
+        card.classList.add("hide");
+      }
+    });
+
+    // Hide button when all cards are visible
+    if (visibleCount >= cards.length) {
+      loadMoreBtn.style.display = "none";
+    } else {
+      loadMoreBtn.style.display = "";
+    }
+  }
+
+  loadMoreBtn.addEventListener("click", () => {
+    visibleCount += LOAD_COUNT;
+
+    updateCards();
+  });
+
+  // Initial state
+  updateCards();
+});

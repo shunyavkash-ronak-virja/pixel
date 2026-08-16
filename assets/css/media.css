@@ -772,21 +772,39 @@ laravel Page
   }
 
   /* ----- Our Achievements Section ----- */
-  .laravels-achievements-title-spacing {
+  .service-achievements-title-spacing {
     padding-block: 106px 50px;
   }
 
-  .laravels-our-achievements-btn-spacing {
+  .service-our-achievements-btn-spacing {
     padding-block: 48px 106px;
   }
 
   /* ----- Partners Showcase Section ----- */
-  .laravels-partners-showcase-head-spacing {
+  .service-partners-showcase-head-spacing {
     padding-block: 80px 48px;
   }
 
-  .laravels-partners-showcase-spacing {
+  .service-partners-showcase-spacing {
     padding-bottom: 80px;
+  }
+
+  /* ----- Service Counter Section ----- */
+  .service-counter-head-spacing {
+    padding-bottom: 50px;
+  }
+
+  .service-counter-item {
+    padding-block: 32px 20px;
+  }
+
+  .service-counter-caption {
+    margin-top: 8px;
+  }
+
+  /* ----- Latest News Section ----- */
+  .project-latest-new-section-spacing {
+    padding-block: 70px 100px;
   }
 }
 
@@ -2258,21 +2276,54 @@ laravel Page
   }
 
   /* ----- Our Achievements Section ----- */
-  .laravels-achievements-title-spacing {
+  .service-achievements-title-spacing {
     padding-block: 92px 40px;
   }
 
-  .laravels-our-achievements-btn-spacing {
+  .service-our-achievements-btn-spacing {
     padding-block: 36px 92px;
   }
 
   /* ----- Partners Showcase Section ----- */
-  .laravels-partners-showcase-head-spacing {
+  .service-partners-showcase-head-spacing {
     padding-block: 60px 36px;
   }
 
-  .laravels-partners-showcase-spacing {
+  .service-partners-showcase-spacing {
     padding-bottom: 60px;
+  }
+
+  /* ----- Service Counter Section ----- */
+  .service-counter-head-spacing {
+    padding-bottom: 40px;
+  }
+
+  .service-counter-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .service-counter-item {
+    padding-block: 24px;
+    border-bottom: var(--border) var(--black-400);
+  }
+
+  .service-counter-item:nth-child(3n) {
+    border-left: none;
+  }
+
+  .service-counter-item:nth-child(n + 3) {
+    border-bottom: none;
+  }
+
+  .service-counter-caption {
+    font-size: 14px;
+    line-height: var(--line-height-1_785);
+    margin-top: 4px;
+  }
+
+  /* ----- Latest News Section ----- */
+  .project-latest-new-section-spacing {
+    padding-block: 60px 80px;
   }
 }
 
@@ -2713,20 +2764,20 @@ laravel Page
   }
 
   /* ----- Our Achievements Section ----- */
-  .laravels-achievements-title-spacing {
+  .service-achievements-title-spacing {
     padding-top: 80px;
   }
 
-  .laravels-our-achievements-btn-spacing {
+  .service-our-achievements-btn-spacing {
     padding-block: 28px 80px;
   }
 
   /* ----- Partners Showcase Section ----- */
-  .laravels-partners-showcase-head-spacing {
+  .service-partners-showcase-head-spacing {
     padding-block: 40px 24px;
   }
 
-  .laravels-partners-showcase-spacing {
+  .service-partners-showcase-spacing {
     padding-bottom: 40px;
   }
 }

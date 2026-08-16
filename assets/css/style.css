@@ -1338,6 +1338,7 @@ Case Study Page
 .our-clients-wrapper {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
+  overflow: hidden;
 }
 
 .clients-card {
@@ -3113,23 +3114,65 @@ laravel Page
 }
 
 /* ----- Our Achievements Section ----- */
-.laravels-achievements-title-spacing {
+.service-achievements-title-spacing {
   padding-block: 120px 60px;
 }
 
-.laravels-our-achievements-title {
+.service-our-achievements-title {
   max-width: 1062px;
 }
 
-.laravels-our-achievements-btn-spacing {
+.service-our-achievements-btn-spacing {
   padding-block: 60px 120px;
 }
 
 /* ----- Partners Showcase Section ----- */
-.laravels-partners-showcase-head-spacing {
+.service-partners-showcase-head-spacing {
   padding-block: 100px 60px;
 }
 
-.laravels-partners-showcase-spacing {
+.service-partners-showcase-spacing {
   padding-bottom: 100px;
+}
+
+/* ----- Service Counter Section ----- */
+.service-counter-head-spacing {
+  padding-block: 80px 60px;
+}
+
+.service-counter-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.service-counter-item {
+  padding-block: 40px 15px;
+  border-left: var(--border) var(--black-400);
+}
+
+.service-counter-item:first-child {
+  border-left: none;
+}
+
+.service-counter-bg-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.service-counter-caption {
+  margin-top: 12px;
+  line-height: var(--line-height-1_562);
+}
+
+/* ----- Latest News Section ----- */
+.project-latest-new-section-spacing {
+  /* 80 - 10  120-20 */
+  padding-block: 80px 120px;
+}
+
+.project-articles-blog-load-btn {
+  display: block;
+  margin-top: 40px;
 }
