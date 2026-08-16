@@ -1,0 +1,8 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 3006" width="1440" height="3006">
+	<defs>
+		<filter x="-50%" y="-50%" width="200%" height="200%" id="f1">
+			<feGaussianBlur stdDeviation="311.4" />
+		</filter>
+	</defs>
+	<path filter="url(#f1)" fill="#04040e" d="m626 862.5c-580.84 0-1888.87-357.86-1973-543.5v2063.5h4134.5v-2063.5c-79.5 185.64-1580.66 543.5-2161.5 543.5z" />
+</svg>
