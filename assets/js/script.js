@@ -144,7 +144,7 @@ if (
 // ================================
 // Partners Showcase JS
 // ================================
-if (typeof Splide !== "undefined" && document.querySelector(".partners-showcase")) {
+if (typeof Splide !== "undefined" && document.querySelector(".partners-showcase-slider")) {
   new Splide(".partners-showcase-slider", {
     type: "loop",
     gap: "30px",

@@ -191,7 +191,7 @@
     margin-block: 16px 36px;
   }
 
-  .faqs-wrapper-small-spacing {
+  .faqs-list-spacing {
     padding-block: 18px;
   }
 
@@ -205,6 +205,19 @@
 
   .faq-content.active .faq-answer {
     padding-top: 18px;
+  }
+
+  .faq-primary-list .faq-content {
+    padding-block: 20px;
+  }
+
+  .faq-block-spacing-v2,
+  .primary-faqs-list-spacing {
+    padding-block: 68px 46px;
+  }
+
+  .faq-list {
+    margin-top: 30px;
   }
 
   /* ----- Latest News Section ----- */
@@ -766,6 +779,15 @@ laravel Page
   .laravels-our-achievements-btn-spacing {
     padding-block: 48px 106px;
   }
+
+  /* ----- Partners Showcase Section ----- */
+  .laravels-partners-showcase-head-spacing {
+    padding-block: 80px 48px;
+  }
+
+  .laravels-partners-showcase-spacing {
+    padding-bottom: 80px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1101,7 +1123,7 @@ laravel Page
     border-top: var(--border) var(--black-300);
   }
 
-  .faqs-wrapper-small-spacing {
+  .faqs-list-spacing {
     padding-block: 0;
   }
 
@@ -1122,6 +1144,23 @@ laravel Page
     padding-top: 14px;
   }
 
+  .faq-primary-list .faq-content {
+    padding-block: 16px;
+  }
+
+  .faq-block-spacing-v2 {
+    padding-block: 56px 36px;
+  }
+
+  .primary-faqs-list-spacing {
+    padding-top: 0;
+    padding-bottom: 36px;
+  }
+
+  .faq-list {
+    align-self: start;
+    margin-top: 20px;
+  }
   /* ----- Latest News Section ----- */
   .latest-news-head {
     align-items: center;
@@ -2226,6 +2265,15 @@ laravel Page
   .laravels-our-achievements-btn-spacing {
     padding-block: 36px 92px;
   }
+
+  /* ----- Partners Showcase Section ----- */
+  .laravels-partners-showcase-head-spacing {
+    padding-block: 60px 36px;
+  }
+
+  .laravels-partners-showcase-spacing {
+    padding-bottom: 60px;
+  }
 }
 
 @media (max-width: 575px) {
@@ -2295,6 +2343,17 @@ laravel Page
     padding-top: 12px;
   }
 
+  .faq-primary-list .faq-content {
+    padding-block: 12px;
+  }
+
+  .faq-block-spacing-v2 {
+    padding-block: 44px 26px;
+  }
+
+  .primary-faqs-list-spacing {
+    padding-bottom: 26px;
+  }
   /* ----- Latest News Section ----- */
   .latest-news-head {
     margin-bottom: 36px;
@@ -2660,6 +2719,15 @@ laravel Page
 
   .laravels-our-achievements-btn-spacing {
     padding-block: 28px 80px;
+  }
+
+  /* ----- Partners Showcase Section ----- */
+  .laravels-partners-showcase-head-spacing {
+    padding-block: 40px 24px;
+  }
+
+  .laravels-partners-showcase-spacing {
+    padding-bottom: 40px;
   }
 }
 
