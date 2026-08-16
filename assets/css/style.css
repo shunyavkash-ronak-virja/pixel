@@ -3219,8 +3219,8 @@ Services Page
 ===================================================== */
 /* ----- Services Hero Section ----- */
 .services-hero-spacing {
-  /* -10  +20 */
   padding-block: 80px 120px;
+  border-color: var(--black-300);
 }
 
 .services-content-wrapper {
@@ -3247,3 +3247,20 @@ Services Page
 }
 
 /* ----- Services Overview Section ----- */
+.service-showcase-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.service-showcase-content {
+  padding-block: 48px;
+}
+
+.service-showcase-description {
+  margin-block: 20px 40px;
+}
+
+.service-showcase-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}

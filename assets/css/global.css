@@ -1367,6 +1367,128 @@ h6:not(:where(.h1, .h2, .h3, .h4, .h5)) {
   width: 16px;
 }
 
+/* ----- Discovery Call Modal Responsive ----- */
+
+@media (max-width: 767px) {
+  .discovery-call-modal {
+    --modal-inline-spacing: 20px;
+    --modal-block-spacing: 32px;
+    padding: 12px;
+    align-items: flex-start;
+  }
+
+  .discovery-call-content {
+    width: 100%;
+    max-width: 560px;
+    margin: auto;
+    flex-direction: column;
+  }
+
+  /* ----- Content / Intro ----- */
+
+  .discovery-call-content-wrapper {
+    max-width: none;
+    width: 100%;
+    padding: var(--modal-block-spacing) var(--modal-inline-spacing);
+  }
+
+  .discovery-call-caption {
+    margin-bottom: 16px;
+  }
+
+  .discovery-call-title {
+    font-size: 26px;
+    letter-spacing: -1.5px;
+  }
+
+  .discovery-call-description {
+    margin-block: 12px 24px;
+  }
+
+  .discovery-call-list {
+    gap: 10px;
+  }
+
+  .discovery-call-item {
+    padding-left: 14px;
+  }
+
+  /* Hide keyboard shortcut on smaller screens */
+  .discovery-call-modal-shortcut {
+    display: none;
+  }
+
+  /* ----- Form ----- */
+
+  .discovery-call-form {
+    width: 100%;
+    padding: var(--modal-block-spacing) var(--modal-inline-spacing);
+    border-left: 0;
+    border-top: var(--border) var(--white-8);
+  }
+
+  .discovery-call-input-wrapper {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .grid-span-width {
+    grid-column: span 1;
+  }
+
+  .discovery-call-outline {
+    margin-block: 2px;
+  }
+
+  .discovery-call-textarea {
+    min-height: 80px;
+  }
+
+  .discovery-call-btn {
+    width: max-content;
+  }
+}
+
+@media (max-width: 480px) {
+  .discovery-call-modal {
+    padding: 8px;
+  }
+
+  .discovery-call-content-wrapper {
+    padding: 28px 16px;
+  }
+
+  .discovery-call-form {
+    padding: 28px 16px;
+  }
+
+  .discovery-call-title {
+    font-size: 24px;
+  }
+
+  .discovery-call-description {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+
+  .discovery-call-list {
+    font-size: 13px;
+    gap: 9px;
+  }
+
+  .discovery-call-form-input,
+  .discovery-call-form select,
+  .discovery-call-form textarea {
+    width: 100%;
+  }
+
+  .discovery-call-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
 /* ----- Progress Timeline ----- */
 .progress-timeline {
   padding-block: 16px;
