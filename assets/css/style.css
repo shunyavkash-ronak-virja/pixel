@@ -613,6 +613,10 @@
   padding: 60px 50px;
 }
 
+.client-testimonials-border {
+  border-color: var(--white-8);
+}
+
 .client-testimonials-wrapper {
   display: flex;
   gap: 26px;
@@ -2873,6 +2877,7 @@ Digital Roadmap Page
 /* ----- Our Clients Section ----- */
 .digital-roadmap-clients-spacing {
   padding-block: 48px;
+  border-color: var(--white-8);
 }
 
 /* ----- Digital Roadmap Section ----- */
@@ -3201,7 +3206,6 @@ laravel Page
 
 /* ----- Latest News Section ----- */
 .project-latest-new-section-spacing {
-  /* 80 - 10  120-20 */
   padding-block: 80px 120px;
 }
 
@@ -3209,3 +3213,37 @@ laravel Page
   display: block;
   margin-top: 40px;
 }
+
+/* =====================================================
+Services Page
+===================================================== */
+/* ----- Services Hero Section ----- */
+.services-hero-spacing {
+  /* -10  +20 */
+  padding-block: 80px 120px;
+}
+
+.services-content-wrapper {
+  max-width: 450px;
+}
+
+.section-caption {
+  margin-bottom: 16px;
+}
+
+.services-head-description {
+  margin-block: 20px 40px;
+}
+
+.services-hero-img-content {
+  position: absolute;
+  bottom: -420px;
+  right: -630px;
+  z-index: -1;
+}
+
+.services-hero-img {
+  max-width: 1400px;
+}
+
+/* ----- Services Overview Section ----- */

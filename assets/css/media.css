@@ -806,6 +806,14 @@ laravel Page
   .project-latest-new-section-spacing {
     padding-block: 70px 100px;
   }
+
+  /* =====================================================
+Services Page
+===================================================== */
+  /* ----- Services Hero Section ----- */
+  .services-hero-spacing {
+    padding-block: 70px 140px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -2325,6 +2333,28 @@ laravel Page
   .project-latest-new-section-spacing {
     padding-block: 60px 80px;
   }
+
+  /* =====================================================
+Services Page
+===================================================== */
+  /* ----- Services Hero Section ----- */
+  .services-hero-spacing {
+    padding-block: 60px 160px;
+  }
+
+  .services-content-wrapper {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .services-head-description {
+    margin-bottom: 36px;
+    font-size: 14px;
+    line-height: var(--line-height-1_642);
+  }
 }
 
 @media (max-width: 575px) {
@@ -2779,6 +2809,18 @@ laravel Page
 
   .service-partners-showcase-spacing {
     padding-bottom: 40px;
+  }
+
+  /* =====================================================
+Services Page
+===================================================== */
+  /* ----- Services Hero Section ----- */
+  .services-hero-spacing {
+    padding-bottom: 180px;
+  }
+
+  .services-hero-img-content {
+    bottom: -330px;
   }
 }
 
