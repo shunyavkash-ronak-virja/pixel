@@ -853,6 +853,24 @@ Services Page
   .services-partners-showcase-spacing {
     padding-bottom: 70px;
   }
+
+  /* ----- Pricing Card Section ----- */
+  .pricing-card-head-spacing {
+    padding-block: 100px 54px;
+  }
+
+  .pricing-card-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .pricing-card {
+    padding-block: 32px;
+  }
+
+  .pricing-card-content {
+    max-width: 100%;
+    margin-top: 42px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -2430,6 +2448,55 @@ Services Page
   .services-partners-showcase-spacing {
     padding-bottom: 60px;
   }
+
+  /* ----- Pricing Card Section ----- */
+  .pricing-card-head-spacing {
+    padding-block: 80px 48px;
+  }
+
+  .pricing-card-head-description {
+    margin-top: 16px;
+  }
+
+  .pricing-card {
+    padding-block: 24px;
+  }
+
+  .pricing-card-overlay {
+    display: none;
+  }
+
+  .pricing-card-head {
+    margin-bottom: 25px;
+  }
+
+  .pricing-card-content {
+    margin-top: 34px;
+  }
+
+  .pricing-card-price-period {
+    font-size: 14px;
+  }
+
+  .pricing-card-caption,
+  .pricing-card-price-caption {
+    font-size: 14px;
+    line-height: var(--line-height-1);
+  }
+
+  .pricing-card-description:not(:first-child) {
+    margin-top: 16px;
+  }
+
+  .pricing-card-description,
+  .pricing-card-list-item-content {
+    font-size: 14px;
+    line-height: var(--line-height-1_642);
+  }
+
+  .pricing-card-list-item {
+    gap: 12px;
+  }
 }
 
 @media (max-width: 575px) {
@@ -2919,6 +2986,19 @@ Services Page
   /* ----- Service Partners Showcase Section ----- */
   .services-partners-showcase-head-spacing {
     border-top: none;
+  }
+
+  /* ----- Pricing Card Section ----- */
+  .pricing-card-head-spacing {
+    padding-block: 60px 40px;
+  }
+
+  .pricing-card-title {
+    font-size: 24px;
+  }
+
+  .pricing-card-content {
+    margin-top: 24px;
   }
 }
 

@@ -3327,3 +3327,131 @@ Services Page
 .services-partners-showcase-spacing {
   padding-bottom: 80px;
 }
+
+/* ----- Pricing Card Section ----- */
+.pricing-card-head-spacing {
+  padding-block: 120px 60px;
+}
+
+.pricing-card-head-description {
+  margin-top: 20px;
+}
+
+.pricing-card-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  overflow: hidden;
+}
+
+.pricing-card {
+  display: flex;
+  flex-direction: column;
+  padding-block: 40px;
+  border: var(--border) var(--transparent);
+  outline: var(--border) var(--black-400);
+  transition: all 0.3s ease-in-out;
+}
+
+.pricing-card.popular {
+  border-color: var(--pelati-24);
+  filter: blur(4)
+    drop-shadow(
+      0 0.5px 0.5px 0 var(--obsidian),
+      0 1px 1px -0.5px var(--obsidian),
+      0 2px 2px -1px var(--obsidian),
+      0 3px 3px -1.5px var(--obsidian),
+      0 5px 5px -2.5px var(--obsidian),
+      0 8px 8px -3px var(--obsidian)
+    );
+  box-shadow:
+    inset 0 0 250px -37px var(--pelati-8),
+    inset 0 0 250px -111px var(--pelati-8),
+    inset 0 0 211.7px 7px var(--pelati-8);
+}
+
+.pricing-card:is(.popular) ~ .pricing-card {
+  outline: none;
+}
+
+.pricing-card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.pricing-card.popular .pricing-card-overlay {
+  opacity: 1;
+}
+
+.pricing-card-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+.pricing-card-caption {
+  margin-top: 4px;
+}
+
+.pricing-card-wrapper-border {
+  border-color: var(--black-400);
+}
+
+.pricing-card-price {
+  font-family: var(--font-family-britti-sans);
+}
+
+.pricing-card-price-period {
+  font-size: 16px;
+  line-height: var(--line-height-1_1);
+}
+
+.pricing-card-price-caption {
+  margin-top: 4px;
+}
+
+.pricing-card-border {
+  border: var(--border) var(--black-400);
+}
+
+.pricing-card-description:not(:first-child) {
+  margin-top: 20px;
+}
+
+.pricing-card-content {
+  max-width: 552px;
+  flex-grow: 1;
+  margin-top: 50px;
+}
+
+.pricing-card-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 15px;
+}
+
+.pricing-card-list-item {
+  display: flex;
+  align-items: start;
+  gap: 14px;
+}
+
+.pricing-card-list-check-mark {
+  margin-top: 5px;
+}
+
+.pricing-card-list-item-content {
+  line-height: var(--line-height-1_562);
+}
+
+.pricing-card-btn {
+  width: 100%;
+  max-width: 100%;
+  margin-top: 40px;
+}
