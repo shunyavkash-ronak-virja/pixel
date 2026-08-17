@@ -1410,43 +1410,6 @@ Case Study Page
   outline: var(--border) var(--white-8);
 }
 
-/* .our-clients-block-arrow-top::before,
-.our-clients-block-arrow-top::after,
-.our-clients-block-arrow-bottom::before,
-.our-clients-block-arrow-bottom::after {
-  content: "";
-  position: absolute;
-  background-color: var(--white);
-} */
-
-/* .our-clients-block-arrow-top::before {
-  width: 1px;
-  height: 5px;
-  left: 0;
-  top: -1px;
-}
-
-.our-clients-block-arrow-top::after {
-  width: 5px;
-  height: 1px;
-  right: 0;
-  top: -1px;
-}
-
-.our-clients-block-arrow-bottom::before {
-  width: 5px;
-  height: 1px;
-  left: -1px;
-  bottom: -1px;
-}
-
-.our-clients-block-arrow-bottom::after {
-  width: 1px;
-  height: 5px;
-  right: 0;
-  bottom: -1px;
-} */
-
 .clients-stack::before,
 .clients-stack::after,
 .clients-card::before {
@@ -1477,26 +1440,32 @@ Case Study Page
 }
 
 .clients-card::before {
-  width: 4px;
-  height: 4px;
+  width: 2px;
+  aspect-ratio: 1;
   top: -2px;
   left: -2px;
-}
-
-/* .clients-card:not(:nth-child(4n + 1)::before),
-.clients-card:not(:nth-child(-n + 4)::before) {
-  display: none;
-} */
-
-.clients-card:nth-child(-n + 4)::before {
-  /* display: none; */
-  background-color: green;
 }
 
 .clients-logo {
   max-width: 138px;
   max-height: 32px;
 }
+/* ===== */
+/* .clients-stack:first-child::before {
+  display: none;
+}
+
+.clients-stack:nth-child(5)::before {
+  display: none;
+}
+
+.clients-stack:nth-last-child(4)::before {
+  display: none;
+}
+
+.clients-stack:last-child::before {
+  display: none;
+} */
 
 /* ----- Featured Section ----- */
 .featured-section-top-spacing {
