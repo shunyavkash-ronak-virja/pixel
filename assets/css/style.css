@@ -3247,6 +3247,10 @@ Services Page
 }
 
 /* ----- Services Overview Section ----- */
+.service-showcase-border {
+  border-color: var(--black-400);
+}
+
 .service-showcase-wrapper {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -3306,4 +3310,20 @@ Services Page
 
 .service-showcase-crad-description {
   margin-top: 20px;
+}
+
+.service-showcase-content-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+/* ----- Service Partners Showcase Section ----- */
+.services-partners-showcase-head-spacing {
+  padding-block: 80px 44px;
+}
+
+.services-partners-showcase-spacing {
+  padding-bottom: 80px;
 }

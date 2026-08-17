@@ -826,6 +826,11 @@ Services Page
     flex-direction: column;
     align-items: center;
     text-align: center;
+    border-right: none;
+  }
+
+  .service-showcase-content-overlay {
+    display: none;
   }
 
   .service-showcase-description {
@@ -838,6 +843,15 @@ Services Page
 
   .service-showcase-crad:nth-child(-n + 2) {
     border-top: var(--border) var(--black-400);
+  }
+
+  /* ----- Service Partners Showcase Section ----- */
+  .services-partners-showcase-head-spacing {
+    padding-block: 70px 34px;
+  }
+
+  .services-partners-showcase-spacing {
+    padding-bottom: 70px;
   }
 }
 
@@ -952,6 +966,10 @@ Services Page
   /* ----- Partners Showcase Section ----- */
   .partners-brand-logo {
     max-height: 42px;
+  }
+
+  .partners-showcase-description {
+    max-width: 100%;
   }
 
   /* ----- Projects Showcase Section ----- */
@@ -2403,6 +2421,15 @@ Services Page
     line-height: var(--line-height-1_642);
     margin-top: 12px;
   }
+
+  /* ----- Service Partners Showcase Section ----- */
+  .services-partners-showcase-head-spacing {
+    padding-block: 60px 24px;
+  }
+
+  .services-partners-showcase-spacing {
+    padding-bottom: 60px;
+  }
 }
 
 @media (max-width: 575px) {
@@ -2882,6 +2909,16 @@ Services Page
 
   .service-showcase-crad:nth-last-child(-n + 1) {
     padding-bottom: 60px;
+  }
+
+  /* ----- Services Blank Section ----- */
+  .services-blank-section {
+    display: none;
+  }
+
+  /* ----- Service Partners Showcase Section ----- */
+  .services-partners-showcase-head-spacing {
+    border-top: none;
   }
 }
 
