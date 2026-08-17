@@ -814,6 +814,31 @@ Services Page
   .services-hero-spacing {
     padding-block: 70px 140px;
   }
+
+  /* ----- Services Overview Section ----- */
+  .service-showcase-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .service-showcase-content {
+    padding-block: 60px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .service-showcase-description {
+    margin-block: 16px 36px;
+  }
+
+  .service-showcase-crad {
+    padding: 24px 20px;
+  }
+
+  .service-showcase-crad:nth-child(-n + 2) {
+    border-top: var(--border) var(--black-400);
+  }
 }
 
 @media (max-width: 767px) {
@@ -2355,6 +2380,29 @@ Services Page
     font-size: 14px;
     line-height: var(--line-height-1_642);
   }
+
+  /* ----- Services Overview Section ----- */
+  .service-showcase-description {
+    max-width: 100%;
+  }
+
+  .service-showcase-crad {
+    padding-inline: 16px;
+  }
+
+  .service-showcase-crad-img-content {
+    margin-bottom: 20px;
+  }
+
+  .service-showcase-icon-content {
+    width: 24px;
+  }
+
+  .service-showcase-crad-description {
+    font-size: 14px;
+    line-height: var(--line-height-1_642);
+    margin-top: 12px;
+  }
 }
 
 @media (max-width: 575px) {
@@ -2821,6 +2869,19 @@ Services Page
 
   .services-hero-img-content {
     bottom: -330px;
+  }
+
+  /* ----- Services Overview Section ----- */
+  .service-showcase-card-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .service-showcase-crad {
+    padding-inline: 12px;
+  }
+
+  .service-showcase-crad:nth-last-child(-n + 1) {
+    padding-bottom: 60px;
   }
 }
 

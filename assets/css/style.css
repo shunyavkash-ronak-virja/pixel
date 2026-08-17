@@ -3254,13 +3254,56 @@ Services Page
 
 .service-showcase-content {
   padding-block: 48px;
+  border-right: var(--border) var(--black-400);
 }
 
 .service-showcase-description {
+  max-width: 532px;
   margin-block: 20px 40px;
 }
 
-.service-showcase-wrapper {
+.service-showcase-card-wrapper {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+}
+
+.service-showcase-crad {
+  padding: 28px 24px;
+  border-left: var(--border) var(--black-400);
+  border-top: var(--border) var(--black-400);
+}
+
+.service-showcase-crad:first-child,
+.service-showcase-crad:nth-child(3) {
+  border-left: none;
+}
+
+.service-showcase-crad:nth-child(-n + 2) {
+  border-top: none;
+}
+
+.service-showcase-crad-img-content {
+  width: 120px;
+  aspect-ratio: 1;
+  margin-bottom: 24px;
+}
+
+.service-showcase-title-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.service-showcase-icon-content {
+  width: 30px;
+  aspect-ratio: 1;
+}
+
+.service-showcase-crad-title {
+  font-size: 22px;
+  line-height: var(--line-height-1_136);
+}
+
+.service-showcase-crad-description {
+  margin-top: 20px;
 }
