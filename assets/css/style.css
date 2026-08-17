@@ -3319,7 +3319,7 @@ Services Page
   z-index: -1;
 }
 
-/* ----- Service Partners Showcase Section ----- */
+/* ----- Services Partners Showcase Section ----- */
 .services-partners-showcase-head-spacing {
   padding-block: 80px 44px;
 }
@@ -3454,4 +3454,9 @@ Services Page
   width: 100%;
   max-width: 100%;
   margin-top: 40px;
+}
+
+/* ----- Pricing Card Bottom Spacing ----- */
+.pricing-card-bottom-spacing {
+  padding-top: 120px;
 }

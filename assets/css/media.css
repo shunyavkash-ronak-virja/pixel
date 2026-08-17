@@ -845,7 +845,7 @@ Services Page
     border-top: var(--border) var(--black-400);
   }
 
-  /* ----- Service Partners Showcase Section ----- */
+  /* ----- Services Partners Showcase Section ----- */
   .services-partners-showcase-head-spacing {
     padding-block: 70px 34px;
   }
@@ -870,6 +870,11 @@ Services Page
   .pricing-card-content {
     max-width: 100%;
     margin-top: 42px;
+  }
+
+  /* ----- Pricing Card Bottom Spacing ----- */
+  .pricing-card-bottom-spacing {
+    padding-top: 100px;
   }
 }
 
@@ -2440,7 +2445,7 @@ Services Page
     margin-top: 12px;
   }
 
-  /* ----- Service Partners Showcase Section ----- */
+  /* ----- Services Partners Showcase Section ----- */
   .services-partners-showcase-head-spacing {
     padding-block: 60px 24px;
   }
@@ -2496,6 +2501,11 @@ Services Page
 
   .pricing-card-list-item {
     gap: 12px;
+  }
+
+  /* ----- Pricing Card Bottom Spacing ----- */
+  .pricing-card-bottom-spacing {
+    padding-top: 80px;
   }
 }
 
@@ -2983,7 +2993,7 @@ Services Page
     display: none;
   }
 
-  /* ----- Service Partners Showcase Section ----- */
+  /* ----- Services Partners Showcase Section ----- */
   .services-partners-showcase-head-spacing {
     border-top: none;
   }
@@ -2999,6 +3009,11 @@ Services Page
 
   .pricing-card-content {
     margin-top: 24px;
+  }
+
+  /* ----- Pricing Card Bottom Spacing ----- */
+  .pricing-card-bottom-spacing {
+    padding-top: 60px;
   }
 }
 

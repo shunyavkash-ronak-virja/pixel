@@ -767,10 +767,9 @@ document.addEventListener("DOMContentLoaded", () => {
 // ================================
 // Latest News - Show More JS
 // ================================
-
-document.querySelectorAll(".latest-news-section").forEach((section) => {
+document.querySelectorAll(".articles-load-more-section").forEach((section) => {
   const cards = section.querySelectorAll(".articles-card");
-  const loadMoreBtn = section.querySelector(".articles-blog-load-btn");
+  const loadMoreBtn = section.querySelector(".project-articles-blog-load-btn");
 
   if (!cards.length || !loadMoreBtn) return;
 
@@ -781,24 +780,15 @@ document.querySelectorAll(".latest-news-section").forEach((section) => {
 
   function updateCards() {
     cards.forEach((card, index) => {
-      if (index < visibleCount) {
-        card.classList.remove("hide");
-      } else {
-        card.classList.add("hide");
-      }
+      card.classList.toggle("hide", index >= visibleCount);
     });
 
-    // Hide button when all cards are visible
-    if (visibleCount >= cards.length) {
-      loadMoreBtn.style.display = "none";
-    } else {
-      loadMoreBtn.style.display = "";
-    }
+    // Hide Load More button when all cards are visible
+    loadMoreBtn.style.display = visibleCount >= cards.length ? "none" : "";
   }
 
   loadMoreBtn.addEventListener("click", () => {
     visibleCount += LOAD_COUNT;
-
     updateCards();
   });
 
