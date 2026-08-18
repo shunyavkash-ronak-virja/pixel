@@ -44,7 +44,7 @@
 
 /* ----- Our Clients Section ----- */
 .clients-section-spacing {
-  padding-top: 40px;
+  padding-top: 55px;
 }
 
 .our-clients-label {
@@ -108,7 +108,7 @@
   justify-content: space-between;
   gap: 16px;
   border-top: var(--border) var(--pelati-40);
-  background-color: var(--pelati-25);
+  background-color: color-mix(in oklab, #00000080, #ff333740);
   filter: blur(72)
     drop-shadow(
       0 0.5px 0.5px 0 var(--obsidian),

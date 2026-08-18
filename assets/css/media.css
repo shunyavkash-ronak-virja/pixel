@@ -33,6 +33,10 @@
   }
 
   /* ----- Our Clients Section ----- */
+  .clients-section-spacing {
+    padding-top: 40px;
+  }
+
   .our-clients-label {
     left: 20px;
   }
