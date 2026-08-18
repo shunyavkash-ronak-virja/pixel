@@ -697,6 +697,9 @@ if (typeof Splide !== "undefined" && document.querySelector("select")) {
   });
 }
 
+// ================================
+// Discovery Call Modal JS
+// ================================
 document.addEventListener("DOMContentLoaded", () => {
   const modal = document.querySelector('[data-modal="discovery-call"]');
   if (!modal) return;
@@ -706,6 +709,9 @@ document.addEventListener("DOMContentLoaded", () => {
   const openModal = () => {
     modal.classList.add("open");
     document.body.style.overflow = "hidden";
+    setTimeout(() => {
+      modal.querySelector("#discovery-call-name").focus();
+    }, 100);
   };
 
   const closeModal = () => {
