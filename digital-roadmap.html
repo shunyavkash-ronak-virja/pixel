@@ -12,6 +12,9 @@
     <!----- Nice select css ----->
     <link rel="stylesheet" href="assets/css/nice-select.css">
 
+    <!----- Fancybox css ----->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
+
     <!----- Splide Css ----->
     <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
 
@@ -316,44 +319,44 @@
                     <form class="ready-for-change-form">
                         <div class="ready-for-change-input-wrapper">
                             <div class="input-stack">
-                                <label for="name" class="text-secondary ready-for-change-label">First Name</label>
+                                <label for="change-form-name" class="text-secondary ready-for-change-label">First Name</label>
                                 <div class="input-block">
-                                    <input class="input-field footer-input ready-for-change-input" type="name" id="name" required>
+                                    <input class="input-field footer-input ready-for-change-input" type="name" id="change-form-name" required>
                                     <span class="input-overlay"></span>
                                 </div>
                             </div>
                             <div class="input-stack">
-                                <label for="last-name" class="text-secondary ready-for-change-label">Last Name</label>
+                                <label for="change-form-last-name" class="text-secondary ready-for-change-label">Last Name</label>
                                 <div class="input-block">
-                                    <input class="input-field footer-input ready-for-change-input" type="name" id="last-name" required>
+                                    <input class="input-field footer-input ready-for-change-input" type=" last-name" id="change-form-last-name" required>
                                     <span class="input-overlay"></span>
                                 </div>
                             </div>
                             <div class="input-stack">
-                                <label for="phone-number" class="text-secondary ready-for-change-label">Phone Number</label>
+                                <label for="change-form-phone-number" class="text-secondary ready-for-change-label">Phone Number</label>
                                 <div class="input-block">
-                                    <input class="input-field footer-input ready-for-change-input" type="number" id="phone-number" required>
+                                    <input class="input-field footer-input ready-for-change-input" type="tel" id="change-form-phone-number" name="phone" inputmode="numeric" minlength="10" maxlength="10" oninput="this.value = this.value.replace(/[^0-9+() -]/g, '')" required>
                                     <span class="input-overlay"></span>
                                 </div>
                             </div>
                             <div class="input-stack">
-                                <label for="email" class="text-secondary ready-for-change-label">Email</label>
+                                <label for="change-form-email" class="text-secondary ready-for-change-label">Email</label>
                                 <div class="input-block">
-                                    <input class="input-field footer-input ready-for-change-input" type="email" id="email" required>
+                                    <input class="input-field footer-input ready-for-change-input" type="email" id="change-form-email" required>
                                     <span class="input-overlay"></span>
                                 </div>
                             </div>
                             <div class="input-stack">
-                                <label for="business-name" class="text-secondary ready-for-change-label">Business Name</label>
+                                <label for="change-form-business-name" class="text-secondary ready-for-change-label">Business Name</label>
                                 <div class="input-block">
-                                    <input class="input-field footer-input ready-for-change-input" type="name" id="business-name" required>
+                                    <input class="input-field footer-input ready-for-change-input" type="name" id="change-form-business-name" required>
                                     <span class="input-overlay"></span>
                                 </div>
                             </div>
                             <div class="input-stack">
-                                <label for="current-website" class="text-secondary ready-for-change-label">Current website</label>
+                                <label for="change-form-current-website" class="text-secondary ready-for-change-label">Current website</label>
                                 <div class="input-block">
-                                    <input class="input-field footer-input ready-for-change-input" type="name" id="current-website" required>
+                                    <input class="input-field footer-input ready-for-change-input" type="name" id="change-form-current-website" required>
                                     <span class="input-overlay"></span>
                                 </div>
                             </div>
@@ -793,6 +796,9 @@
     <!-- Nice select js -->
     <script src="assets/js/jquery.js"></script>
     <script src="assets/js/jquery.nice-select.js"></script>
+
+    <!----- Fancybox js ----->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
 
     <!----- Splide Js ----->
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>

@@ -12,6 +12,9 @@
     <!----- Nice select css ----->
     <link rel="stylesheet" href="assets/css/nice-select.css">
 
+    <!----- Fancybox css ----->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
+
     <!----- Splide Css ----->
     <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
 
@@ -78,7 +81,7 @@
                         <div class="section-caption project-contact-caption">Australia’s only laravel partner</div>
                         <h1 class="project-contact-title">We’re a <span class="text-gradient">Shopify Agency</span></h1>
                         <p class="head-description project-contact-description">We’ve worked with hundreds of brands to accelerate their digital growth.</p>
-                        <a class="btn btn-big-out-spacing" href="javascript:void(0);">
+                        <a class="btn btn-big-out-spacing" href="javascript:void(0);" data-modal-open="discovery-call">
                             <p class="btn-content btn-big-spacing-block btn-small-spacing-inline btn-primary-gradient">
                                 Press <span>B</span> to book a call
                             </p>
@@ -91,36 +94,39 @@
                         <form class="project-contact-form-block">
                             <div class="project-contact-form-wrapper">
                                 <div class="project-contact-stack">
-                                    <label class="text-secondary input-label" for="first-name">First Name</label>
+                                    <label class="text-secondary input-label" for="shopify-form-first-name">First Name</label>
                                     <div class="input-block">
-                                        <input class="input-field project-contact-input" type="text" id="first-name" name="name" required>
+                                        <input class="input-field project-contact-input" type="text" id="shopify-form-first-name" name="name" required>
                                         <span class="input-overlay"></span>
                                     </div>
                                 </div>
                                 <div class="project-contact-stack">
-                                    <label class="text-secondary input-label" for="last-name">Last Name</label>
+                                    <label class="text-secondary input-label" for="shopify-form-last-name">Last Name</label>
                                     <div class="input-block">
-                                        <input class="input-field project-contact-input" type="text" id="last-name" name="last-name" required>
+                                        <input class="input-field project-contact-input" type="text" id="shopify-form-last-name" name="last-name" required>
                                         <span class="input-overlay"></span>
                                     </div>
                                 </div>
                                 <div class="project-contact-stack">
-                                    <label class="text-secondary input-label" for="phone">Phone Number</label>
+                                    <label class="text-secondary input-label" for="shopify-form-phone">Phone Number</label>
                                     <div class="input-block">
-                                        <input class="input-field project-contact-input" type="tel" id="phone" name="phone" inputmode="numeric" minlength="10" maxlength="10" oninput="this.value = this.value.replace(/[^0-9+() -]/g, '')" required>
+                                        <input class="input-field project-contact-input" type="tel" id="shopify-form-phone" name="phone" inputmode="numeric" minlength="10" maxlength="10" oninput="this.value = this.value.replace(/[^0-9+() -]/g, '')" required>
                                         <span class="input-overlay"></span>
                                     </div>
                                 </div>
                                 <div class="project-contact-stack">
-                                    <label class="text-secondary input-label" for="email">Email</label>
+                                    <label class="text-secondary input-label" for="shopify-form-email">Email</label>
                                     <div class="input-block">
-                                        <input class="input-field project-contact-input" type="email" id="email" name="email" required>
+                                        <input class="input-field project-contact-input" type="email" id="shopify-form-email" name="email" required>
                                         <span class="input-overlay"></span>
                                     </div>
                                 </div>
                                 <div class="project-contact-stack project-contact-textarea-stack">
-                                    <label class="text-secondary input-label" for="textarea">How can we help</label>
-                                    <textarea class="project-contact-textarea" name="" id=""></textarea>
+                                    <label class="text-secondary input-label" for="shopify-form-textarea">How can we help</label>
+                                    <div class="input-block">
+                                        <textarea class="input-field project-contact-textarea" name="shopify-form-textarea" id="shopify-form-textarea"></textarea>
+                                        <span class="input-overlay"></span>
+                                    </div>
                                 </div>
                             </div>
                             <button class="btn btn-big-out-spacing project-contact-fom-btn" type="submit">
@@ -176,7 +182,7 @@
                     </div>
                 </div>
                 <div class="container-inline-spacing service-our-achievements-btn-spacing">
-                    <a class="mx-auto btn btn-big-out-spacing" href="javascript:void(0);">
+                    <a class="mx-auto btn btn-big-out-spacing" href="javascript:void(0);" data-modal-open="discovery-call">
                         <p class="btn-content btn-big-spacing-block btn-small-spacing-inline btn-primary-gradient">
                             Press <span>B</span> to book a call
                         </p>
@@ -407,7 +413,7 @@
                         <h2 class="process-timeline-title process-timeline-v2-title">How our <span class="text-gradient">Shopify</span> expertise can help</h2>
                         <p class="text-secondary timeline-head-description timeline-description-v3">Pixel is more than just a web development agency; we're your dedicated partner in custom solution success. As one of the few Laravel partners in Oceania, we have a proven track record of delivering exceptional results. Specializing in custom Laravel solutions, we partner with modern brands and fast-paced teams to design, develop, and launch bespoke websites and applications that exceed expectations</p>
                         <p class="text-secondary timeline-head-description timeline-description-v3">Our team of experienced Laravel experts understands the complexities of web development. Whether you're upgrading to a Laravel solution or migrating from another platform, we have the experience to make the transition seamless and painless, ensuring your website or application performs at its best</p>
-                        <a class="btn btn-big-out-spacing timeline-description-btn" href="javascript:void(0);">
+                        <a class="btn btn-big-out-spacing timeline-description-btn" href="javascript:void(0);" data-modal-open="discovery-call">
                             <p class="btn-content btn-big-spacing-block btn-small-spacing-inline btn-primary-gradient">
                                 Press <span>B</span> to book a call
                             </p>
@@ -1377,6 +1383,9 @@
     <!-- Nice select js -->
     <script src="assets/js/jquery.js"></script>
     <script src="assets/js/jquery.nice-select.js"></script>
+
+    <!----- Fancybox js ----->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
 
     <!----- Splide Js ----->
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>

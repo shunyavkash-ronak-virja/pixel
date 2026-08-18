@@ -156,6 +156,10 @@ body {
   flex-direction: column;
 }
 
+.body-hidden {
+  overflow: hidden;
+}
+
 header,
 section,
 footer {

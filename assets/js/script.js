@@ -7,11 +7,13 @@ const toggleBtn = document.querySelector(".toggle-btn");
 const headerLinkStack = document.querySelector(".header-link-stack");
 const headerDropdownLink = document.querySelector(".header-dropdown-link-wraper");
 const headerDropdownBlock = document.querySelector(".header-dropdown-block");
+const bodyHidden = document.querySelector("body");
 
 toggleBtn.addEventListener("click", () => {
   toggleBtn.classList.toggle("active");
   headerLinkStack.classList.toggle("active");
   header.classList.toggle("active");
+  bodyHidden.classList.toggle("body-hidden");
 });
 
 headerDropdownLink.addEventListener("click", () => {
