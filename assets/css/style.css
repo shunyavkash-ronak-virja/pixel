@@ -59,32 +59,15 @@
   transform: translateY(-50%);
 }
 
-.logo-showcase-slider::before,
-.logo-showcase-slider:after {
-  /* content: ""; */
-  width: 100%;
-  max-width: 150px;
-  height: 100%;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 2;
-}
-
-.logo-showcase-slider::before {
-  left: 0;
-  background: linear-gradient(
+.logo-showcase-slider {
+  -webkit-mask-image: linear-gradient(
     to right,
-    rgba(26, 8, 16, 0.95) 20%,
-    rgba(26, 8, 16, 0.7) 45%,
-    rgba(26, 8, 16, 0.3) 75%,
+    transparent 0.7%,
+    black 50%,
+    black 50%,
     transparent 100%
   );
-}
-
-.logo-showcase-slider:after {
-  right: 0;
-  background: linear-gradient(to left, var(--black) 0%, var(--transparent) 100%);
+  mask-image: linear-gradient(to right, transparent 0.7%, black 50%, black 50%, transparent 100%);
 }
 
 .logo-showcase-slide {
