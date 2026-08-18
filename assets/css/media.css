@@ -358,6 +358,11 @@ Case Study Page
     margin-bottom: 28px;
   }
 
+  /* ----- Our Clients Section ----- */
+  .clients-card {
+    height: 100px;
+  }
+
   /* ----- Featured Section ----- */
   .case-studies-articles-section-spacing {
     padding-block: 140px 100px;
@@ -909,6 +914,9 @@ Services Page
   /* ----- Our Clients Section ----- */
   .our-clients-label {
     left: 16px;
+    font-size: 12px;
+    line-height: var(--line-height-1);
+    padding-block: 4px;
   }
 
   .logo-showcase-slider::before,
@@ -1457,6 +1465,10 @@ Case Study Page
     gap: 0;
   }
 
+  .case-study-hero-slider {
+    padding-bottom: 50px;
+  }
+
   .case-study-hero-content {
     width: 100%;
     max-width: 100%;
@@ -1493,6 +1505,11 @@ Case Study Page
 
   .case-study-hero-info {
     padding: 8px;
+  }
+
+  /* ----- Our Clients Section ----- */
+  .clients-card {
+    height: 80px;
   }
 
   /* ----- Featured Section ----- */
@@ -2681,6 +2698,22 @@ Case Study Page
 
   .case-study-hero-slide {
     max-width: 380px;
+  }
+
+  /* ----- Our Clients Section ----- */
+  .clients-card {
+    height: 60px;
+  }
+
+  .clients-stack::after {
+    display: none;
+  }
+
+  .clients-stack::before {
+    width: 2px;
+    height: 2px;
+    top: -1px;
+    left: -1px;
   }
 
   /* ----- Featured Section ----- */

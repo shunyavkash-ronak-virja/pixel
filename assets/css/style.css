@@ -1380,9 +1380,10 @@ Case Study Page
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 10%;
   border: var(--border) var(--transparent);
-  transition: all 0.3s ease-in-out;
   opacity: 40%;
+  transition: all 0.3s ease-in-out;
 }
 
 .clients-card:hover {
@@ -1409,7 +1410,8 @@ Case Study Page
 
 .clients-stack::before,
 .clients-stack::after,
-.clients-card::before {
+.clients-outline-mark::before,
+.clients-outline-mark::after {
   content: "";
   position: absolute;
   background-color: var(--white);
@@ -1436,33 +1438,54 @@ Case Study Page
   display: none;
 }
 
-.clients-card::before {
+.clients-outline-mark::before,
+.clients-outline-mark::after {
   width: 2px;
   aspect-ratio: 1;
-  top: -2px;
-  left: -2px;
+  top: 0;
 }
 
-.clients-logo {
-  max-width: 138px;
-  max-height: 32px;
+.clients-outline-mark::before {
+  left: -1px;
 }
-/* ===== */
-/* .clients-stack:first-child::before {
+
+.clients-outline-mark::after {
+  right: 0;
+  top: -1px;
+}
+
+.clients-stack:nth-child(5) .clients-outline-mark::before,
+.clients-stack:nth-child(9) .clients-outline-mark::before {
+  top: -1px;
+  left: 0;
+}
+
+.clients-stack:nth-child(1) .clients-outline-mark::before,
+.clients-stack:nth-child(6) .clients-outline-mark::before,
+.clients-stack:nth-child(7) .clients-outline-mark::before,
+.clients-stack:nth-child(8) .clients-outline-mark::before {
   display: none;
 }
 
-.clients-stack:nth-child(5)::before {
-  display: none;
+.clients-stack:nth-child(10) .clients-outline-mark::before,
+.clients-stack:nth-child(11) .clients-outline-mark::before,
+.clients-stack:nth-child(12) .clients-outline-mark::before {
+  top: auto;
+  bottom: 0;
 }
 
-.clients-stack:nth-last-child(4)::before {
+.clients-stack:nth-child(1) .clients-outline-mark::after,
+.clients-stack:nth-child(2) .clients-outline-mark::after,
+.clients-stack:nth-child(3) .clients-outline-mark::after,
+.clients-stack:nth-child(4) .clients-outline-mark::after,
+.clients-stack:nth-child(5) .clients-outline-mark::after,
+.clients-stack:nth-child(6) .clients-outline-mark::after,
+.clients-stack:nth-child(7) .clients-outline-mark::after,
+.clients-stack:nth-child(9) .clients-outline-mark::after,
+.clients-stack:nth-child(10) .clients-outline-mark::after,
+.clients-stack:nth-child(11) .clients-outline-mark::after {
   display: none;
 }
-
-.clients-stack:last-child::before {
-  display: none;
-} */
 
 /* ----- Featured Section ----- */
 .featured-section-top-spacing {
