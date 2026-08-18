@@ -2487,11 +2487,8 @@ Contact Us Page
 }
 
 .contact-us-textarea {
-  resize: none;
-  display: block;
   width: 100%;
   min-height: 188px;
-  font-family: inherit;
 }
 
 .contact-us-fom-btn {
@@ -3108,8 +3105,6 @@ laravel Page
 
 .project-contact-textarea {
   min-height: 188px;
-  display: block;
-  resize: none;
 }
 
 .project-contact-fom-btn {

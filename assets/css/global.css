@@ -339,6 +339,11 @@ textarea:focus {
   outline: none;
 }
 
+textarea {
+  resize: none;
+  display: block;
+}
+
 .text-center {
   text-align: center;
 }
@@ -1097,7 +1102,8 @@ h6:not(:where(.h1, .h2, .h3, .h4, .h5)) {
   transition: all 0.3s ease-in-out;
 }
 
-.input-overlay:is(:where(.input-field):focus ~ *) {
+.input-overlay:is(:where(.input-field):focus ~ *),
+.input-overlay:is(:where(.nice-select):focus ~ *) {
   opacity: 1;
 }
 
@@ -1282,6 +1288,7 @@ h6:not(:where(.h1, .h2, .h3, .h4, .h5)) {
   display: flex;
   align-items: center;
   gap: 4px;
+  margin-top: 20px;
 }
 
 .discovery-call-modal-shortcut-label {
@@ -1358,7 +1365,6 @@ h6:not(:where(.h1, .h2, .h3, .h4, .h5)) {
 
 .discovery-call-textarea {
   min-height: 60px;
-  resize: none;
 }
 
 .discovery-call-btn {

@@ -22,13 +22,6 @@
   white-space: nowrap;
 }
 
-.nice-select:hover,
-.nice-select:active,
-.nice-select.open,
-.nice-select:focus {
-  border-color: var(--white);
-}
-
 .nice-select:after {
   content: "";
   width: 5px;
