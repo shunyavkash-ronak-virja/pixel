@@ -229,7 +229,9 @@ if (typeof Splide !== "undefined" && document.querySelector(".client-testimonial
   });
 }
 
-// Fancybox js -----
+// ================================
+// Fancybox Js
+// ================================
 if (typeof Fancybox !== "undefined") {
   Fancybox.bind("[data-fancybox]", {});
 }
@@ -239,7 +241,6 @@ if (typeof Fancybox !== "undefined") {
 // Exact readable equivalent of the production .boxCanvas implementation.
 // ================================
 const BOX_STYLES = [
-  // Figma screenshot 1: 2% fill, 4% border.
   {
     fill: "#FF333705",
     border: "#FF33370A",
@@ -247,7 +248,6 @@ const BOX_STYLES = [
     topInset: "#FF333729",
     edgeInset: "#FF33371F",
   },
-  // Figma screenshot 2: 4% fill, 12% border.
   {
     fill: "#FF33370A",
     border: "#FF33371F",
@@ -255,7 +255,6 @@ const BOX_STYLES = [
     topInset: "#FF333729",
     edgeInset: "#FF33371F",
   },
-  // Figma screenshot 3: 12% fill, 24% border.
   {
     fill: "#FF33371F",
     border: "#FF33373D",
@@ -404,11 +403,8 @@ document.querySelectorAll(".boxCanvasWrapper").forEach((wrapper) => {
       context.fillRect(x, y, boxWidth, boxHeight);
     }
 
-    // 0px 0.5px 0.5px inset: the fine red highlight at the box top.
     context.fillStyle = hexToRgba(style.topInset, boxOpacity);
     context.fillRect(x, y, boxWidth, 0.5);
-
-    // 0px 1px 2px -0.5px inset: a very soft inner red edge.
     const edgeGlow = context.createLinearGradient(x, y, x, y + 3);
     edgeGlow.addColorStop(0, hexToRgba(style.edgeInset, boxOpacity));
     edgeGlow.addColorStop(1, "rgba(255,51,55,0)");
@@ -553,7 +549,6 @@ if (tabs.length && cards.length && searchInput && loadMoreBtn) {
     }
   }
 
-  // Tab Click
   tabs.forEach((tab) => {
     tab.addEventListener("click", () => {
       tabs.forEach((btn) => btn.classList.remove("active"));
@@ -567,38 +562,30 @@ if (tabs.length && cards.length && searchInput && loadMoreBtn) {
     });
   });
 
-  // Search
   searchInput.addEventListener("input", () => {
     visibleCount = INITIAL_COUNT;
     filterBlogs();
   });
 
-  // Load More
   loadMoreBtn.addEventListener("click", () => {
     visibleCount += LOAD_COUNT;
     filterBlogs();
   });
 
-  // Initial Load
   filterBlogs();
 }
 
 document.addEventListener("DOMContentLoaded", () => {
   const sections = document.querySelectorAll(".blog-details-category-item");
   const links = document.querySelectorAll(".blog-details-side-link");
-
-  const offset = 100; // same as scroll-margin-top
+  const offset = 100;
 
   function updateActiveLink() {
-    // Remove all active classes first
     links.forEach((link) => link.classList.remove("active"));
-
     let activeIndex = -1;
 
     sections.forEach((section, index) => {
       const top = section.getBoundingClientRect().top;
-
-      // Section has reached the 100px line
       if (top <= offset) {
         activeIndex = index;
       }
@@ -712,26 +699,20 @@ if (typeof Splide !== "undefined" && document.querySelector("select")) {
 
 document.addEventListener("DOMContentLoaded", () => {
   const modal = document.querySelector('[data-modal="discovery-call"]');
-
   if (!modal) return;
-
   const openButtons = document.querySelectorAll('[data-modal-open="discovery-call"]');
-
   const closeButton = modal.querySelector(".discovery-call-modal-close-btn");
 
-  // Open modal
   const openModal = () => {
     modal.classList.add("open");
     document.body.style.overflow = "hidden";
   };
 
-  // Close modal
   const closeModal = () => {
     modal.classList.remove("open");
     document.body.style.overflow = "";
   };
 
-  // Open from buttons
   openButtons.forEach((button) => {
     button.addEventListener("click", (event) => {
       event.preventDefault();
@@ -739,27 +720,21 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // Close from close button
   closeButton?.addEventListener("click", closeModal);
 
-  // Close when clicking the overlay
   modal.addEventListener("click", (event) => {
     if (event.target === modal) {
       closeModal();
     }
   });
 
-  // Keyboard controls
   document.addEventListener("keydown", (event) => {
-    // Ignore keyboard shortcuts while typing in form fields
     const isTyping = event.target.matches("input, textarea, select");
 
-    // Press B to open
     if (event.key.toLowerCase() === "b" && !isTyping && !modal.classList.contains("open")) {
       openModal();
     }
 
-    // Press Escape to close
     if (event.key === "Escape" && modal.classList.contains("open")) {
       closeModal();
     }
@@ -784,8 +759,6 @@ document.querySelectorAll(".articles-load-more-section").forEach((section) => {
     cards.forEach((card, index) => {
       card.classList.toggle("hide", index >= visibleCount);
     });
-
-    // Hide Load More button when all cards are visible
     loadMoreBtn.style.display = visibleCount >= cards.length ? "none" : "";
   }
 
@@ -793,7 +766,5 @@ document.querySelectorAll(".articles-load-more-section").forEach((section) => {
     visibleCount += LOAD_COUNT;
     updateCards();
   });
-
-  // Initial state
   updateCards();
 });
