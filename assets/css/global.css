@@ -657,14 +657,29 @@ h6:not(:where(.h1, .h2, .h3, .h4, .h5)) {
 }
 
 /* ----- Slider Button Default Css ----- */
+.splide-arrow-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  position: absolute;
+  bottom: 0;
+}
+
+.splide-arrow-wrapper-sapcing {
+  gap: 16px;
+}
+
+.splide__arrow--prev,
+.splide__arrow--next {
+  position: static;
+}
+
 .splide__arrow {
   background: transparent;
   border-radius: 0;
   height: auto;
   opacity: 1;
   transform: translate(0);
-  top: auto;
-  bottom: 0;
 }
 
 .splide__arrow svg {
@@ -680,6 +695,12 @@ h6:not(:where(.h1, .h2, .h3, .h4, .h5)) {
 .splide__arrow:disabled {
   opacity: 0.6;
   pointer-events: none;
+}
+
+@media (max-width: 767px) {
+  .splide-arrow-wrapper {
+    gap: 12px;
+  }
 }
 
 /* ----- Button Css ----- */

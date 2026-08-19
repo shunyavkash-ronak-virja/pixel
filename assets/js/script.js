@@ -191,6 +191,7 @@ if (typeof Splide !== "undefined" && document.querySelector(".highlight-slider")
       arrows: false,
       pagination: false,
       perPage: 1,
+      height: "100%",
     });
 
     var main = new Splide(".highlight-slider", {

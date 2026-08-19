@@ -4,10 +4,6 @@
     padding-top: 0;
   }
 
-  .highlight-caption {
-    margin-bottom: 18px;
-  }
-
   .highlight-counter-wrapper {
     margin-block: 22px 28px;
   }
@@ -74,19 +70,19 @@
 
   /* ----- Why It Matters Section ----- */
   .highlight-wrapper {
-    padding: 50px 20px;
+    padding-block: 50px;
   }
 
   .highlight-caption-img {
     max-width: 86px;
   }
 
-  .highlight-counter-wrapper {
-    margin-block: 20px 24px;
+  .highlight-caption {
+    margin-bottom: 24px;
   }
 
-  .highlight-counter-description {
-    margin-top: 6px;
+  .highlight-counter-wrapper {
+    margin-block: 24px;
   }
 
   /* ----- Our Services Section ----- */
@@ -122,7 +118,6 @@
   }
 
   .why-choose-us-content {
-    padding-inline: 20px;
     padding-bottom: 40px;
   }
 
@@ -549,7 +544,7 @@ Process Page
     margin-bottom: 40px;
   }
 
-  /* ----- Process Hero Section ----- */
+  /* ----- Process Counter Section ----- */
   .counter-block {
     padding: 24px;
   }
@@ -1022,7 +1017,6 @@ Services Page
     flex-direction: column;
     gap: 28px;
     padding-block: 35px 40px;
-    padding-inline: 16px;
   }
 
   .highlight-thumbnail-outline,
@@ -1031,23 +1025,29 @@ Services Page
     max-width: 100%;
   }
 
+  .highlight-caption-img {
+    max-width: 72px;
+  }
+
   .highlight-counter-wrapper {
     max-width: 100%;
+    margin-bottom: 38px;
   }
 
-  /* .highlight-thumbnail-img {
-    max-height: 320px;
-  } */
+  .highlight-thumbnail-img {
+    min-height: 220px;
+  }
 
-  .highlight-slider-arrow-wrapper .icon-btn {
+  .highlight-slider {
+    padding-bottom: 0;
+  }
+
+  .highlight-counter-description {
+    font-size: 14px;
+  }
+
+  .highlight-slider-arrow {
     left: auto;
-  }
-
-  .highlight-slider-arrow-wrapper .splide__arrow--prev {
-    right: 48px;
-  }
-
-  .highlight-slider-arrow-wrapper .splide__arrow--next {
     right: 0;
   }
 
@@ -1110,10 +1110,6 @@ Services Page
     border-bottom: var(--border) var(--black-300);
   }
 
-  .why-choose-us-content {
-    padding-inline: 16px;
-  }
-
   .why-choose-us-title-stack {
     gap: 12px;
   }
@@ -1142,6 +1138,7 @@ Services Page
     left: 0;
     background: linear-gradient(180deg, rgba(255, 51, 55, 0.25) 0, rgba(255, 51, 55, 0) 64%);
     clip-path: polygon(20% 0, 32% 60%, 100% 100%, 0 100%, 0 0);
+    pointer-events: none;
   }
 
   /* ----- Client Testimonials Section ----- */
@@ -1164,8 +1161,12 @@ Services Page
     max-width: 100%;
   }
 
+  .client-testimonials-thumbnails-img {
+    min-height: 228px;
+  }
+
   .client-testimonials-slider {
-    padding-block: 0 100px;
+    padding-block: 0 84px;
   }
 
   .client-testimonials-content {
@@ -1189,20 +1190,10 @@ Services Page
     gap: 16px;
   }
 
-  .client-testimonials-arrow-wrapper .icon-btn {
-    bottom: 0;
-  }
-
   .client-testimonials-arrow-wrapper {
-    .splide__arrow--prev {
-      left: 44%;
-      transform: translateX(-44%);
-    }
-
-    .splide__arrow--next {
-      left: 52%;
-      transform: translateX(52%);
-    }
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   /* ----- FAQ Section ----- */
@@ -1539,20 +1530,11 @@ Case Study Page
     max-width: 100%;
   }
 
-  .featured-slider-arrow-wrapper .splide__arrow--prev {
-    left: 0;
-    right: auto;
-  }
-
-  .featured-slider-arrow-wrapper .splide__arrow--next {
-    right: auto;
-    left: 44px;
-  }
-
-  .featured-slider-arrow-wrapper .splide__arrow {
+  .featured-slider-arrow-wrapper {
     top: auto;
-    bottom: -40px;
-    transform: translateY(40px);
+    bottom: -72px;
+    right: auto;
+    left: 0;
   }
 
   /* ----- Featured Section ----- */
@@ -1831,7 +1813,7 @@ Process Page
     margin-inline: -16px;
   }
 
-  /* ----- Process Hero Section ----- */
+  /* ----- Process Counter Section ----- */
   .counter-block {
     padding: 20px;
   }
@@ -2579,6 +2561,11 @@ Services Page
     max-height: 32px;
   }
 
+  /* ----- Why It Matters Section ----- */
+  .highlight-counter-wrapper {
+    margin-bottom: 52px;
+  }
+
   /* ----- Our Services Section ----- */
   .our-services-card {
     padding-inline: 12px;
@@ -2587,6 +2574,11 @@ Services Page
   .our-services-title {
     font-size: 18px;
     line-height: var(--line-height-1_388);
+  }
+
+  /* ----- Why Choose Us Section ----- */
+  .why-choose-us-news-banner {
+    margin-inline: -12px;
   }
 
   /* ----- FAQ Section ----- */
@@ -2849,7 +2841,7 @@ Process Page
     margin-inline: -12px;
   }
 
-  /* ----- Process Hero Section ----- */
+  /* ----- Process Counter Section ----- */
   .counter-block {
     padding: 16px;
   }
