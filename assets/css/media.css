@@ -94,6 +94,10 @@
     padding-bottom: 46px;
   }
 
+  .our-services-primary-outline {
+    display: none;
+  }
+
   .our-services-card {
     padding-inline: 20px;
     padding-block: 24px;
