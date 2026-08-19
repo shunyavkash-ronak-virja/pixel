@@ -72,9 +72,11 @@
     </header>
 
     <main>
-        <div class="background-glow-wrapper">
-            <div class="background-glow-inner"></div>
-            <img src="assets/images/icons/bg-center-layer.svg" class="" alt="bg-center-layer">
+        <div class="background-glow-out-layer">
+            <div class="background-glow-wrapper">
+                <div class="background-glow-inner"></div>
+                <img src="assets/images/icons/bg-center-layer.svg" class="" alt="bg-center-layer">
+            </div>
         </div>
 
         <!----- Hero Section ----->
@@ -407,7 +409,7 @@
                 </div>
             </div>
             <div class="highlights-block container container-spacing-0 section-spacing section-spacing-top-0">
-                <div class="highlight-wrapper">
+                <div class="container-inline-spacing highlight-wrapper">
                     <div class="relative highlight-thumbnail-outline">
                         <div class="highlight-thumbnail-slider splide" id="image-carousel" aria-label="Beautiful Images">
                             <div class="highlight-thumbnail-track splide__track">
@@ -432,7 +434,7 @@
                         </div>
                     </div>
                     <div class="highlight-slider splide" role="group" aria-label="Splide Basic HTML Example">
-                        <div class="highlight-slider-arrow-wrapper splide__arrows splide__arrows--ltr">
+                        <div class="splide-arrow-wrapper highlight-slider-arrow splide__arrows splide__arrows--ltr">
                             <button class="icon-btn icon-btn-primary icon-corner-shape splide__arrow splide__arrow--prev" type="button" aria-label="Previous slide" aria-controls="splide01-track">
                                 <div class="icon-btn-content icon-corner-shape-content">
                                     <svg class="icon-btn-icon" viewBox="0 0 11 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -598,12 +600,13 @@
         <section class="section-spacing-block">
             <div class="container section-spacing section-spacing-bottom-0 section-spacing-block"></div>
         </section>
+
         <!----- Why Choose Us Section ----->
         <section class="section-border why-choose-us-section">
             <div class="relative container container-spacing-0 section-mark-top">
                 <div class="section-mark-bottom"></div>
                 <div class="why-choose-us-wrapper">
-                    <div class="why-choose-us-content why-choose-us-pros">
+                    <div class="container-inline-spacing why-choose-us-content why-choose-us-pros">
                         <h2 class="why-choose-us-title">
                             Custom Apps Are <br>
                             Powerful But Risky</h2>
@@ -662,7 +665,7 @@
                             <p class="why-choose-us-news-description">All of this is preventable with the right partner.</p>
                         </div>
                     </div>
-                    <div class="relative why-choose-us-content why-choose-us-cons">
+                    <div class="container-inline-spacing relative why-choose-us-content why-choose-us-cons">
                         <h3 class="h2 why-choose-us-title">How Pixel <br> Eliminates Risk</h3>
                         <ul class="why-choose-us-lits">
                             <li class="why-choose-us-item">
@@ -743,7 +746,7 @@
                                         <a class="relative client-testimonials-thumbnails-wrapper" data-fancybox href="assets/video/testimonials-review.mp4">
                                             <img class="img-cover client-testimonials-thumbnails-img" src="assets/images/sections/global-images/client-testimonials-img-01.png" alt="client-testimonials-img">
                                             <div class="client-testimonials-thumbnails-btn-wrapper">
-                                                <img src="assets/images/icons/play-gradient-btn.png" alt="play-gradient-btn">
+                                                <img class="play-gradient-btn" src="assets/images/icons/play-gradient-btn.png" alt="play-gradient-btn">
                                             </div>
                                         </a>
                                     </li>
@@ -751,7 +754,7 @@
                                         <a class="relative client-testimonials-thumbnails-wrapper" data-fancybox href="assets/video/testimonials-review.mp4">
                                             <img class="img-cover client-testimonials-thumbnails-img" src="assets/images/sections/global-images/client-testimonials-img-01.png" alt="client-testimonials-img">
                                             <div class="client-testimonials-thumbnails-btn-wrapper">
-                                                <img src="assets/images/icons/play-gradient-btn.png" alt="play-gradient-btn">
+                                                <img class="play-gradient-btn" src="assets/images/icons/play-gradient-btn.png" alt="play-gradient-btn">
                                             </div>
                                         </a>
                                     </li>
@@ -760,7 +763,7 @@
                         </div>
                     </div>
                     <div class="client-testimonials-slider splide" role="group" aria-label="Splide Basic HTML Example">
-                        <div class="client-testimonials-arrow-wrapper splide__arrows splide__arrows--ltr">
+                        <div class="splide-arrow-wrapper splide-arrow-wrapper-sapcing client-testimonials-arrow-wrapper splide__arrows splide__arrows--ltr">
                             <button class="icon-btn icon-btn-big icon-btn-primary icon-corner-shape splide__arrow splide__arrow--prev" type="button" aria-label="Previous slide" aria-controls="splide04-track">
                                 <div class="icon-btn-content icon-corner-shape-content">
                                     <svg class="icon-btn-icon" viewBox="0 0 11 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1076,7 +1079,7 @@
                     <h2>Latest digital insights & news</h2>
                 </div>
                 <div class="blog-card-slider splide" role="group" aria-label="Splide Basic HTML Example">
-                    <div class="blog-card-slider-arrow-wrapper splide__arrows splide__arrows--ltr">
+                    <div class="splide-arrow-wrapper blog-card-slider-arrow-wrapper splide__arrows splide__arrows--ltr">
                         <button class="icon-btn icon-btn-primary icon-corner-shape splide__arrow splide__arrow--prev" type="button" aria-label="Previous slide" aria-controls="splide01-track">
                             <div class="icon-btn-content icon-corner-shape-content">
                                 <svg class="icon-btn-icon" viewBox="0 0 11 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1310,7 +1313,9 @@
                 <div class="footer-watermark">
                     <img class="footer-watermark-img" src="assets/images/sections/footer-brand-watermark/footer-brand-watermark.png" alt="footer-watermark">
                 </div>
-                <div class="footer-bg"></div>
+                <div class="footer-glow-clip">
+                    <div class="footer-bg"></div>
+                </div>
             </div>
         </footer>
 

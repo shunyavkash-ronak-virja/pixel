@@ -72,10 +72,11 @@
     </header>
 
     <main>
-        <div class="background-glow-wrapper">
-            <div class="background-glow-inner"></div>
-            <img src="assets/images/icons/bg-center-layer.svg" class="" alt="bg-center-layer">
-
+        <div class="background-glow-out-layer">
+            <div class="background-glow-wrapper">
+                <div class="background-glow-inner"></div>
+                <img src="assets/images/icons/bg-center-layer.svg" class="" alt="bg-center-layer">
+            </div>
         </div>
 
         <!----- Web Development Hero Section ----->
@@ -141,7 +142,7 @@
                                         <a class="relative client-testimonials-thumbnails-wrapper" data-fancybox href="assets/video/testimonials-review.mp4">
                                             <img class="img-cover client-testimonials-thumbnails-img" src="assets/images/sections/global-images/client-testimonials-img-01.png" alt="client-testimonials-img">
                                             <div class="client-testimonials-thumbnails-btn-wrapper">
-                                                <img src="assets/images/icons/play-gradient-btn.png" alt="play-gradient-btn">
+                                                <img class="play-gradient-btn" src="assets/images/icons/play-gradient-btn.png" alt="play-gradient-btn">
                                             </div>
                                         </a>
                                     </li>
@@ -149,7 +150,7 @@
                                         <a class="relative client-testimonials-thumbnails-wrapper" data-fancybox href="assets/video/testimonials-review.mp4">
                                             <img class="img-cover client-testimonials-thumbnails-img" src="assets/images/sections/global-images/client-testimonials-img-01.png" alt="client-testimonials-img">
                                             <div class="client-testimonials-thumbnails-btn-wrapper">
-                                                <img src="assets/images/icons/play-gradient-btn.png" alt="play-gradient-btn">
+                                                <img class="play-gradient-btn" src="assets/images/icons/play-gradient-btn.png" alt="play-gradient-btn">
                                             </div>
                                         </a>
                                     </li>
@@ -158,7 +159,7 @@
                         </div>
                     </div>
                     <div class="client-testimonials-slider splide" role="group" aria-label="Splide Basic HTML Example">
-                        <div class="client-testimonials-arrow-wrapper splide__arrows splide__arrows--ltr">
+                        <div class="splide-arrow-wrapper client-testimonials-arrow-wrapper splide__arrows splide__arrows--ltr">
                             <button class="icon-btn icon-btn-big icon-btn-primary icon-corner-shape splide__arrow splide__arrow--prev" type="button" aria-label="Previous slide" aria-controls="splide04-track">
                                 <div class="icon-btn-content icon-corner-shape-content">
                                     <svg class="icon-btn-icon" viewBox="0 0 11 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1056,7 +1057,9 @@
                 <div class="footer-watermark">
                     <img class="footer-watermark-img" src="assets/images/sections/footer-brand-watermark/footer-brand-watermark.png" alt="footer-watermark">
                 </div>
-                <div class="footer-bg"></div>
+                <div class="footer-glow-clip">
+                    <div class="footer-bg"></div>
+                </div>
             </div>
         </footer>
 

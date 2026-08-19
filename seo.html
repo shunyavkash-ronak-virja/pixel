@@ -72,10 +72,11 @@
     </header>
 
     <main>
-        <div class="background-glow-wrapper">
-            <div class="background-glow-inner"></div>
-            <img src="assets/images/icons/bg-center-layer.svg" class="" alt="bg-center-layer">
-
+        <div class="background-glow-out-layer">
+            <div class="background-glow-wrapper">
+                <div class="background-glow-inner"></div>
+                <img src="assets/images/icons/bg-center-layer.svg" class="" alt="bg-center-layer">
+            </div>
         </div>
 
         <!----- SEO Hero Section ----->
@@ -568,7 +569,7 @@
             <div class="relative container section-mark-top customer-review-spacing boxCanvasWrapper" data-box-width="64" data-box-height="48">
                 <canvas class="boxCanvas" aria-hidden="true"></canvas>
                 <div class="mx-auto customer-review-slider splide" role="group" aria-label="Splide Basic HTML Example">
-                    <div class="customer-review-arrow-wrapper splide__arrows splide__arrows--ltr">
+                    <div class="splide-arrow-wrapper customer-review-arrow-wrapper splide__arrows splide__arrows--ltr">
                         <button class="icon-btn icon-btn-big icon-btn-primary icon-corner-shape splide__arrow splide__arrow--prev" type="button" aria-label="Previous slide" aria-controls="splide05-track" disabled="">
                             <div class="icon-btn-content icon-corner-shape-content">
                                 <svg class="icon-btn-icon" viewBox="0 0 11 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1050,7 +1051,9 @@
                 <div class="footer-watermark">
                     <img class="footer-watermark-img" src="assets/images/sections/footer-brand-watermark/footer-brand-watermark.png" alt="footer-watermark">
                 </div>
-                <div class="footer-bg"></div>
+                <div class="footer-glow-clip">
+                    <div class="footer-bg"></div>
+                </div>
             </div>
         </footer>
 
