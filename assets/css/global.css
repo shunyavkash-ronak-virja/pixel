@@ -99,6 +99,13 @@
 }
 
 /* ----- Background Glow ----- */
+.background-glow-out-layer {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
 .background-glow-wrapper {
   position: absolute;
   top: 836px;
@@ -129,9 +136,20 @@
   filter: blur(622px);
 }
 
+@media (max-width: 991px) {
+  .background-glow-wrapper {
+    top: 750px;
+  }
+}
+
+@media (max-width: 767px) {
+  .background-glow-wrapper {
+    top: 664px;
+  }
+}
+
 @media (max-width: 575px) {
   .background-glow-wrapper {
-    height: 450px;
     top: 576px;
   }
 
