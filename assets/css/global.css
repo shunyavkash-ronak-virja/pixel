@@ -66,6 +66,7 @@
   --line-height-1_215: 1.215;
   --line-height-1_428: 1.428;
   --line-height-1_5: 1.5;
+  --line-height-1_555: 1.555;
   --line-height-1_562: 1.562;
   --line-height-1_625: 1.625;
   --line-height-1_63: 1.63;
@@ -640,7 +641,7 @@ h5:not(:where(.h1, .h2, .h3, .h4, .h6)) {
 .h6,
 h6:not(:where(.h1, .h2, .h3, .h4, .h5)) {
   font-size: 28px;
-  line-height: 1;
+  line-height: var(--line-height-1);
   font-weight: 600;
 }
 

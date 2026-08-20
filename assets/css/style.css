@@ -300,8 +300,12 @@
 }
 
 /* ----- Why It Matters Section ----- */
+.why-it-matters-head {
+  max-width: 942px;
+}
+
 .why-it-matters-head-description {
-  max-width: 932px;
+  line-height: var(--line-height-1_562);
 }
 
 .highlight-wrapper {
@@ -401,6 +405,7 @@
   margin-top: 8px;
   font-weight: 400;
   letter-spacing: -0.1px;
+  line-height: var(--line-height-1);
 }
 
 .highlight-slider-arrow-wrapper {
@@ -413,10 +418,10 @@
 }
 
 .our-services-primary-outline {
-  width: 100%;
+  width: 45%;
   max-width: 456px;
   position: absolute;
-  top: 0;
+  top: -1px;
   left: 50%;
   transform: translateX(-50%);
   border-top: var(--border) var(--pelati);
@@ -432,7 +437,7 @@
   width: 1px;
   aspect-ratio: 1;
   position: absolute;
-  top: 0;
+  top: -1px;
 }
 
 .our-services-primary-outline::before,
@@ -474,6 +479,11 @@
 
 .our-services-head-description {
   max-width: 825px;
+  line-height: var(--line-height-1_562);
+}
+
+.our-services-head-btn-wrapper {
+  margin-top: 16px;
 }
 
 .our-services-card-wrapper {
@@ -514,6 +524,7 @@
 .our-services-description {
   max-width: 340px;
   margin-top: 24px;
+  line-height: var(--line-height-1_562);
 }
 
 /* ----- Why Choose Us Section ----- */
@@ -757,6 +768,7 @@
 
 .faqs-description {
   margin-block: 18px 40px;
+  line-height: var(--line-height-1_562);
 }
 
 .faqs-wrapper {
@@ -852,6 +864,7 @@
 }
 
 .faq-answer {
+  line-height: var(--line-height-1_562);
   transition: all 0.3s ease-in-out;
 }
 
@@ -979,6 +992,7 @@
   max-width: 502px;
   margin-block: 24px 44px;
   color: var(--white-60);
+  line-height: var(--line-height-1_562);
 }
 
 .cta-btn-wrapper {
@@ -1067,6 +1081,7 @@ Blog Listing Page
 .blogs-highlights-description {
   margin-block: 16px 40px;
   font-weight: 400;
+  line-height: var(--line-height-1_562);
 }
 
 /* ----- Articles Section ----- */
@@ -1091,6 +1106,8 @@ Blog Listing Page
 }
 
 .articles-filter-tab {
+  line-height: var(--line-height-1_25);
+  font-weight: 400;
   padding: 8px 12px;
   text-transform: capitalize;
   background-color: var(--white-1);
@@ -1130,19 +1147,15 @@ Blog Listing Page
 
 .articles-filter-input {
   font-weight: 400;
+  line-height: var(--line-height-1_25);
   border: var(--border) var(--black-400);
+  background-color: var(--black-200);
   padding-block: 16px;
   padding-inline: 40px 20px;
-  color: var(--white);
-  transition: all 0.3s ease-in-out;
 }
 
 .articles-filter-input::placeholder {
   color: var(--white-32);
-}
-
-.articles-filter-input:focus {
-  border-color: var(--white-24);
 }
 
 .articles-filter-input-icon {
@@ -1259,7 +1272,7 @@ Blog Details Page
 }
 
 .blog-details-category-item {
-  scroll-margin-top: 100px;
+  scroll-margin-top: 90px;
 }
 
 .blog-details-category-title {
@@ -1292,7 +1305,7 @@ Blog Details Page
   display: flex;
   flex-direction: column;
   gap: 8px;
-  margin-bottom: 24px;
+  margin-bottom: 22px;
 }
 
 .blog-details-side-link {
@@ -1551,6 +1564,10 @@ Case Study Page
   max-width: 955px;
 }
 
+.featured-slider-title {
+  line-height: var(--line-height-1);
+}
+
 .featured-slider-description {
   margin-top: 14px;
   color: var(--white-60);
@@ -1611,6 +1628,7 @@ Case Study Page
 
 .cta-banner-description {
   margin-top: 25px;
+  line-height: var(--line-height-1_625);
 }
 
 /* =====================================================
@@ -1792,6 +1810,7 @@ About Us Page
 }
 
 .our-mission-description {
+  line-height: var(--line-height-1_562);
   border: var(--border) var(--pelati-24);
   padding: 24px;
   filter: blur(4)
@@ -1905,10 +1924,12 @@ About Us Page
 
 .content-highlight-title {
   max-width: 556px;
+  font-size: 32px;
 }
 
 .content-highlight-description {
   max-width: 434px;
+  line-height: var(--line-height-1_562);
 }
 
 .value-card-wrapper {
@@ -2077,6 +2098,7 @@ Process Page
   position: absolute;
   top: 0;
   left: 50%;
+  pointer-events: none;
   transform: translateX(-50%);
 }
 
@@ -2317,6 +2339,7 @@ Process Page
 
 .timeline-head-description {
   font-size: 18px;
+  line-height: var(--line-height-1_555);
   font-weight: 400;
   margin-top: 24px;
 }
@@ -2401,6 +2424,7 @@ Contact Us Page
 
 .contact-us-description {
   margin-block: 20px 36px;
+  line-height: var(--line-height-1_625);
 }
 
 .contact-us-content-lists {
@@ -2413,6 +2437,7 @@ Contact Us Page
   display: flex;
   align-items: center;
   gap: 10px;
+  line-height: var(--line-height-1);
 }
 
 .contact-us-icon {
@@ -2427,6 +2452,10 @@ Contact Us Page
   flex-wrap: wrap;
   border-block: var(--border) var(--white-8);
   padding-block: 32px;
+}
+
+.contact-us-media-caption {
+  line-height: var(--line-height-1);
 }
 
 .contact-us-media-list {
@@ -2576,7 +2605,14 @@ Web Design Page
 }
 
 .brisbane-head-wrapper {
-  max-width: 752px;
+  max-width: 772px;
+}
+
+.brisbane-head-description {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: var(--line-height-1_555);
+  max-width: 770px;
 }
 
 .key-considerations-wrapper {
@@ -2795,7 +2831,7 @@ SEO Page
 }
 
 .pixel-promises-icon {
-  width: 38px;
+  width: 40px;
   aspect-ratio: 1;
   margin-bottom: 30px;
 }
@@ -2806,6 +2842,7 @@ SEO Page
 
 .web-developmen-promises-description {
   font-size: 18px;
+  line-height: var(--line-height-1_555);
 }
 
 /* ----- Design Principles Section ----- */
@@ -2907,6 +2944,7 @@ Digital Roadmap Page
 
 .digital-roadmap-description {
   max-width: 488px;
+  line-height: var(--line-height-1_625);
 }
 
 .digital-roadmap-highlights-spacing {
@@ -3220,7 +3258,7 @@ Services Page
   max-width: 450px;
 }
 
-.section-caption {
+.services-content-wrapper .section-caption {
   margin-bottom: 16px;
 }
 

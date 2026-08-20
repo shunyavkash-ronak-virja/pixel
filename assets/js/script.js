@@ -662,6 +662,7 @@ if (typeof Splide !== "undefined" && document.querySelector(".casestudy-testimon
       autoplay: true,
       rewind: true,
       pagination: false,
+      arrows: false,
       interval: 5000,
       speed: 800,
       easing: "ease-in-out",
