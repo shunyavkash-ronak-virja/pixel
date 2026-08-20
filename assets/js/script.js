@@ -239,7 +239,7 @@ if (typeof Fancybox !== "undefined") {
 
 // ================================
 // Animated CTA Box Canvas
-// Exact readable equivalent of the production .boxCanvas implementation.
+// Exact readable equivalent of the production .box-canvas implementation.
 // ================================
 const BOX_STYLES = [
   {
@@ -274,8 +274,8 @@ const OUTER_BOX_SHADOWS = [
   { offsetY: 8, blur: 8, color: "#07011308" },
 ];
 
-document.querySelectorAll(".boxCanvasWrapper").forEach((wrapper) => {
-  const canvas = wrapper.querySelector(".boxCanvas");
+document.querySelectorAll(".box-canvas-wrapper").forEach((wrapper) => {
+  const canvas = wrapper.querySelector(".box-canvas");
   if (!canvas) return;
 
   const context = canvas.getContext("2d");
@@ -707,12 +707,14 @@ document.addEventListener("DOMContentLoaded", () => {
   if (!modal) return;
   const openButtons = document.querySelectorAll('[data-modal-open="discovery-call"]');
   const closeButton = modal.querySelector(".discovery-call-modal-close-btn");
+  const desktopMediaQuery = window.matchMedia("(min-width: 992px)");
 
   const openModal = () => {
     modal.classList.add("open");
     document.body.style.overflow = "hidden";
+
     setTimeout(() => {
-      modal.querySelector("#discovery-call-name").focus();
+      modal.querySelector("#discovery-call-name")?.focus();
     }, 100);
   };
 
@@ -737,6 +739,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   document.addEventListener("keydown", (event) => {
+    if (!desktopMediaQuery.matches) return;
     const isTyping = event.target.matches("input, textarea, select");
 
     if (event.key.toLowerCase() === "b" && !isTyping && !modal.classList.contains("open")) {

@@ -1032,6 +1032,10 @@ h6:not(:where(.h1, .h2, .h3, .h4, .h5)) {
   .icon-btn-big {
     width: 42px;
   }
+
+  .btn-content span {
+    display: none;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1053,10 +1057,6 @@ h6:not(:where(.h1, .h2, .h3, .h4, .h5)) {
   .btn-content::before,
   .btn-content::after {
     width: 6px;
-  }
-
-  .btn-content span {
-    display: none;
   }
 
   .icon-btn {
