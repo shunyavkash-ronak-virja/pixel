@@ -2092,6 +2092,23 @@ Process Page
   padding-block: 60px 120px;
 }
 
+.process-hero-animation {
+  isolation: isolate;
+}
+
+.process-hero-canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.process-hero-canvas {
+  opacity: 0.85;
+}
+
 .gradient-shade-img {
   width: 100%;
   max-width: 695px;

@@ -472,6 +472,193 @@ document.querySelectorAll(".box-canvas-wrapper").forEach((wrapper) => {
 });
 
 // ================================
+// Process Hero Canvas (second animation variant)
+// ================================
+document.querySelectorAll(".process-hero-animation").forEach((section) => {
+  const canvas = section.querySelector(".process-hero-canvas");
+  if (!canvas) return;
+
+  const context = canvas.getContext("2d");
+  const cellSize = 38;
+  const boxSize = 37.33;
+  const boxInset = (cellSize - boxSize) / 2;
+  const boxCount = 7;
+  const boxLifetime = 7000;
+  const fadeDuration = 300;
+  const boxStyles = [
+    { fill: "rgba(255,255,255,0.025)", border: "rgba(255,255,255,0.04)" },
+    { fill: "rgba(255,255,255,0.06)", border: "rgba(255,255,255,0.1)" },
+    { fill: "rgba(255,255,255,0.12)", border: "rgba(255,255,255,0.18)" },
+  ];
+  let width = 0;
+  let height = 0;
+  let columns = 0;
+  let rows = 0;
+  let boxes = [];
+  let previousFrameTime = 0;
+
+  function getGridBounds() {
+    return {
+      leftColumn: Math.ceil(columns * 0.18),
+      rightColumn: Math.floor(columns * 0.79) - 1,
+      bottomRow: Math.floor(rows * 0.56) - 1,
+    };
+  }
+
+  function isInGridArea(x, y) {
+    const { leftColumn, rightColumn, bottomRow } = getGridBounds();
+    return x >= leftColumn && x <= rightColumn && y >= 0 && y <= bottomRow;
+  }
+
+  function findPosition(ignoredBox = null) {
+    const candidates = [];
+
+    for (let y = 0; y < rows; y++) {
+      for (let x = 0; x < columns; x++) {
+        if (!isInGridArea(x, y)) continue;
+        const tooClose = boxes.some(
+          (box) => box !== ignoredBox && Math.abs(box.x - x) <= 1 && Math.abs(box.y - y) <= 1,
+        );
+        if (!tooClose) candidates.push({ x, y });
+      }
+    }
+
+    return candidates[Math.floor(Math.random() * candidates.length)] || { x: 0, y: 0 };
+  }
+
+  function createBoxes() {
+    boxes = [];
+    for (let index = 0; index < boxCount; index++) {
+      const position = findPosition();
+      boxes.push({
+        ...position,
+        opacity: 0,
+        targetOpacity: 0.78 + Math.random() * 0.22,
+        timer: Math.random() * boxLifetime,
+        switchTimer: 0,
+        switching: false,
+      });
+    }
+  }
+
+  function drawGradientLine(x1, y1, x2, y2, opacity) {
+    const gradient = context.createLinearGradient(x1, y1, x2, y2);
+    gradient.addColorStop(0, "rgba(255,255,255,0)");
+    gradient.addColorStop(0.18, `rgba(255,255,255,${opacity * 0.35})`);
+    gradient.addColorStop(0.5, `rgba(255,255,255,${opacity})`);
+    gradient.addColorStop(0.82, `rgba(255,255,255,${opacity * 0.35})`);
+    gradient.addColorStop(1, "rgba(255,255,255,0)");
+    context.strokeStyle = gradient;
+    context.beginPath();
+    context.moveTo(x1, y1);
+    context.lineTo(x2, y2);
+    context.stroke();
+  }
+
+  function drawPartialGrid() {
+    context.lineWidth = 1;
+    const { leftColumn, rightColumn, bottomRow } = getGridBounds();
+    const left = leftColumn * cellSize;
+    const right = (rightColumn + 1) * cellSize;
+    const bottom = (bottomRow + 1) * cellSize;
+    const centerX = (left + right) / 2;
+    const centerY = bottom * 0.36;
+
+    for (let x = left; x <= right; x += cellSize) {
+      const horizontalDistance = Math.abs(x - centerX) / ((right - left) / 2);
+      const opacity = 0.08 * Math.max(0, 1 - horizontalDistance ** 1.7);
+      drawGradientLine(x, 0, x, bottom, opacity);
+    }
+
+    for (let y = 0; y <= bottom; y += cellSize) {
+      const verticalDistance = Math.abs(y - centerY) / (bottom * 0.7);
+      const opacity = 0.08 * Math.max(0, 1 - verticalDistance ** 1.5);
+      drawGradientLine(left, y, right, y, opacity);
+    }
+  }
+
+  function beamIntensity(x, y) {
+    const horizontal = 1 - Math.min(Math.abs(x / width - 0.52) / 0.21, 1);
+    const vertical = 1 - Math.min(Math.abs(y / height - 0.15) / 0.24, 1);
+    return Math.max(0, horizontal * vertical);
+  }
+
+  function drawBoxes() {
+    boxes.forEach((box) => {
+      const x = box.x * cellSize + boxInset;
+      const y = box.y * cellSize + boxInset;
+      const intensity = beamIntensity(x + boxSize / 2, y + boxSize / 2);
+      const style = boxStyles[intensity > 0.45 ? 2 : intensity > 0.12 ? 1 : 0];
+      const opacity = box.opacity;
+      context.fillStyle = style.fill.replace(
+        /([\d.]+)\)$/,
+        (_, alpha) => `${Number(alpha) * opacity})`,
+      );
+      context.fillRect(x, y, boxSize, boxSize);
+      if (intensity > 0) {
+        context.fillStyle = `rgba(255,71,74,${intensity * opacity * 0.16})`;
+        context.fillRect(x, y, boxSize, boxSize);
+      }
+      context.strokeStyle = style.border.replace(
+        /([\d.]+)\)$/,
+        (_, alpha) => `${Number(alpha) * opacity})`,
+      );
+      context.lineWidth = 0.5;
+      context.strokeRect(x, y, boxSize, boxSize);
+    });
+  }
+
+  function updateBoxes(elapsedTime) {
+    boxes.forEach((box) => {
+      box.opacity += (box.targetOpacity - box.opacity) * 0.08;
+      box.timer += elapsedTime;
+      if (box.timer >= boxLifetime && !box.switching) {
+        box.targetOpacity = 0;
+        box.switching = true;
+        box.switchTimer = 0;
+      }
+      if (box.switching) box.switchTimer += elapsedTime;
+      if (box.switching && box.switchTimer > fadeDuration) {
+        Object.assign(box, findPosition(box), {
+          opacity: 0,
+          targetOpacity: 0.78 + Math.random() * 0.22,
+          timer: 0,
+          switchTimer: 0,
+          switching: false,
+        });
+      }
+    });
+  }
+
+  function animate(frameTime) {
+    const elapsedTime = frameTime - previousFrameTime;
+    previousFrameTime = frameTime;
+    context.clearRect(0, 0, width, height);
+    drawPartialGrid();
+    updateBoxes(elapsedTime);
+    drawBoxes();
+    requestAnimationFrame(animate);
+  }
+
+  function resizeCanvas() {
+    const rect = section.getBoundingClientRect();
+    const dpr = Math.min(window.devicePixelRatio || 1, 2);
+    width = rect.width;
+    height = rect.height;
+    columns = Math.floor(width / cellSize);
+    rows = Math.floor(height / cellSize);
+    canvas.width = Math.round(width * dpr);
+    canvas.height = Math.round(height * dpr);
+    context.setTransform(dpr, 0, 0, dpr, 0, 0);
+    createBoxes();
+  }
+
+  resizeCanvas();
+  animate(0);
+  new ResizeObserver(resizeCanvas).observe(section);
+});
+
+// ================================
 // FAQ JS
 // ================================
 document.querySelectorAll(".faq-question-block").forEach((question) => {
