@@ -479,8 +479,8 @@ document.querySelectorAll(".process-hero-animation").forEach((section) => {
   if (!canvas) return;
 
   const context = canvas.getContext("2d");
-  const cellSize = 38;
-  const boxSize = 37.33;
+  const cellSize = 36;
+  const boxSize = 36;
   const boxInset = (cellSize - boxSize) / 2;
   const boxCount = 7;
   const boxLifetime = 7000;
