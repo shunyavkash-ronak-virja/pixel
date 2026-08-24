@@ -99,21 +99,17 @@ if (typeof Splide !== "undefined" && document.querySelector(".clients-site-showc
 // ================================
 // Process Flow JS
 // ================================
-if (
-  window.matchMedia("(min-width:768px)").matches &&
-  document.querySelector(".process-flow-item")
-) {
+const processFlow = document.querySelector(".process-flow-item");
+if (processFlow) {
   const items = document.querySelectorAll(".process-flow-item");
   const contentItems = document.querySelectorAll(".process-flow-tab-content");
-
+  const desktopQuery = window.matchMedia("(min-width: 768px)");
   let currentIndex = 0;
   let timer;
 
   function activateItem(index) {
     items.forEach((item) => {
       item.classList.remove("active");
-      item.setAttribute("aria-pressed", "false");
-
       const effect = item.querySelector(".process-flow-time-line-effect");
 
       if (effect) {
@@ -124,10 +120,7 @@ if (
     });
 
     if (!items[index]) return;
-
     items[index].classList.add("active");
-    items[index].setAttribute("aria-pressed", "true");
-
     contentItems.forEach((contentItem) => {
       contentItem.classList.remove("active");
     });
@@ -144,22 +137,42 @@ if (
     }, 6000);
   }
 
+  function startDesktopTabs() {
+    if (!desktopQuery.matches) return;
+    activateItem(currentIndex);
+  }
+
+  function stopDesktopTabs() {
+    clearTimeout(timer);
+  }
+
   items.forEach((item, index) => {
     item.addEventListener("click", () => {
+      if (!desktopQuery.matches) return;
       currentIndex = index;
       activateItem(currentIndex);
     });
 
     item.addEventListener("keydown", (event) => {
+      if (!desktopQuery.matches) return;
       if (event.key !== "Enter" && event.key !== " ") return;
-
       event.preventDefault();
       currentIndex = index;
       activateItem(currentIndex);
     });
   });
 
-  activateItem(0);
+  if (desktopQuery.matches) {
+    startDesktopTabs();
+  }
+
+  desktopQuery.addEventListener("change", (event) => {
+    if (event.matches) {
+      startDesktopTabs();
+    } else {
+      stopDesktopTabs();
+    }
+  });
 }
 
 // ================================
