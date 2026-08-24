@@ -412,6 +412,14 @@
   left: 0;
 }
 
+.btn-accessibility-text {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+
 /* ----- Our Services Section ----- */
 .our-services-head-spacing {
   padding-bottom: 60px;
