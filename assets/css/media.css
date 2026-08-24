@@ -981,6 +981,10 @@ Services Page
     margin-bottom: 20px;
   }
 
+  .process-flow-heade {
+    cursor: auto;
+  }
+
   .process-flow-caption {
     font-size: 14px;
   }
