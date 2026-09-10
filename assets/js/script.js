@@ -105,141 +105,114 @@ if (processFlow) {
     ======================================== */
 
     function getMaxProcessFlowHeight() {
+
         if (!wrapper || !contentList) return 0;
 
-        /*
-          Remove previous dynamic height
-          before measuring.
-        */
-
-        resetProcessFlowHeight();
-
 
         /*
-          Save current active item
+          Create a hidden copy of the content list.
+      
+          We will measure the copy instead of
+          changing the real Process Flow tabs.
         */
 
-        const activeIndex = Array.from(items).findIndex((item) =>
-            item.classList.contains("active")
-        );
+        const measureWrapper = wrapper.cloneNode(true);
 
-        const savedIndex =
-            activeIndex >= 0 ? activeIndex : currentIndex;
+        measureWrapper.style.position = "absolute";
+        measureWrapper.style.left = "-99999px";
+        measureWrapper.style.top = "0";
+        measureWrapper.style.width =
+            `${wrapper.getBoundingClientRect().width}px`;
+        measureWrapper.style.height = "auto";
+        measureWrapper.style.minHeight = "0";
+        measureWrapper.style.visibility = "hidden";
+        measureWrapper.style.pointerEvents = "none";
+        measureWrapper.style.display = "flex";
 
 
         /*
-          Save transition styles
+          Add hidden copy to the page
+          so browser can calculate its layout.
         */
 
-        const savedStyles = [];
+        document.body.appendChild(measureWrapper);
 
 
-        items.forEach((item) => {
+        /*
+          Get elements from the copied Process Flow.
+        */
 
-            const detail = item.querySelector(
-                ".process-flow-item-detail-block"
+        const measureContentList =
+            measureWrapper.querySelector(
+                ".process-flow-content-list"
             );
 
-            const description = item.querySelector(
-                ".process-flow-item-description"
+        const measureItems =
+            measureWrapper.querySelectorAll(
+                ".process-flow-item"
             );
 
 
-            if (detail) {
+        if (!measureContentList || !measureItems.length) {
 
-                savedStyles.push({
-                    element: detail,
-                    transition: detail.style.transition,
-                });
+            measureWrapper.remove();
 
-                detail.style.transition = "none";
-            }
+            return 0;
+        }
 
 
-            if (description) {
+        /*
+          Make sure the copied content list
+          uses the same width as the real one.
+        */
 
-                savedStyles.push({
-                    element: description,
-                    transition: description.style.transition,
-                });
+        measureContentList.style.width =
+            `${contentList.getBoundingClientRect().width}px`;
 
-                description.style.transition = "none";
-            }
+        measureContentList.style.maxWidth = "none";
 
-        });
+
+        /*
+          Remove transitions from the copied elements.
+      
+          This makes measurement instant.
+        */
+
+        measureWrapper
+            .querySelectorAll(
+                ".process-flow-item-detail-block, .process-flow-item-description"
+            )
+            .forEach((element) => {
+
+                element.style.transition = "none";
+
+            });
 
 
         let maxHeight = 0;
 
 
         /*
-          Check every process item
+          Measure every tab in the hidden copy.
+      
+          The real tabs are NOT touched.
         */
 
-        items.forEach((item) => {
+        measureItems.forEach((item) => {
 
-            /*
-              Remove active from all
-            */
-
-            items.forEach((element) => {
+            measureItems.forEach((element) => {
                 element.classList.remove("active");
             });
 
 
-            /*
-              Open this item
-            */
-
             item.classList.add("active");
-
-
-            /*
-              Force layout calculation
-            */
-
-            void contentList.offsetHeight;
-
-
-            /*
-              Get actual content height
-            */
-
-            const height = contentList.scrollHeight;
-
-
-            maxHeight = Math.max(maxHeight, height);
-
+            void measureContentList.offsetHeight;
+             const height =
+                measureContentList.scrollHeight;
+            maxHeight =
+                Math.max(maxHeight, height);
         });
-
-
-        /*
-          Remove temporary active states
-        */
-
-        items.forEach((item) => {
-            item.classList.remove("active");
-        });
-
-
-        /*
-          Restore current active item
-        */
-
-        if (items[savedIndex]) {
-            items[savedIndex].classList.add("active");
-        }
-
-
-        /*
-          Restore transitions
-        */
-
-        savedStyles.forEach(({ element, transition }) => {
-            element.style.transition = transition;
-        });
-
-
+        measureWrapper.remove();
         return maxHeight;
     }
 
